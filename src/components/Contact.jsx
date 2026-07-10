@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaPaperPlane } from "react-icons/fa";
 import { useLang } from "../context/LanguageContext";
 
-const BOUNDARY_MAP_SRC = "https://www.google.com/maps/d/embed?mid=1o68LDPIzeMksEDwX4UrTSOZd9pJJoQU&ehbc=2E312F";
+const BOUNDARY_MAP_SRC = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.5!2d75.8624599!3d27.991615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3912d250fc010c47%3A0x27eb40cc78e6ca4e!2sKhakhi%20Dham!5e0!3m2!1sen!2sin!4v1720000000001!5m2!1sen!2sin";
 
 function Contact() {
   const navigate = useNavigate();
@@ -145,7 +145,7 @@ function Contact() {
                 ></iframe>
               ) : (
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3519.829023473187!2d75.87912977630327!3d28.01119657680076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39132475df8a5e01%3A0xe54e6012ea2c1f4e!2sKhakhi%20Bhavan!5e0!3m2!1sen!2sin!4v1719999999999!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3519.5!2d75.8817047!3d28.0111919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3912d2148801d4ab%3A0x797a6b6f8541caa0!2sKhakhi%20Bhavan!5e0!3m2!1sen!2sin!4v1720000000002!5m2!1sen!2sin"
                   width="100%"
                   height="260"
                   style={{ border: 0, borderRadius: "10px" }}
@@ -161,8 +161,8 @@ function Contact() {
               <a
                 href={
                   activeMap === "dham"
-                    ? "https://www.google.com/maps/d/viewer?mid=1o68LDPIzeMksEDwX4UrTSOZd9pJJoQU"
-                    : "https://maps.app.goo.gl/5PJJWLc9mqbsc4Hd7"
+                    ? "https://maps.app.goo.gl/8qDmviqS1VQaMgNm9"
+                    : "https://maps.app.goo.gl/78GnXC8EiTw4NkAt8"
                 }
                 target="_blank"
                 rel="noreferrer"
