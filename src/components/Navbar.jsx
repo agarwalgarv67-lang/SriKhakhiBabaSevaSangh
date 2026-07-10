@@ -27,27 +27,13 @@ function Navbar() {
 
         <nav className={isOpen ? "nav-menu active" : "nav-menu"}>
           <ul>
-            <li>
-              <NavLink to="/" onClick={closeMenu}>Home</NavLink>
-            </li>
-            <li>
-              <NavLink to="/about" onClick={closeMenu}>About</NavLink>
-            </li>
-            <li>
-              <NavLink to="/Journey" onClick={closeMenu}>Our Journey</NavLink>
-            </li>
-            <li>
-              <NavLink to="/gallery" onClick={closeMenu}>Gallery</NavLink>
-            </li>
-            <li>
-              <NavLink to="/events" onClick={closeMenu}>Events</NavLink>
-            </li>
-            <li>
-              <NavLink to="/donation" onClick={closeMenu}>Donation</NavLink>
-            </li>
-            <li>
-              <NavLink to="/contact" onClick={closeMenu}>Contact</NavLink>
-            </li>
+            <li><NavLink to="/" onClick={closeMenu}>Home</NavLink></li>
+            <li><NavLink to="/about" onClick={closeMenu}>About</NavLink></li>
+            <li><NavLink to="/Journey" onClick={closeMenu}>Our Journey</NavLink></li>
+            <li><NavLink to="/gallery" onClick={closeMenu}>Gallery</NavLink></li>
+            <li><NavLink to="/events" onClick={closeMenu}>Events</NavLink></li>
+            <li><NavLink to="/donation" onClick={closeMenu}>Donation</NavLink></li>
+            <li><NavLink to="/contact" onClick={closeMenu}>Contact</NavLink></li>
           </ul>
         </nav>
       </div>

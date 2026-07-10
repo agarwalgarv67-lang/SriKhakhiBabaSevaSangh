@@ -4,7 +4,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import Navbar from "./components/Navbar";
-import LangToggle from "./components/LangToggle";
 import { LanguageProvider } from "./context/LanguageContext";
 
 import Home from "./pages/Home";
@@ -30,7 +29,6 @@ function App() {
   return (
     <LanguageProvider>
       <Navbar />
-      <LangToggle />
 
       <Routes>
         <Route path="/" element={<Home />} />
