@@ -4,6 +4,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import Navbar from "./components/Navbar";
+import LangToggle from "./components/LangToggle";
+import { LanguageProvider } from "./context/LanguageContext";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -26,8 +28,9 @@ function App() {
   }, []);
 
   return (
-    <>
+    <LanguageProvider>
       <Navbar />
+      <LangToggle />
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -38,7 +41,7 @@ function App() {
         <Route path="/donation" element={<Donation />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </>
+    </LanguageProvider>
   );
 }
 

@@ -6,25 +6,42 @@ import mela from "../assets/images/mela.jpeg";
 import mela2 from "../assets/images/mela2.jpeg";
 import mela3 from "../assets/images/mela3.jpeg";
 import mela4 from "../assets/images/mela4.jpeg";
+import { useLang } from "../context/LanguageContext";
 
 function Gallery() {
+  const { lang } = useLang();
   const [activeIndex, setActiveIndex] = useState(null);
 
-  const images = [
-    { src: temple2, alt: "Sri Khakhi Dham Temple View" },
-    { src: temple3, alt: "Ancient Temple Architecture" },
-    { src: mela, alt: "Falgun Badi Amavasya Mela Procession" },
-    { src: mela2, alt: "Devotees gathering at Dham" },
-    { src: mela3, alt: "Grand Satsang Celebration" },
-    { src: mela4, alt: "Annadan Bhandara Prasadam" },
-  ];
+  const images = {
+    en: [
+      { src: temple2, alt: "Sri Khakhi Dham Temple View" },
+      { src: temple3, alt: "Ancient Temple Architecture" },
+      { src: mela, alt: "Falgun Badi Amavasya Mela Procession" },
+      { src: mela2, alt: "Devotees gathering at Dham" },
+      { src: mela3, alt: "Grand Satsang Celebration" },
+      { src: mela4, alt: "Annadan Bhandara Prasadam" },
+    ],
+    hi: [
+      { src: temple2, alt: "श्री खाखी धाम मंदिर दृश्य" },
+      { src: temple3, alt: "प्राचीन मंदिर वास्तुकला" },
+      { src: mela, alt: "फाल्गुन बड़ी अमावस्या मेला शोभायात्रा" },
+      { src: mela2, alt: "धाम में एकत्रित भक्तगण" },
+      { src: mela3, alt: "भव्य सत्संग उत्सव" },
+      { src: mela4, alt: "अन्नदान भंडारा प्रसाद" },
+    ],
+  };
+
+  const currentImages = images[lang];
+
+  const heading = lang === "en" ? "Photo Gallery" : "फोटो गैलरी";
+  const viewLabel = lang === "en" ? "🔍 View Image" : "🔍 चित्र देखें";
 
   const handleNext = () => {
-    setActiveIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+    setActiveIndex((prev) => (prev === currentImages.length - 1 ? 0 : prev + 1));
   };
 
   const handlePrev = () => {
-    setActiveIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+    setActiveIndex((prev) => (prev === 0 ? currentImages.length - 1 : prev - 1));
   };
 
   const handleClose = () => {
@@ -46,10 +63,10 @@ function Gallery() {
 
   return (
     <section className="gallery">
-      <h2 data-aos="fade-up">Photo Gallery</h2>
+      <h2 data-aos="fade-up">{heading}</h2>
 
       <div className="gallery-grid">
-        {images.map((img, idx) => (
+        {currentImages.map((img, idx) => (
           <div
             key={idx}
             className="gallery-item"
@@ -60,7 +77,7 @@ function Gallery() {
           >
             <img src={img.src} alt={img.alt} />
             <div className="gallery-hover-overlay">
-              <span>🔍 View Image</span>
+              <span>{viewLabel}</span>
             </div>
           </div>
         ))}
@@ -71,7 +88,7 @@ function Gallery() {
           <button className="lightbox-close-btn" onClick={handleClose} aria-label="Close Lightbox">
             <FaTimes />
           </button>
-          
+
           <button
             className="lightbox-nav-btn prev-btn"
             onClick={(e) => {
@@ -85,14 +102,14 @@ function Gallery() {
 
           <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
             <img
-              src={images[activeIndex].src}
-              alt={images[activeIndex].alt}
+              src={currentImages[activeIndex].src}
+              alt={currentImages[activeIndex].alt}
               className="lightbox-image"
             />
             <div className="lightbox-caption">
-              <span className="caption-text">{images[activeIndex].alt}</span>
+              <span className="caption-text">{currentImages[activeIndex].alt}</span>
               <span className="lightbox-counter">
-                {activeIndex + 1} / {images.length}
+                {activeIndex + 1} / {currentImages.length}
               </span>
             </div>
           </div>

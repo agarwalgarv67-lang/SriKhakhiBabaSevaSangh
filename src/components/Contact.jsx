@@ -1,18 +1,57 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaPaperPlane } from "react-icons/fa";
+import { useLang } from "../context/LanguageContext";
 
 function Contact() {
   const navigate = useNavigate();
+  const { lang } = useLang();
   const [activeMap, setActiveMap] = useState("dham");
+
+  const t = {
+    en: {
+      sectionSubtitle: "GET IN TOUCH",
+      heading: "Connect With Us",
+      intro:
+        "Have questions about visiting the temple or staying at the dharamshala? Reach out to us or view our maps below.",
+      officeLabel: "Registered Office",
+      officeAddr: "5-4-425/2&3, Station Road, Nampally, Hyderabad - 500001",
+      callLabel: "Call Us",
+      emailLabel: "Email",
+      sendMsg: "Send Us a Message",
+      templeTab: "Temple Hill",
+      dharamshaTab: "Dharamshala",
+      mapTitleDham: "Sri Khakhi Dham (Temple)",
+      mapTitleBhavan: "Sri Khakhi Bhavan (Stay)",
+      openMaps: "📍 Open in Google Maps",
+    },
+    hi: {
+      sectionSubtitle: "संपर्क करें",
+      heading: "हमसे जुड़ें",
+      intro:
+        "मंदिर दर्शन या धर्मशाला में ठहरने संबंधी प्रश्नों के लिए हमसे संपर्क करें या नीचे दिए गए मानचित्र देखें।",
+      officeLabel: "पंजीकृत कार्यालय",
+      officeAddr: "5-4-425/2&3, स्टेशन रोड, नामपल्ली, हैदराबाद - 500001",
+      callLabel: "फ़ोन करें",
+      emailLabel: "ईमेल",
+      sendMsg: "हमें संदेश भेजें",
+      templeTab: "मंदिर पहाड़ी",
+      dharamshaTab: "धर्मशाला",
+      mapTitleDham: "श्री खाखी धाम (मंदिर)",
+      mapTitleBhavan: "श्री खाखी भवन (ठहरने के लिए)",
+      openMaps: "📍 Google Maps में खोलें",
+    },
+  };
+
+  const txt = t[lang];
 
   return (
     <section className="contact-home-section">
       <div className="contact-home-container">
         <div className="contact-home-header" data-aos="fade-up">
-          <span className="section-subtitle">GET IN TOUCH</span>
-          <h2>Connect With Us</h2>
-          <p>Have questions about visiting the temple or staying at the dharamshala? Reach out to us or view our maps below.</p>
+          <span className="section-subtitle">{txt.sectionSubtitle}</span>
+          <h2>{txt.heading}</h2>
+          <p>{txt.intro}</p>
         </div>
 
         <div className="contact-home-grid">
@@ -23,8 +62,8 @@ function Contact() {
                 <FaMapMarkerAlt />
               </div>
               <div className="info-content">
-                <h4>Registered Office</h4>
-                <p>5-4-425/2&3, Station Road, Nampally, Hyderabad - 500001</p>
+                <h4>{txt.officeLabel}</h4>
+                <p>{txt.officeAddr}</p>
               </div>
             </div>
 
@@ -33,8 +72,11 @@ function Contact() {
                 <FaPhoneAlt />
               </div>
               <div className="info-content">
-                <h4>Call Us</h4>
-                <p><a href="tel:+918686001010">+91 86860 01010</a> / <a href="tel:+919391055244">+91 93910 55244</a></p>
+                <h4>{txt.callLabel}</h4>
+                <p>
+                  <a href="tel:+918686001010">+91 86860 01010</a> /{" "}
+                  <a href="tel:+919391055244">+91 93910 55244</a>
+                </p>
               </div>
             </div>
 
@@ -43,61 +85,70 @@ function Contact() {
                 <FaEnvelope />
               </div>
               <div className="info-content">
-                <h4>Email</h4>
-                <p><a href="mailto:srikhakhibabasevasangh.hyd@gmail.com">srikhakhibabasevasangh.hyd@gmail.com</a></p>
+                <h4>{txt.emailLabel}</h4>
+                <p>
+                  <a href="mailto:srikhakhibabasevasangh.hyd@gmail.com">
+                    srikhakhibabasevasangh.hyd@gmail.com
+                  </a>
+                </p>
               </div>
             </div>
-            
+
             <div style={{ marginTop: "20px" }}>
               <button className="contact-home-btn" onClick={() => navigate("/contact")}>
-                <FaPaperPlane /> Send Us a Message
+                <FaPaperPlane /> {txt.sendMsg}
               </button>
             </div>
           </div>
 
           {/* Right Column: Dual Maps Embed */}
-          <div className="contact-card-box map-card" data-aos="fade-left" data-aos-delay="100" style={{ background: "white", padding: "25px", borderTop: "4px solid #ff9800" }}>
+          <div
+            className="contact-card-box map-card"
+            data-aos="fade-left"
+            data-aos-delay="100"
+            style={{ background: "white", padding: "25px", borderTop: "4px solid #ff9800" }}
+          >
             <div className="map-card-header" style={{ marginBottom: "15px" }}>
               <h3 style={{ fontSize: "18px", color: "#3e2723", fontWeight: "600", margin: 0 }}>
-                {activeMap === "dham" ? "Sri Khakhi Dham (Temple)" : "Sri Khakhi Bhavan (Stay)"}
+                {activeMap === "dham" ? txt.mapTitleDham : txt.mapTitleBhavan}
               </h3>
-              
+
               <div className="map-tabs">
-                <button 
+                <button
                   className={`map-tab-btn ${activeMap === "dham" ? "active" : ""}`}
                   onClick={() => setActiveMap("dham")}
                 >
-                  Temple Hill
+                  {txt.templeTab}
                 </button>
-                <button 
+                <button
                   className={`map-tab-btn ${activeMap === "bhavan" ? "active" : ""}`}
                   onClick={() => setActiveMap("bhavan")}
                 >
-                  Dharamshala
+                  {txt.dharamshaTab}
                 </button>
               </div>
             </div>
-            
+
             <div className="map-embed-container">
               {activeMap === "dham" ? (
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3523.064541197414!2d75.86024007493339!3d27.991921712883617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDU5JzMwLjkiTiA3NcKwNTEnNDYuMSJF!5e0!3m2!1sen!2sin!4v1783682924506!5m2!1sen!2sin" 
-                  width="100%" 
-                  height="260" 
-                  style={{ border: 0, borderRadius: "10px" }} 
-                  allowFullScreen="" 
-                  loading="lazy" 
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3523.064541197414!2d75.86024007493339!3d27.991921712883617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDU5JzMwLjkiTiA3NcKwNTEnNDYuMSJF!5e0!3m2!1sen!2sin!4v1783682924506!5m2!1sen!2sin"
+                  width="100%"
+                  height="260"
+                  style={{ border: 0, borderRadius: "10px" }}
+                  allowFullScreen=""
+                  loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   title="Sri Khakhi Dham Map"
                 ></iframe>
               ) : (
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3519.829023473187!2d75.87912977630327!3d28.01119657680076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39132475df8a5e01%3A0xe54e6012ea2c1f4e!2sKhakhi%20Bhavan!5e0!3m2!1sen!2sin!4v1719999999999!5m2!1sen!2sin" 
-                  width="100%" 
-                  height="260" 
-                  style={{ border: 0, borderRadius: "10px" }} 
-                  allowFullScreen="" 
-                  loading="lazy" 
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3519.829023473187!2d75.87912977630327!3d28.01119657680076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39132475df8a5e01%3A0xe54e6012ea2c1f4e!2sKhakhi%20Bhavan!5e0!3m2!1sen!2sin!4v1719999999999!5m2!1sen!2sin"
+                  width="100%"
+                  height="260"
+                  style={{ border: 0, borderRadius: "10px" }}
+                  allowFullScreen=""
+                  loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   title="Sri Khakhi Bhavan Map"
                 ></iframe>
@@ -105,9 +156,13 @@ function Contact() {
             </div>
 
             <div style={{ marginTop: "12px", textAlign: "right" }}>
-              <a 
-                href={activeMap === "dham" ? "https://maps.app.goo.gl/AmkZC4HJgmT8bEHf6" : "https://maps.app.goo.gl/5PJJWLc9mqbsc4Hd7"} 
-                target="_blank" 
+              <a
+                href={
+                  activeMap === "dham"
+                    ? "https://maps.app.goo.gl/AmkZC4HJgmT8bEHf6"
+                    : "https://maps.app.goo.gl/5PJJWLc9mqbsc4Hd7"
+                }
+                target="_blank"
                 rel="noreferrer"
                 style={{
                   display: "inline-flex",
@@ -116,10 +171,10 @@ function Contact() {
                   color: "#ff9800",
                   textDecoration: "none",
                   fontWeight: "600",
-                  fontSize: "13px"
+                  fontSize: "13px",
                 }}
               >
-                📍 Open in Google Maps
+                {txt.openMaps}
               </a>
             </div>
           </div>
