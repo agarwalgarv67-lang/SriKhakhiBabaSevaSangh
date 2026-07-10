@@ -242,7 +242,7 @@ function Contact() {
           
           {/* Address Details */}
           <div className="contact-card-box highlight-border">
-            <h2>📍 {lang === "en" ? "Addresses" : "पते"}</h2>
+            <h2>📍 {lang === "en" ? "Addresses" : "पता"}</h2>
             
             <div className="address-section">
               <h4>{lang === "en" ? "Temple Location" : "पावन मंदिर स्थल"}</h4>
