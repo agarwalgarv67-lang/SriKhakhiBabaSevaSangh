@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaPaperPlane } from "react-icons/fa";
 import { useLang } from "../context/LanguageContext";
 
+const BOUNDARY_MAP_SRC = "https://www.google.com/maps/d/embed?mid=1o68LDPIzeMksEDwX4UrTSOZd9pJJoQU&ehbc=2E312F";
+
 function Contact() {
   const navigate = useNavigate();
   const { lang } = useLang();
@@ -132,14 +134,14 @@ function Contact() {
             <div className="map-embed-container">
               {activeMap === "dham" ? (
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3523.064541197414!2d75.86024007493339!3d27.991921712883617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDU5JzMwLjkiTiA3NcKwNTEnNDYuMSJF!5e0!3m2!1sen!2sin!4v1783682924506!5m2!1sen!2sin"
+                  src={BOUNDARY_MAP_SRC}
                   width="100%"
                   height="260"
                   style={{ border: 0, borderRadius: "10px" }}
                   allowFullScreen=""
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Sri Khakhi Dham Map"
+                  title="Sri Khakhi Dham Boundary Map"
                 ></iframe>
               ) : (
                 <iframe
@@ -159,7 +161,7 @@ function Contact() {
               <a
                 href={
                   activeMap === "dham"
-                    ? "https://maps.app.goo.gl/AmkZC4HJgmT8bEHf6"
+                    ? "https://www.google.com/maps/d/viewer?mid=1o68LDPIzeMksEDwX4UrTSOZd9pJJoQU"
                     : "https://maps.app.goo.gl/5PJJWLc9mqbsc4Hd7"
                 }
                 target="_blank"

@@ -192,14 +192,14 @@ function Contact() {
             <div className="map-embed-container">
               {activeMap === "dham" ? (
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3523.064541197414!2d75.86024007493339!3d27.991921712883617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDU5JzMwLjkiTiA3NcKwNTEnNDYuMSJF!5e0!3m2!1sen!2sin!4v1783682924506!5m2!1sen!2sin" 
+                  src="https://www.google.com/maps/d/embed?mid=1o68LDPIzeMksEDwX4UrTSOZd9pJJoQU&ehbc=2E312F" 
                   width="100%" 
                   height="320" 
                   style={{ border: 0, borderRadius: "10px" }} 
                   allowFullScreen="" 
                   loading="lazy" 
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Sri Khakhi Dham Location"
+                  title="Sri Khakhi Dham Boundary Map"
                 ></iframe>
               ) : (
                 <iframe 
@@ -217,7 +217,7 @@ function Contact() {
             
             <div style={{ marginTop: "15px", textAlign: "right" }}>
               <a 
-                href={activeMap === "dham" ? "https://maps.app.goo.gl/AmkZC4HJgmT8bEHf6" : "https://maps.app.goo.gl/5PJJWLc9mqbsc4Hd7"} 
+                href={activeMap === "dham" ? "https://www.google.com/maps/d/viewer?mid=1o68LDPIzeMksEDwX4UrTSOZd9pJJoQU" : "https://maps.app.goo.gl/5PJJWLc9mqbsc4Hd7"} 
                 target="_blank" 
                 rel="noreferrer"
                 className="open-maps-link"
