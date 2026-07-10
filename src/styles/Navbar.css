@@ -33,7 +33,7 @@
 }
 
 .logo img {
-  height: 68px;
+  height: 90px;
   width: auto;
   object-fit: contain;
   transition: transform 0.3s ease;
@@ -175,6 +175,6 @@
   }
   
   .logo img {
-    height: 52px;
+    height: 70px;
   }
 }
