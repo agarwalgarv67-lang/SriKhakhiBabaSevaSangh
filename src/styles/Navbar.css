@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+  border-bottom: 3.5px solid #ff9800; /* Solid saffron border to prevent blending with page backgrounds */
+  z-index: 1000;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 68px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover img {
+  transform: scale(1.05) rotate(3deg);
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.logo h2 {
+  color: #3e2723;
+  font-family: 'Marcellus', 'Playfair Display', Georgia, serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.15;
+  letter-spacing: 0.2px;
+}
+
+.logo span {
+  color: #ff9800;
+  font-family: 'Outfit', 'Poppins', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* Menu Toggle Button (Mobile Hamburger) */
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: #3e2723;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px;
+  transition: color 0.3s ease;
+}
+
+.menu-toggle:hover {
+  color: #ff9800;
+}
+
+/* Nav Menu Layout */
+.nav-menu ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #ff9800;
+  background: #fff8e1;
+}
+
+.nav-menu a.active {
+  color: #ff9800;
+  background: #fff3e0;
+  border-bottom: 2px solid #ff9800;
+  border-radius: 4px 4px 0 0;
+}
+
+/* Responsive Media Queries (Mobile Friendly Drawer) */
+@media (max-width: 960px) {
+  .menu-toggle {
+    display: block; /* Show hamburger button */
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-top: 1px solid #f5ebe6;
+    border-bottom: 4px solid #ff9800;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    padding: 20px 0;
+  }
+
+  .nav-menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  .nav-menu a {
+    display: block;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    text-align: left;
+  }
+
+  .nav-menu a.active {
+    border-bottom: none;
+    border-left: 4px solid #ff9800;
+    border-radius: 0 8px 8px 0;
+    background: #fff3e0;
+  }
+}
+
+@media (max-width: 580px) {
+  .logo h2 {
+    font-size: 18px;
+  }
+  
+  .logo span {
+    font-size: 8px;
+    letter-spacing: 1.5px;
+  }
+  
+  .logo img {
+    height: 52px;
+  }
+}
