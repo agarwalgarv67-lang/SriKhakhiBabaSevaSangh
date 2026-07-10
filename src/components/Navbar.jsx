@@ -14,6 +14,10 @@ function Navbar() {
       <div className="container">
         <Link to="/" className="logo" onClick={closeMenu}>
           <img src={logo} alt="Sri Khakhi Baba Seva Sangh Logo" />
+          <div className="logo-text">
+            <h2 style={{ fontFamily: "Poppins" }}>Sri Khakhi Baba Seva Sangh</h2>
+            <span>DADA FATEHPURA, RAJASTHAN</span>
+          </div>
         </Link>
 
         {/* Mobile Toggle Button */}
