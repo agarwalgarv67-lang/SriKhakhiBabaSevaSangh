@@ -81,7 +81,7 @@ function Contact() {
             <div className="map-embed-container">
               {activeMap === "dham" ? (
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3521.1488169123847!2d75.8573100762967!3d27.991624376785165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3913253b2354714f%3A0xb35fc060d4bcf84b!2sKhakhi%20Dham!5e0!3m2!1sen!2sin!4v1719999999999!5m2!1sen!2sin" 
+                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3523.064541197414!2d75.86024007493339!3d27.991921712883617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDU5JzMwLjkiTiA3NcKwNTEnNDYuMSJF!5e0!3m2!1sen!2sin!4v1783682924506!5m2!1sen!2sin" 
                   width="100%" 
                   height="260" 
                   style={{ border: 0, borderRadius: "10px" }} 
@@ -106,7 +106,7 @@ function Contact() {
 
             <div style={{ marginTop: "12px", textAlign: "right" }}>
               <a 
-                href={activeMap === "dham" ? "https://maps.app.goo.gl/1umgqau5kNFRYGPa6" : "https://maps.app.goo.gl/5PJJWLc9mqbsc4Hd7"} 
+                href={activeMap === "dham" ? "https://maps.app.goo.gl/AmkZC4HJgmT8bEHf6" : "https://maps.app.goo.gl/5PJJWLc9mqbsc4Hd7"} 
                 target="_blank" 
                 rel="noreferrer"
                 style={{

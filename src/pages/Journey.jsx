@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import temple from "../assets/images/temple3.jpeg";
 import { FaLanguage, FaCalendarAlt, FaSchool, FaBuilding, FaTree, FaClinicMedical, FaHandsHelping, FaUniversity, FaArrowRight } from "react-icons/fa";
 
@@ -14,7 +14,7 @@ function Journey() {
       titleEn: "Sri Khakhi Baba Government School Founded",
       titleHi: "राजकीय प्राथमिक विद्यालय की स्थापना",
       descEn: "Established Sri Khakhi Baba Government Primary School in Dada Fatehpura village to connect the children of the region to education.",
-      descHi: "क्षेत्र के बच्चों को शिक्षा से जोड़ने के लिए ग्राम दादा फतेहरा में श्री खाखी बाबा राजकीय प्राथमिक विद्यालय की आधारशिला रखी गई।"
+      descHi: "क्षेत्र के बच्चों को शिक्षा से जोड़ने के लिए ग्राम डाडा फतेहरा में श्री खाखी बाबा राजकीय प्राथमिक विद्यालय की आधारशिला रखी गई।"
     },
     {
       year: "1962",
