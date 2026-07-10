@@ -3,37 +3,6 @@ body{
   font-family: 'Poppins', sans-serif;
 }
 
-.navbar{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:15px 60px;
-  background:#ff9800;
-  color:white;
-}
-
-.logo{
-  display:flex;
-  align-items:center;
-  gap:15px;
-}
-
-.logo img{
-  width:60px;
-}
-
-.nav-links{
-  display:flex;
-  list-style:none;
-  gap:30px;
-}
-
-.nav-links a{
-  color:white;
-  text-decoration:none;
-  font-weight:bold;
-}
-
 /* ================= HERO SECTION ================= */
 .hero {
   height: 90vh;
