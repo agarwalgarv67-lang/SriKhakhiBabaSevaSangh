@@ -15,8 +15,8 @@
 }
 
 .container {
-  width: 90%;
-  max-width: 1200px;
+  width: 95%; /* Widened from 90% to push content to the edges */
+  max-width: 1400px; /* Increased from 1200px */
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -33,7 +33,7 @@
 }
 
 .logo img {
-  height: 68px;
+  height: 85px; /* Increased from 68px */
   width: auto;
   object-fit: contain;
   transition: transform 0.3s ease;
@@ -50,7 +50,7 @@
 }
 
 .logo h2 {
-  color: #ffffff;
+  color: #000000; /* Set text to black */
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
   font-weight: 600;
@@ -60,7 +60,7 @@
 }
 
 .logo span {
-  color: #ffe082; /* Warm light amber color for high readability on orange */
+  color: #212121; /* Dark charcoal/black for subtitle contrast */
   font-family: 'Outfit', 'Poppins', sans-serif;
   font-size: 10px;
   font-weight: 700;
@@ -177,6 +177,6 @@
   }
   
   .logo img {
-    height: 52px;
+    height: 65px; /* Increased from 52px */
   }
 }
