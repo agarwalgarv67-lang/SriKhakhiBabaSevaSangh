@@ -8,7 +8,7 @@ function About() {
 
   const t = {
     en: {
-      sectionSubtitle: "WELCOME TO THE ASHRAM",
+ 
       heading: "Sri Khakhi Baba Seva Sangh",
       primary:
         "Sri Khakhi Baba Seva Sangh is a spiritual and charitable trust dedicated to preserving the sacred heritage of Sri Khakhi Baba while serving society through religious, educational, environmental, and community welfare activities.",
@@ -17,7 +17,7 @@ function About() {
       btn: "Read Our History",
     },
     hi: {
-      sectionSubtitle: "आश्रम में आपका स्वागत है",
+      
       heading: "श्री खाखी बाबा सेवा संघ",
       primary:
         "श्री खाखी बाबा सेवा संघ एक आध्यात्मिक एवं धर्मार्थ न्यास है, जो श्री खाखी बाबा की पावन विरासत को संरक्षित करते हुए धार्मिक, शैक्षणिक, पर्यावरणीय और सामुदायिक कल्याण कार्यों के माध्यम से समाज की सेवा करता है।",
