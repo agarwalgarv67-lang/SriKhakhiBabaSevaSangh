@@ -1818,7 +1818,7 @@ body{
 
 .events-hero {
   height: 40vh;
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url("./assets/images/temple2.jpeg");
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url("./assets/images/bhajan2.jpeg");
   background-size: cover;
   background-position: center;
   display: flex;
