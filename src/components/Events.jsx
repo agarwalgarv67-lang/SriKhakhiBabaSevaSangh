@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { FaCalendarAlt, FaMapMarkerAlt, FaBullhorn, FaHeart } from "react-icons/fa";
-import bhajan2 from "../assets/images/bhajan2.jpeg";
+import mela from "../assets/images/male.jpeg";
 import { useLang } from "../context/LanguageContext";
 
 function Events() {
@@ -74,7 +74,7 @@ function Events() {
         <div className="events-home-split">
           <div className="events-home-feature-card" data-aos="fade-right" data-aos-delay="100">
             <div className="feature-card-img-wrapper">
-              <img src={bhajan2} alt="Annual Mahotsav" />
+              <img src={mela} alt="Annual Mahotsav" />
               <span className="event-tag">{txt.majorFestival}</span>
             </div>
             <div className="feature-card-body">
