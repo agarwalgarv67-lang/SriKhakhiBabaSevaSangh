@@ -22,8 +22,8 @@ function Contact() {
     
     // Construct the WhatsApp message text dynamically based on selected language
     const intro = lang === "en" 
-      ? "Jai Srimannarayan! New message from Seva Sangh Website:" 
-      : "जय श्रीमन्नारायण! सेवा संघ वेबसाइट से नया संदेश:";
+      ? "Jai Dada ke Nath ki ! New message from Seva Sangh Website:" 
+      : "जय डाडा के नाथ की! सेवा संघ वेबसाइट से नया संदेश:";
       
     const nameLabel = lang === "en" ? "Name" : "नाम";
     const emailLabel = lang === "en" ? "Email" : "ईमेल";
