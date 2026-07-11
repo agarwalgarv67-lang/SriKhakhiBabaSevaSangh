@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { FaCalendarAlt, FaMapMarkerAlt, FaBullhorn, FaHeart } from "react-icons/fa";
-import mela from "../assets/images/male.jpeg";
+import mela from "../assets/images/mela.jpeg";
 import { useLang } from "../context/LanguageContext";
 
 function Events() {
