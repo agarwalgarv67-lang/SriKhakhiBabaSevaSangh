@@ -1,6 +1,9 @@
 import { useState } from "react";
 import baba from "../assets/images/baba.jpeg";
 import temple from "../assets/images/temple.jpeg";
+import kiljiKhadau from "../assets/images/kilji-baba-khadau.jpg";
+import sukhramdasImg from "../assets/images/sukhramdas-ji.jpg";
+import khakhiBabaPoster from "../assets/images/khakhi-baba-poster.jpg";
 import { FaLanguage, FaHistory, FaMapMarkedAlt } from "react-icons/fa";
 
 function About() {
@@ -143,6 +146,87 @@ function About() {
                   The devotees sitting nearby were left stunned and speechless. Remaining invisible yet eternally present—continuing to bless his beloved devotees and relieve their pain and suffering through his divine grace.
                 </p>
               </div>
+
+              {/* Guru-Disciple Lineage Section */}
+              <div className="lineage-section">
+                <h2 className="lineage-english">Guru–Disciple Lineage</h2>
+                <p className="lineage-shloka">॥ गुरुपरम्परासेवायांमम् शिरः सदा नत्वातिष्ठतु ॥</p>
+                <p className="lineage-shloka-meaning">May my head always remain bowed in humble service to the Guru Parampara</p>
+
+                <div className="lineage-flow">
+                  {/* Person 1 - Guru Kilji Baba Maharaj */}
+                  <div className="lineage-card">
+                    <div className="lineage-img-wrapper rect-poster">
+                      <img src={kiljiKhadau} alt="Guru Kilji Baba Maharaj Khadau" className="lineage-img-rect" />
+                    </div>
+                    <div className="lineage-card-body">
+                      <h3 className="lineage-name">Anant Shri Vibhusht Shri Shri 1008 Guru Kilji Baba Maharaj</h3>
+                      <p className="lineage-role">Mahant of Galta Ji Gaddi, Jaipur · Founder of Khaki Panth</p>
+                      <p className="lineage-desc">
+                        Shri Shri 1008 Guru Kilji Baba Maharaj is revered as the Mahant of the sacred Gaddi of Galta Ji (Jaipur, Rajasthan) and the founder of the Khaki Panth. A great ascetic saint, he dedicated his life to meditation, penance, and renunciation at Shri Galta Ji — his Tapobhoomi.
+                      </p>
+                      <p className="lineage-desc">
+                        The spiritual origin of the Khaki Panth is traced to the Treta Yuga. It is believed that after Bhagwan Shri Ram defeated the demoness Tadka, sages began applying the sacred ash (bhasma) from her body as a symbol of the victory of good over evil — giving birth to the Khaki Panth tradition.
+                      </p>
+                      <p className="lineage-desc">
+                        Guru Kilji Baba Maharaj strengthened this tradition through intense austerities, long samadhi, and a life of simplicity. His matted hair (jata) was so long that four disciples were needed to carry it while walking — a testament to his extraordinary life of penance. The saints of this panth keep jata, apply bhasma, and like a flowing river, never stay permanently at one place.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Arrow 1 */}
+                  <div className="lineage-arrow">
+                    <div className="arrow-line"></div>
+                    <div className="arrow-head">⬇</div>
+                  </div>
+
+                  {/* Person 2 - Sant Shiromani Shri Sukhramdas Ji */}
+                  <div className="lineage-card">
+                    <div className="lineage-img-wrapper rect-poster">
+                      <img src={sukhramdasImg} alt="Sant Shiromani Shri Sukhramdas Ji Baba Maharaj" className="lineage-img-rect" />
+                    </div>
+                    <div className="lineage-card-body">
+                      <h3 className="lineage-name">Sant Shiromani Shri Shri 1008 Shri Guru Sukhramdas Ji Baba Maharaj</h3>
+                      <p className="lineage-role">Founder of Khaki Tradition in Lohargal Dham</p>
+                      <p className="lineage-desc">
+                        Shri Shri 1008 Shri Guru Sukhramdas Ji Baba Maharaj was a leading saint of the glorious Guru–Shishya (Guru-Disciple) tradition of the Khaki Panth and the devoted disciple of Shri Guru Kilji Baba Maharaj. After receiving Diksha (spiritual initiation) from his Guru, he made Shri Lohargal Dham in Rajasthan his Tapobhoomi (place of penance) and played an important role in spreading the Khaki Panth and promoting spiritual awakening across north-western India. He is regarded as the founder of the Khaki tradition in this region.
+                      </p>
+                      <p className="lineage-desc">
+                        He was known for his calm nature, radiant spiritual presence, and deep meditative state. His Vaishnav tilak on the forehead, japa mala (prayer beads) in his hands, and his spiritual practices performed in the presence of the ever-burning Dhuni (sacred fire) are remembered as symbols of his constant remembrance of the Divine, intense penance, and life of renunciation.
+                      </p>
+                      <p className="lineage-desc">
+                        He holds a highly respected place in the Guru tradition, reflecting his spiritual greatness, deep devotion to his Guru, and dedication to the welfare of society. Through his penance, sacrifice, and detachment, he gave a new direction to this tradition and inspired countless seekers to follow the path of Sanatan Dharma and an ascetic way of life. Even today, Shri Lohargal Dham stands as a sacred witness to his penance, spiritual practices, and divine legacy, continuing to inspire devotees on their spiritual journey.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Arrow 2 */}
+                  <div className="lineage-arrow">
+                    <div className="arrow-line"></div>
+                    <div className="arrow-head">⬇</div>
+                  </div>
+
+                  {/* Person 3 - Sri Khakhi Baba */}
+                  <div className="lineage-card lineage-card-final">
+                    <div className="lineage-img-wrapper rect-poster">
+                      <img src={khakhiBabaPoster} alt="Santanamagranya Shri Shri 1008 Shri Khakhi Baba Maharaj" className="lineage-img-rect" />
+                    </div>
+                    <div className="lineage-card-body">
+                      <h3 className="lineage-name">Santanamagranya Shri Shri 1008 Shri Khakhi Baba Maharaj</h3>
+                      <p className="lineage-role">The Great Ascetic &amp; Saint of Dada Fatehpura</p>
+                      <p className="lineage-desc">
+                        Shri Shri 1008 Shri Khakhi Baba Maharaj was the devoted disciple of Sant Shiromani Shri Guru Sukhramdas Ji Baba Maharaj. After receiving Diksha (spiritual initiation) from his revered Guru, he made the ideals of penance, sacrifice, detachment, Guru-seva (service to the Guru), and Sanatan Dharma the foundation of his life. Following his Guru's command and the principle of the wandering ascetic tradition, he departed from Lohargal and arrived at Dada Fatehpura, where he sanctified the land through his deep penance and spiritual practices.
+                      </p>
+                      <p className="lineage-desc">
+                        Following the instructions of his Guru, he spread the spiritual tradition of the Khaki Panth among the people through intense penance, continuous spiritual practice, and selfless service for the welfare of society. He inspired countless devotees with faith, devotion, and the values of Sanatan Dharma, leaving a lasting impact on their lives.
+                      </p>
+                      <p className="lineage-desc">
+                        Even today, his Tapobhoomi (place of penance) remains a sacred center of unwavering faith, spiritual awareness, and the blessings of the Guru for devotees. His divine teachings and ideals continue to illuminate the eternal tradition of the Khaki Panth, inspiring and guiding future generations.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           ) : (
             <div className="content-hindi fade-in">
@@ -229,6 +313,91 @@ function About() {
                 <p>
                   इस अद्भुत एवं दिव्य क्षण को देखकर वहां उपस्थित भक्त चेतनाशून्य से रह गए। श्री खाखी बाबा प्रिय भक्तों के लिए अदृश्य रूप में विद्यमान हैं और आज भी उनके दुख-दर्द हरते हुए उन्हें कृपा प्रदान करते रहते हैं।
                 </p>
+              </div>
+
+              {/* गुरु-शिष्य परंपरा Section */}
+              <div className="lineage-section">
+                <h2 className="lineage-english">गुरु-शिष्य परंपरा</h2>
+                <p className="lineage-shloka">॥ गुरुपरम्परासेवायांमम् शिरः सदा नत्वातिष्ठतु ॥</p>
+                <p className="lineage-shloka-meaning">गुरु-परम्परा की सेवा में मेरा सिर सदैव विनम्रतापूर्वक झुका रहे|</p>
+
+                <div className="lineage-flow">
+                  {/* व्यक्ति 1 */}
+                  {/* व्यक्ति 1 - गुरु किलजी बाबा महाराज */}
+                  <div className="lineage-card">
+                    <div className="lineage-img-wrapper rect-poster">
+                      <img src={kiljiKhadau} alt="गुरु कीलजी बाबा महाराज खड़ाऊं" className="lineage-img-rect" />
+                    </div>
+                    <div className="lineage-card-body">
+                      <h3 className="lineage-name">अनन्त श्री विभूषित श्री श्री १००८ गुरु कीलजी बाबा महाराज</h3>
+                      <p className="lineage-role">महंत, गलता जी गद्दी, जयपुर · खाकी पंथ के आद्य प्रवर्तक</p>
+                      <p className="lineage-desc">
+                        श्री श्री १००८ गुरु कीलजी बाबा महाराज गलता जी (जयपुर, राजस्थान) की पवित्र गद्दी के महंत तथा खाकी पंथ के आद्य प्रवर्तक एवं महान तपस्वी संत माने जाते हैं। उनकी तपोभूमि श्री गलता जी रही, जहाँ उन्होंने कठोर तप, दीर्घकालीन समाधि तथा वैराग्यमय जीवन के माध्यम से तप एवं साधना की एक अद्वितीय परंपरा स्थापित की।
+                      </p>
+                      <p className="lineage-desc">
+                        खाकी पंथ की परंपरा के अनुसार इसकी आध्यात्मिक उत्पत्ति त्रेतायुग के रामायण काल से मानी जाती है। मान्यता है कि भगवान श्रीराम द्वारा ताड़का के वध के पश्चात उसका शरीर भस्म में परिवर्तित हो गया, जिसे साधु-संतों ने अधर्म पर धर्म की विजय तथा अहंकार के दहन का प्रतीक मानकर अपने शरीर पर धारण करना प्रारम्भ किया। इसी कारण यह परंपरा 'खाकी पंथ' के नाम से प्रसिद्ध हुई।
+                      </p>
+                      <p className="lineage-desc">
+                        गुरु कीलजी बाबा महाराज ने इस परंपरा को तप, त्याग, वैराग्य एवं आत्मानुशासन के माध्यम से सुदृढ़ किया। वे महान तपस्वी थे और दीर्घकाल तक समाधिस्थ रहकर कठोर साधना करते थे। उनके संबंध में यह भी प्रसिद्ध है कि उनकी जटाएँ इतनी लंबी एवं विशाल थीं कि उनके साथ चलने के लिए चार शिष्यों को उन्हें संभालना पड़ता था, जो उनकी विलक्षण तपस्या और वैराग्यमय जीवन का प्रतीक माना जाता है।
+                      </p>
+                      <p className="lineage-desc">
+                        इस परंपरा के संत शैव साधुओं की भाँति जटाधारी होते हैं, शरीर पर पवित्र भस्म धारण करते हैं तथा यह मानते हैं कि जिस प्रकार नदी का प्रवाह निरंतर गतिमान रहता है, उसी प्रकार एक साधु का जीवन भी सदैव भ्रमणशील होना चाहिए; इसलिए इस परंपरा के संत किसी एक स्थान पर स्थायी रूप से निवास नहीं करते।
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* तीर 1 */}
+                  <div className="lineage-arrow">
+                    <div className="arrow-line"></div>
+                    <div className="arrow-head">⬇</div>
+                  </div>
+
+                  {/* व्यक्ति 2 - संत शिरोमणि श्री सुखरामदास जी */}
+                  <div className="lineage-card">
+                    <div className="lineage-img-wrapper rect-poster">
+                      <img src={sukhramdasImg} alt="संत शिरोमणि श्री सुखरामदास जी बाबा महाराज" className="lineage-img-rect" />
+                    </div>
+                    <div className="lineage-card-body">
+                      <h3 className="lineage-name">संत शिरोमणि श्री श्री १००८ श्री गुरु सुखरामदास जी बाबा महाराज</h3>
+                      <p className="lineage-role">लोहार्गल धाम में खाकी परंपरा के जनक</p>
+                      <p className="lineage-desc">
+                        श्री श्री १००८ श्री गुरु सुखरामदास जी बाबा महाराज खाकी पंथ की गौरवशाली गुरु-शिष्य परंपरा के प्रमुख संत एवं श्री गुरु कीलजी बाबा महाराज के परम शिष्य थे। गुरु कीलजी बाबा महाराज से दीक्षा प्राप्त करने के पश्चात उन्होंने राजस्थान के पावन तीर्थ श्री लोहार्गल धाम को अपनी तपोभूमि बनाया तथा उत्तर-पश्चिम भारत में खाकी पंथ के प्रचार-प्रसार एवं आध्यात्मिक जागरण का महत्वपूर्ण कार्य किया। उन्हें इस क्षेत्र में खाकी परंपरा का जनक माना जाता है।
+                      </p>
+                      <p className="lineage-desc">
+                        वे सदैव शांत, तेजस्वी एवं समाधिस्थ स्वरूप के धनी थे। उनके मस्तक पर सुशोभित वैष्णव तिलक, करकमलों में जपमाला तथा अखण्ड प्रज्वलित धूनी के सान्निध्य में संपन्न उनकी तपस्या एवं साधना, उनके निरंतर नाम-स्मरण और वैराग्यमय जीवन की साक्षी मानी जाती है।
+                      </p>
+                      <p className="lineage-desc">
+                        गुरु-परंपरा में उन्हें अत्यंत आदरणीय स्थान प्राप्त है, जो उनके आध्यात्मिक तेज, गुरु-भक्ति एवं लोककल्याण के प्रति समर्पण का परिचायक है। उनके तप, त्याग एवं वैराग्य ने इस परंपरा को एक नई दिशा प्रदान की तथा असंख्य साधकों को सनातन धर्म और तपस्वी जीवन की ओर प्रेरित किया। आज भी श्री लोहार्गल धाम उनकी तपस्या, साधना और दिव्य परंपरा का साक्षी बनकर श्रद्धालुओं को आध्यात्मिक प्रेरणा प्रदान करता है।
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* तीर 2 */}
+                  <div className="lineage-arrow">
+                    <div className="arrow-line"></div>
+                    <div className="arrow-head">⬇</div>
+                  </div>
+
+                  {/* व्यक्ति 3 — श्री खाखी बाबा */}
+                  <div className="lineage-card lineage-card-final">
+                    <div className="lineage-img-wrapper rect-poster">
+                      <img src={khakhiBabaPoster} alt="संतनामाग्रण्य श्री श्री १००८ श्री खाखी बाबा महाराज" className="lineage-img-rect" />
+                    </div>
+                    <div className="lineage-card-body">
+                      <h3 className="lineage-name">संतनामाग्रण्य श्री श्री १००८ श्री खाखी बाबा महाराज</h3>
+                      <p className="lineage-role">डाडा फतेहपुरा के महान तपस्वी एवं दिव्य संत</p>
+                      <p className="lineage-desc">
+                        श्री श्री १००८ श्री खाखी बाबा महाराज संत शिरोमणि श्री गुरु सुखरामदास जी बाबा महाराज के परम शिष्य थे, जिन्होंने अपने गुरुदेव से दीक्षा प्राप्त कर उनके तप, त्याग, वैराग्य, गुरु-सेवा एवं सनातन धर्म के आदर्शों को अपने जीवन का आधार बनाया। गुरु आज्ञा का पालन करते हुए तथा भ्रमणशील साधु परंपरा के सिद्धांत का अनुसरण करते हुए वे लोहार्गल से प्रस्थान कर डाडा फतेहपुरा पधारे, जहाँ उन्होंने अपनी तपस्या एवं साधना से उस भूमि को पावन बनाया।
+                      </p>
+                      <p className="lineage-desc">
+                        अपने गुरु के आदेशानुसार उन्होंने कठोर तपस्या, अखण्ड साधना तथा लोककल्याण के माध्यम से खाकी पंथ की आध्यात्मिक परंपरा को जनमानस तक पहुँचाया और असंख्य श्रद्धालुओं के जीवन में श्रद्धा, भक्ति एवं धर्म के संस्कारों का संचार किया।
+                      </p>
+                      <p className="lineage-desc">
+                        उनकी तपोभूमि आज भी श्रद्धालुओं के लिए अटूट आस्था, आध्यात्मिक चेतना एवं गुरु-कृपा का पावन केंद्र है तथा उनकी दिव्य शिक्षाएँ और आदर्श खाकी पंथ की अखण्ड परंपरा को निरंतर आलोकित करते हुए आने वाली पीढ़ियों का मार्गदर्शन कर रहे हैं।
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           )

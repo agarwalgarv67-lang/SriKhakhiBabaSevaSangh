@@ -1808,6 +1808,283 @@ body{
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* ================= GURU-DISCIPLE LINEAGE SECTION ================= */
+.lineage-section {
+  margin-top: 50px;
+  padding: 40px 30px;
+  background: linear-gradient(135deg, #fff8f0 0%, #fef3e2 100%);
+  border-radius: 20px;
+  border: 1px solid #ffe0b2;
+  box-shadow: 0 8px 30px rgba(255, 152, 0, 0.08);
+}
+
+.lineage-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.lineage-heading h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.lineage-hindi {
+  display: block;
+  color: #8b4513;
+  font-size: 26px;
+}
+
+.lineage-english {
+  display: block;
+  color: #ff9800;
+  font-size: 22px;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
+.lineage-section > h2.lineage-english {
+  display: block;
+  text-align: left;
+  color: #8b4513;
+  font-size: 26px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.3px;
+  margin-bottom: 6px;
+}
+
+.lineage-shloka {
+  font-weight: 700;
+  color: #5d4037;
+  font-size: 16px;
+  margin: 4px 0 2px;
+}
+
+.lineage-shloka-meaning {
+  color: #8d6e63;
+  font-size: 14px;
+  font-style: italic;
+  margin: 0;
+}
+
+.lineage-subtitle {
+  color: #8d6e63;
+  font-size: 15px;
+  margin: 0;
+  font-style: italic;
+}
+
+.lineage-flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  margin-top: 28px;
+}
+
+/* Card */
+.lineage-card {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 950px;
+  padding: 30px;
+  border: 2.5px solid #ffe0b2;
+  border-radius: 16px;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lineage-card:hover {
+  transform: translateY(-2px);
+  border-color: #ff9800;
+  box-shadow: 0 6px 20px rgba(255, 152, 0, 0.05);
+}
+
+.lineage-card-final {
+  background: none;
+  border-color: #ffcdd2;
+}
+
+.lineage-card-final:hover {
+  border-color: #8b0000;
+  box-shadow: 0 6px 20px rgba(139, 0, 0, 0.05);
+}
+
+/* Image placeholder */
+.lineage-img-wrapper {
+  flex-shrink: 0;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid #ff9800;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.lineage-card-final .lineage-img-wrapper {
+  border-color: #8b0000;
+}
+
+/* Rectangular poster image styling for Kilji Baba */
+.lineage-img-wrapper.rect-poster {
+  width: 190px;
+  height: 270px;
+  border-radius: 12px;
+  border: 1px solid #ffe0b2;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lineage-img-rect {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+  display: block;
+}
+
+.lineage-img-rect:hover {
+  transform: scale(1.05);
+}
+
+.lineage-img-placeholder {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  border: 3px solid #ff9800;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 8px;
+}
+
+.lineage-card-final .lineage-img-placeholder {
+  border-color: #8b0000;
+  background: linear-gradient(135deg, #fce4ec, #ffebee);
+}
+
+.lineage-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.4s ease;
+}
+
+.lineage-img:hover {
+  transform: scale(1.08);
+}
+
+.lineage-img-icon {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.lineage-img-hint {
+  font-size: 9px;
+  color: #a1887f;
+  margin: 4px 0 0 0;
+  line-height: 1.2;
+}
+
+/* Card body text */
+.lineage-card-body {
+  flex: 1;
+}
+
+.lineage-name {
+  font-size: 24px;
+  color: #8b4513;
+  margin: 0 0 6px 0;
+  font-weight: 700;
+}
+
+.lineage-card-final .lineage-name {
+  color: #8b0000;
+}
+
+.lineage-role {
+  font-size: 15px;
+  color: #ff9800;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin: 0 0 12px 0;
+}
+
+.lineage-card-final .lineage-role {
+  color: #b71c1c;
+}
+
+.lineage-desc {
+  font-size: 16px;
+  color: #5d4037;
+  line-height: 1.65;
+  margin: 0 0 14px 0;
+}
+
+.lineage-desc:last-child {
+  margin-bottom: 0;
+}
+
+/* Arrow between cards */
+.lineage-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 0;
+}
+
+.arrow-line {
+  width: 2px;
+  height: 30px;
+  background: linear-gradient(to bottom, #ff9800, #ff9800);
+  border-radius: 2px;
+}
+
+.arrow-head {
+  font-size: 28px;
+  color: #ff9800;
+  line-height: 1;
+  animation: bounceArrow 1.5s ease-in-out infinite;
+}
+
+@keyframes bounceArrow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(5px); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .lineage-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .lineage-img-placeholder {
+    width: 90px;
+    height: 90px;
+  }
+
+  .lineage-heading h2 {
+    font-size: 22px;
+  }
+}
+
 /* ================= EVENTS PAGE ================= */
 .events-page-container {
   background: #fffdf9;
