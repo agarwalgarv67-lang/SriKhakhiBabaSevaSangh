@@ -73,6 +73,60 @@ function GuruMahima() {
         en: "The scriptures like Shaiva, Shakta, Agama, and various other texts, only serve as a cause of confusion for souls with deluded minds. If distracted or undiscriminating people misuse these scriptures, they surely move towards downfall. Therefore, a seeker should receive the grace of the Guru and faithfully follow the path shown by him.",
         hi: "शैव-शास्त्र आदि नाना प्रकार के आगम तथा अन्य विविध शास्त्र—ये सब भ्रान्तचित्त व्यक्तियों को अनेक प्रकार की भ्रान्तियों में उलझाने का साधन मात्र बन जाते हैं। इसका अभिप्राय यह है कि यदि चित्तविक्षिप्त अथवा विवेकहीन व्यक्ति इन शास्त्रों का दुरुपयोग करते हैं, तो वे निश्चय ही पतन के मार्ग की ओर अग्रसर होते हैं। अतः शासक को गुरु की कृपा प्राप्त कर, उनके द्वारा उपदिष्ट मार्ग का निष्ठापूर्वक अनुसरण करना चाहिए।"
       }
+    },
+    {
+      num: 15,
+      speaker: { en: "Ishvara Uvacha", hi: "ईश्वर उवाच" },
+      sanskrit: "गुरोः पादोदकं पीत्वा गुरोरुच्छिष्टभोजनम्।\nगुरुमूर्तेः सदा ध्यानं गुरुमन्त्रं सदा जपेत्॥१५॥",
+      meaning: {
+        en: "One should drink the holy water of the Guru's feet (charanamrta), partake of the Guru's prasad (remnants of food), always meditate on the form of the Guru, and constantly chant the Guru-mantra.",
+        hi: "गुरु के चरणोदक का पान कर, गुरु के छोड़े गये उच्छिष्ट भोजन से पूजित होकर मनुष्य को सदा गुरु की मूर्ति का ध्यान करना चाहिये और गुरु-मन्त्र का जप सतत करते रहना चाहिये॥१५॥"
+      }
+    },
+    {
+      num: 16,
+      speaker: { en: "Ishvara Uvacha", hi: "ईश्वर उवाच" },
+      sanskrit: "काशीक्षेत्रं तन्निवासो जाह्नवी चरणोदकम्।\nगुरुर्विश्वेश्वरः साक्षात् तारकं ब्रह्म निश्चितम्॥१६॥",
+      meaning: {
+        en: "The Guru's abode (home) itself is Kashi Kshetra, the water of his feet is the Ganga, and the Guru himself is Vishweshvara — the Lord of Kashi. He is indeed the Taraka Brahman, the liberating mantra that grants moksha at the final moment.",
+        hi: "गुरु का निवासस्थान (घर) ही काशी क्षेत्र है, उसका चरणोदक ही गंगा है और स्वयं गुरु विश्वेश्वर हैं, अर्थात् काशी नगरी के अधिपति भगवान विश्वनाथ हैं। ये ही तारक ब्रह्म भी हैं, यह बात भी निश्चित है, अर्थात् काशी विश्वेश्वर जीव को अन्तिम समय में काशी में जिस तारक ब्रह्म का, मोक्ष पद को देने वाले मन्त्र का उपदेश करते हैं, वह भी गुरु का ही प्रसाद है।"
+      }
+    },
+    {
+      num: 77,
+      speaker: { en: "Ishvara Uvacha", hi: "ईश्वर उवाच" },
+      sanskrit: "गुरुरादिरनादिश्च गुरुः परमदैवतम्।\nगुरोः परतरं नास्ति तस्मै श्रीगुरवे नमः॥७७॥",
+      meaning: {
+        en: "The Guru is the original cause of our knowledge, and this form of the Guru is without beginning or end. The Guru alone is the highest deity. There is no one greater than the Guru in this entire world. We bow down to that Guru.",
+        hi: "गुरु हमारी ज्ञान-प्राप्ति का आदिकारण है एवं यह गुरुमूर्ति आदि और अन्त से रहित है। गुरु ही सर्वश्रेष्ठ देवता है। गुरु से बढ़कर इस संसार में दूसरा कोई नहीं है। उस गुरु के प्रति हम नतमस्तक हैं॥७७॥"
+      }
+    },
+    {
+      num: 78,
+      speaker: { en: "Ishvara Uvacha", hi: "ईश्वर उवाच" },
+      sanskrit: "सप्तसागरपर्यन्ततीर्थस्नानादिकं फलम्।\nगुरोरङ्घ्रिपयोबिन्दुसहस्रांशेन दुर्लभम्॥७८॥",
+      meaning: {
+        en: "The merit gained by bathing and performing rituals at all holy places extending to the seven seas cannot be equalled even by one-thousandth part of a single drop of water from the Guru's feet. In other words, the entire merit from visiting all pilgrimage sites is obtained simply from a drop of the Guru's charanamrta.",
+        hi: "सात समुद्र पर्यन्त समस्त तीर्थों में स्नान, तर्पण आदि से जो फल मिलता है, वह समस्त पुण्य गुरुदेव के चरणों के प्रक्षालन से प्राप्त पादोदक की एक बूँद के हजारवें हिस्से से भी दुर्लभ नहीं है, अर्थात् समस्त तीर्थों के सेवन से जितना पुण्य प्राप्त होता है, वह सब गुरु के चरणों की धोवन की एक बूँद के हजारवें हिस्से से ही मिल जाता है॥७८॥"
+      }
+    },
+    {
+      num: 79,
+      speaker: { en: "Ishvara Uvacha", hi: "ईश्वर उवाच" },
+      sanskrit: "हरौ रुष्टे गुरुस्त्राता गुरौ रुष्टे न कश्चन।\nतस्मात् सर्वप्रयत्नेन श्रीगुरुं शरणं व्रजेत्॥७९॥",
+      meaning: {
+        en: "If Hari — all forms of God and all deities — become displeased, the Guru can still protect the devotee. But if the Guru becomes displeased, no one else can protect him. Therefore, firmly understanding this truth, one should always seek refuge in the Guru with full effort.",
+        hi: "हरि के, अर्थात् भगवान के समस्त रूपों के, समस्त देवताओं के रुष्ट (नाराज) हो जाने पर तो व्यक्ति की गुरु रक्षा कर लेता है, किन्तु गुरु के रुष्ट हो जाने पर उसकी रक्षा करने वाला दूसरा कोई नहीं है। अतः इस विषय को पूरी तरह से मन में बैठा कर हर समय गुरु की शरण में जाने का ही प्रयत्न करना चाहिये।"
+      }
+    },
+    {
+      num: 83,
+      speaker: { en: "Ishvara Uvacha", hi: "ईश्वर उवाच" },
+      sanskrit: "गुरोः कृपाप्रसादेन ब्रह्माविष्णुसदाशिवाः।\nसमर्थाः प्रभवादौ च केवलं गुरुसेवया॥८३॥",
+      meaning: {
+        en: "It is only through the gracious blessing obtained by worshipping the Guru alone that Brahma, Vishnu, and Sadashiva become capable of performing their respective functions of creation, sustenance, and dissolution.",
+        hi: "एकमात्र गुरु की उपासना करने से मिली गुरु की कृपा के प्रसाद से ही ब्रह्मा, विष्णु और सदाशिव क्रमशः सृष्टि-स्थिति-संहार रूप अपने-अपने कार्यों को करने में समर्थ हो जाते हैं।"
+      }
     }
   ];
 
