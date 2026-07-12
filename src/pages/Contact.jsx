@@ -218,7 +218,7 @@ function Contact() {
             
             <div style={{ marginTop: "15px", textAlign: "right" }}>
               <a 
-                href={activeMap === "dham" ? "https://maps.app.goo.gl/8qDmviqS1VQaMgNm9" : "https://maps.app.goo.gl/78GnXC8EiTw4NkAt8"} 
+                href={activeMap === "dham" ? "https://www.google.com/maps/dir/?api=1&destination=27.991615,75.8624599" : "https://maps.app.goo.gl/78GnXC8EiTw4NkAt8"} 
                 target="_blank" 
                 rel="noreferrer"
                 className="open-maps-link"
@@ -232,7 +232,7 @@ function Contact() {
                   fontSize: "14px"
                 }}
               >
-                📍 {lang === "en" ? "Open in Google Maps" : "गूगल मैप्स में खोलें"}
+                📍 {lang === "en" ? "Get Directions on Google Maps" : "गूगल मैप्स पर मार्ग प्राप्त करें"}
               </a>
             </div>
           </div>

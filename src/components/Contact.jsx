@@ -25,7 +25,7 @@ function Contact() {
       dharamshaTab: "Dharamshala",
       mapTitleDham: "Sri Khakhi Dham (Temple)",
       mapTitleBhavan: "Sri Khakhi Bhavan (Stay)",
-      openMaps: "📍 Open in Google Maps",
+      openMaps: "📍 Get Directions on Google Maps",
     },
     hi: {
       sectionSubtitle: "संपर्क करें",
@@ -41,7 +41,7 @@ function Contact() {
       dharamshaTab: "धर्मशाला",
       mapTitleDham: "श्री खाखी धाम (मंदिर)",
       mapTitleBhavan: "श्री खाखी भवन (ठहरने के लिए)",
-      openMaps: "📍 Google Maps में खोलें",
+      openMaps: "📍 Google Maps पर मार्ग प्राप्त करें",
     },
   };
 
@@ -161,7 +161,7 @@ function Contact() {
               <a
                 href={
                   activeMap === "dham"
-                    ? "https://maps.app.goo.gl/8qDmviqS1VQaMgNm9"
+                    ? "https://www.google.com/maps/dir/?api=1&destination=27.991615,75.8624599"
                     : "https://maps.app.goo.gl/78GnXC8EiTw4NkAt8"
                 }
                 target="_blank"
