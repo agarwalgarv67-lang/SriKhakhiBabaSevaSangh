@@ -565,7 +565,6 @@ function About() {
                     </div>
                     <h3 className="book-title">{book.title[lang]}</h3>
                     <p className="book-author">{lang === "en" ? "Publisher: " : "प्रकाशक: "}{book.author[lang]}</p>
-                    <p className="book-desc">{book.desc[lang]}</p>
                   </div>
                 </div>
               ))}
