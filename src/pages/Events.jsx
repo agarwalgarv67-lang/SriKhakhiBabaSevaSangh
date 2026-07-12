@@ -1,9 +1,10 @@
 import { useState } from "react";
+import { useLang } from "../context/LanguageContext";
 import { FaLanguage, FaCalendarAlt, FaMapMarkerAlt, FaUsers, FaMusic, FaDownload, FaInfoCircle, FaPhoneAlt } from "react-icons/fa";
 import calendarImg from "../assets/images/calendar_2026_2027.jpg";
 
 function Events() {
-  const [lang, setLang] = useState("en"); // 'en' or 'hi'
+  const { lang, setLang } = useLang();
 
   const eventsList = [
     {

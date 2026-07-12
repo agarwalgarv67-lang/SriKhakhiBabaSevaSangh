@@ -1,8 +1,9 @@
 import { useState } from "react";
+import { useLang } from "../context/LanguageContext";
 import { FaLanguage, FaPhoneAlt, FaEnvelope, FaInstagram, FaMapMarkerAlt, FaUserTie, FaPaperPlane, FaCheck } from "react-icons/fa";
 
 function Contact() {
-  const [lang, setLang] = useState("en"); // 'en' or 'hi'
+  const { lang, setLang } = useLang();
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [activeMap, setActiveMap] = useState("dham");
   const [formData, setFormData] = useState({

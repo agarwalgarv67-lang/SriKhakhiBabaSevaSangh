@@ -1,9 +1,10 @@
-﻿import { useState } from "react";
+import { useState } from "react";
+import { useLang } from "../context/LanguageContext";
 import temple from "../assets/images/temple3.jpeg";
 import { FaLanguage, FaCalendarAlt, FaSchool, FaBuilding, FaTree, FaClinicMedical, FaHandsHelping, FaUniversity, FaArrowRight } from "react-icons/fa";
 
 function Journey() {
-  const [lang, setLang] = useState("en"); // 'en' or 'hi'
+  const { lang, setLang } = useLang();
   const [filter, setFilter] = useState("all"); // 'all', 'development', 'welfare'
 
   const milestones = [

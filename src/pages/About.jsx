@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLang } from "../context/LanguageContext";
 import baba from "../assets/images/baba.jpeg";
 import temple from "../assets/images/temple.jpeg";
 import kiljiKhadau from "../assets/images/kilji-baba-khadau.jpg";
@@ -7,7 +8,7 @@ import khakhiBabaPoster from "../assets/images/khakhi-baba-poster.jpg";
 import { FaLanguage, FaHistory, FaMapMarkedAlt } from "react-icons/fa";
 
 function About() {
-  const [lang, setLang] = useState("en"); // 'en' or 'hi'
+  const { lang, setLang } = useLang();
   const [tab, setTab] = useState("saint"); // 'saint' or 'dham'
 
   return (
