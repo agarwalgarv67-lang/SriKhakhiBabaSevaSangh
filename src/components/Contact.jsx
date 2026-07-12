@@ -161,7 +161,7 @@ function Contact() {
               <a
                 href={
                   activeMap === "dham"
-                    ? "https://www.google.com/maps/d/viewer?mid=1o68LDPIzeMksEDwX4UrTSOZd9pJJoQU"
+                    ? "https://maps.app.goo.gl/8qDmviqS1VQaMgNm9"
                     : "https://maps.app.goo.gl/78GnXC8EiTw4NkAt8"
                 }
                 target="_blank"

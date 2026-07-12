@@ -218,7 +218,7 @@ function Contact() {
             
             <div style={{ marginTop: "15px", textAlign: "right" }}>
               <a 
-                href={activeMap === "dham" ? "https://www.google.com/maps/d/viewer?mid=1o68LDPIzeMksEDwX4UrTSOZd9pJJoQU" : "https://maps.app.goo.gl/78GnXC8EiTw4NkAt8"} 
+                href={activeMap === "dham" ? "https://maps.app.goo.gl/8qDmviqS1VQaMgNm9" : "https://maps.app.goo.gl/78GnXC8EiTw4NkAt8"} 
                 target="_blank" 
                 rel="noreferrer"
                 className="open-maps-link"
