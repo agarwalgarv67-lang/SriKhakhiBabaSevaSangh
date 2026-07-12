@@ -4,6 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import Navbar from "./components/Navbar";
+import ScrollToTop from "./components/ScrollToTop";
 import { LanguageProvider } from "./context/LanguageContext";
 
 import Home from "./pages/Home";
@@ -28,6 +29,7 @@ function App() {
 
   return (
     <LanguageProvider>
+      <ScrollToTop />
       <Navbar />
 
       <Routes>
