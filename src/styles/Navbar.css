@@ -86,18 +86,20 @@
 /* Nav Menu Layout */
 .nav-menu ul {
   display: flex;
-  gap: 30px;
+  gap: 8px;
   list-style: none;
+  flex-wrap: nowrap;
 }
 
 .nav-menu a {
   text-decoration: none;
   color: #ffffff;
   font-weight: 600;
-  font-size: 15px;
-  padding: 8px 16px;
+  font-size: 13.5px;
+  padding: 7px 11px;
   border-radius: 20px;
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .nav-menu a:hover {
@@ -113,7 +115,7 @@
 }
 
 /* Responsive Media Queries (Mobile Friendly Drawer) */
-@media (max-width: 960px) {
+@media (max-width: 1100px) {
   .menu-toggle {
     display: block; /* Show hamburger button */
   }
