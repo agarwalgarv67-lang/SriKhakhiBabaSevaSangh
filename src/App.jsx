@@ -10,6 +10,7 @@ import { LanguageProvider } from "./context/LanguageContext";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Journey from "./pages/Journey";
+import AartiStuti from "./pages/AartiStuti";
 import Gallery from "./pages/Gallery";
 import Events from "./pages/Events";
 import Donation from "./pages/Donation";
@@ -36,6 +37,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/Journey" element={<Journey />} />
+        <Route path="/aarti-stuti" element={<AartiStuti />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/events" element={<Events />} />
         <Route path="/donation" element={<Donation />} />

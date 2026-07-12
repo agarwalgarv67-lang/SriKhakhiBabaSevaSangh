@@ -2966,3 +2966,511 @@ body{
     padding: 10px 20px;
   }
 }
+
+/* ================= AARTI & STUTI PAGE ================= */
+.aarti-stuti-page-container {
+  background-color: #fffbf7;
+  min-height: 100vh;
+  padding-bottom: 80px;
+}
+
+.aarti-hero-banner {
+  height: 45vh;
+  min-height: 300px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.aarti-hero-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(45, 27, 24, 0.5), rgba(45, 27, 24, 0.8));
+  z-index: 1;
+}
+
+.aarti-hero-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.aarti-hero-overlay h1 {
+  font-size: 48px;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.aarti-hero-overlay p {
+  font-size: 18px;
+  color: #ffcc80;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.aarti-controls {
+  background: #ffffff;
+  border-bottom: 1px solid #efe5de;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 10px 0;
+}
+
+.aarti-controls-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 991px) {
+  .aarti-controls-container {
+    justify-content: center;
+  }
+}
+
+.aarti-controls .tab-btn {
+  padding: 10px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 1px solid #e0d5cd;
+  background: #ffffff;
+  color: #5d4037;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.aarti-controls .tab-btn:hover {
+  border-color: #ff9800;
+  color: #ff9800;
+  transform: translateY(-1px);
+}
+
+.aarti-controls .tab-btn.active {
+  background-color: #ff9800;
+  border-color: #ff9800;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(255, 152, 0, 0.25);
+}
+
+.aarti-main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.tab-content-wrapper {
+  opacity: 0;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.content-intro-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px 40px;
+  margin-bottom: 40px;
+  border-left: 5px solid #ff9800;
+  box-shadow: 0 8px 30px rgba(93, 64, 55, 0.04);
+}
+
+.content-intro-card h2 {
+  font-size: 28px;
+  color: #3e2723;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.content-intro-card .intro-text {
+  font-size: 16px;
+  color: #5d4037;
+  line-height: 1.8;
+}
+
+/* Subtabs for Aarti */
+.aarti-subtabs {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.aarti-subtab-btn {
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 1px solid #ff9800;
+  background: transparent;
+  color: #ff9800;
+  transition: all 0.2s ease;
+}
+
+.aarti-subtab-btn:hover {
+  background: rgba(255, 152, 0, 0.05);
+}
+
+.aarti-subtab-btn.active {
+  background: #ff9800;
+  color: #ffffff;
+}
+
+/* Shlokas CSS */
+.shlokas-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.shloka-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 35px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.02);
+  border: 1px solid #f3e9e1;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shloka-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(255, 152, 0, 0.08);
+  border-color: #ffe0b2;
+}
+
+.shloka-number {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ff9800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+
+.shloka-speaker {
+  font-size: 14px;
+  font-weight: 600;
+  color: #795548;
+  display: inline-block;
+  background: #efe6df;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.shloka-sanskrit {
+  font-size: 21px;
+  color: #3e2723;
+  font-weight: 600;
+  line-height: 1.8;
+  white-space: pre-line;
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: 'Poppins', serif;
+  background-color: #fffbf7;
+  padding: 24px;
+  border-radius: 12px;
+  border-left: 4px dashed #ffe0b2;
+  border-right: 4px dashed #ffe0b2;
+  letter-spacing: 0.5px;
+}
+
+.shloka-meaning {
+  border-top: 1px solid #f5ebe2;
+  padding-top: 20px;
+}
+
+.shloka-meaning strong {
+  font-size: 13px;
+  color: #ff9800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.shloka-meaning p {
+  font-size: 15px;
+  color: #5d4037;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Stuti (Traditional Style Backup) */
+.stuti-single-box {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 50px 60px;
+  box-shadow: 0 6px 25px rgba(93, 64, 55, 0.03);
+  border: 1px solid #f3e9e1;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.stuti-row {
+  padding: 16px 0;
+}
+
+.stuti-row:first-child {
+  padding-top: 0;
+}
+
+.stuti-row:last-child {
+  padding-bottom: 0;
+}
+
+.stuti-row-num {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ff9800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.stuti-row-hindi {
+  font-size: 21px;
+  color: #3e2723;
+  font-weight: 600;
+  line-height: 1.8;
+  white-space: pre-line;
+  margin-bottom: 10px;
+}
+
+.stuti-row-english {
+  margin-top: 12px;
+  border-top: 1px dashed #efe4dc;
+  padding-top: 12px;
+}
+
+.stuti-row-translit {
+  font-size: 15px;
+  color: #795548;
+  font-style: italic;
+  line-height: 1.6;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.stuti-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  opacity: 0.4;
+}
+
+.stuti-divider .stuti-dot {
+  width: 7px;
+  height: 7px;
+  background-color: #ff9800;
+  border-radius: 50%;
+}
+
+.stuti-divider .stuti-line {
+  width: 120px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #ff9800, transparent);
+}
+
+/* Song Lyrics Layout */
+.lyrics-sheet {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 60px 45px;
+  box-shadow: 0 6px 25px rgba(93, 64, 55, 0.03);
+  border: 2px solid #ff9800;
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Inner decorative border line surrounding the stuti */
+.lyrics-sheet::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  border: 1px dashed #ffe0b2;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.lyrics-verse {
+  margin-bottom: 35px;
+}
+
+.lyrics-verse:last-child {
+  margin-bottom: 0;
+}
+
+.lyrics-line-hi {
+  font-size: 21px;
+  color: #3e2723;
+  font-weight: 600;
+  line-height: 1.8;
+  white-space: pre-line;
+  margin: 0;
+}
+
+.lyrics-line-en {
+  font-size: 15px;
+  color: #795548;
+  font-style: italic;
+  line-height: 1.6;
+  white-space: pre-line;
+  margin: 8px auto 0 auto;
+  border-top: 1px dashed #efe4dc;
+  padding-top: 8px;
+  display: inline-block;
+  max-width: 90%;
+}
+
+/* Panchatattva CSS */
+.panchatattva-single-box {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 60px 45px;
+  box-shadow: 0 6px 25px rgba(93, 64, 55, 0.03);
+  border: 2px solid #ff9800;
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.panchatattva-single-box::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  border: 1px dashed #ffe0b2;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.panchatattva-para-block {
+  margin-bottom: 35px;
+  position: relative;
+  z-index: 2;
+}
+
+.panchatattva-para-block:last-child {
+  margin-bottom: 0;
+}
+
+.panchatattva-para-block .para-hindi {
+  font-size: 16.5px;
+  color: #3e2723;
+  font-weight: 500;
+  line-height: 1.9;
+  white-space: pre-line;
+  margin: 0;
+  text-align: justify;
+}
+
+.panchatattva-para-block .para-english {
+  font-size: 14.5px;
+  color: #5d4037;
+  line-height: 1.75;
+  white-space: pre-line;
+  margin: 12px 0 0 0;
+  border-top: 1px dashed #efe4dc;
+  padding-top: 10px;
+  text-align: justify;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .aarti-hero-banner {
+    height: 35vh;
+  }
+  .aarti-hero-overlay h1 {
+    font-size: 34px;
+  }
+  .aarti-hero-overlay p {
+    font-size: 15px;
+  }
+  .aarti-controls .tab-buttons {
+    gap: 8px;
+    padding: 5px 10px;
+  }
+  .aarti-controls .tab-btn {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+  .aarti-main-content {
+    padding: 20px 10px;
+  }
+  .content-intro-card {
+    padding: 20px;
+    margin-bottom: 25px;
+  }
+  .content-intro-card h2 {
+    font-size: 22px;
+  }
+  .content-intro-card .intro-text {
+    font-size: 14px;
+  }
+  .shloka-card {
+    padding: 20px;
+  }
+  .shloka-sanskrit {
+    font-size: 17px;
+    padding: 15px;
+  }
+  .stuti-single-box, .lyrics-sheet {
+    padding: 30px 20px;
+  }
+  .stuti-row-hindi, .lyrics-line-hi {
+    font-size: 17px;
+  }
+  .stuti-row-translit, .lyrics-line-en {
+    font-size: 13.5px;
+  }
+  .panchatattva-single-box {
+    padding: 30px 20px;
+  }
+  .panchatattva-para-block .para-hindi {
+    font-size: 15px;
+  }
+  .panchatattva-para-block .para-english {
+    font-size: 13.5px;
+  }
+}
