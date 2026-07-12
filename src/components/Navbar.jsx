@@ -30,7 +30,7 @@ function Navbar() {
             <li><NavLink to="/" onClick={closeMenu}>Home</NavLink></li>
             <li><NavLink to="/about" onClick={closeMenu}>About</NavLink></li>
             <li><NavLink to="/Journey" onClick={closeMenu}>Our Journey</NavLink></li>
-            <li><NavLink to="/aarti-stuti" onClick={closeMenu}>Aarti & Stuti</NavLink></li>
+            <li><NavLink to="/guru-mahima" onClick={closeMenu}>Guru Mahima</NavLink></li>
             <li><NavLink to="/gallery" onClick={closeMenu}>Gallery</NavLink></li>
             <li><NavLink to="/events" onClick={closeMenu}>Events</NavLink></li>
             <li><NavLink to="/donation" onClick={closeMenu}>Donation</NavLink></li>

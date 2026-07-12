@@ -4,7 +4,7 @@ import { FaFire, FaBookOpen, FaPray, FaHands, FaLanguage } from "react-icons/fa"
 import jyotImg from "../assets/images/jyot.jpeg";
 import bhajanImg from "../assets/images/bhajan.jpeg";
 
-function AartiStuti() {
+function GuruMahima() {
   const { lang, setLang } = useLang();
   const [tab, setTab] = useState("gurugita"); // 'gurugita', 'babastuti', 'panchatattva', 'aarti'
   const [aartiTab, setAartiTab] = useState("aarti1"); // 'aarti1', 'aarti2'
@@ -474,4 +474,4 @@ function AartiStuti() {
   );
 }
 
-export default AartiStuti;
+export default GuruMahima;
