@@ -30,7 +30,7 @@ const booksData = [
     id: "volume_2",
     title: { en: "Sri Khakhi Baba Bhajan Sangrah - Volume 2", hi: "श्री खाखी बाबा भजन संग्रह - भाग २" },
     author: { en: "Sri Khakhi Baba Seva Sangh, Hyderabad", hi: "श्री खाखी बाबा सेवा संघ, हैदराबाद" },
-    year: "Vikram Samvat 2048",
+    year: "Vikram Samvat 2055",
     desc: {
       en: "The second volume of the collection, compiling devotional hymns in praise of the Guru-lineage and regional saints of Rajasthan.",
       hi: "भजन संग्रह का द्वितीय भाग, जिसमें गुरु-परंपरा एवं राजस्थान के क्षेत्रीय संतों की महिमा में गाए जाने वाले भक्तिमय भजनों का संकलन है।"
