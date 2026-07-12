@@ -5,11 +5,76 @@ import temple from "../assets/images/temple.jpeg";
 import kiljiKhadau from "../assets/images/kilji-baba-khadau.jpg";
 import sukhramdasImg from "../assets/images/sukhramdas-ji.jpg";
 import khakhiBabaPoster from "../assets/images/khakhi-baba-poster.jpg";
-import { FaLanguage, FaHistory, FaMapMarkedAlt } from "react-icons/fa";
+import { FaLanguage, FaHistory, FaMapMarkedAlt, FaBook } from "react-icons/fa";
+
+import coverVolume1 from "../assets/images/cover_volume_1.jpg";
+import coverVolume2 from "../assets/images/cover_volume_2.jpg";
+import coverVolume3 from "../assets/images/cover_volume_3.jpg";
+import coverVolume4 from "../assets/images/cover_volume_4.jpg";
+import chalisaCover from "../assets/images/chalisa_cover.jpg";
+
+// Published Books Data
+const booksData = [
+  {
+    id: "volume_1",
+    title: { en: "Sri Khakhi Baba Bhajan Sangrah - Volume 1", hi: "श्री खाखी बाबा भजन संग्रह - भाग १" },
+    author: { en: "Sri Khakhi Baba Seva Sangh, Hyderabad", hi: "श्री खाखी बाबा सेवा संघ, हैदराबाद" },
+    year: "Vikram Samvat 2040",
+    desc: {
+      en: "The first volume of the sacred hymn collection, featuring traditional prayers, daily aartis, and foundational bhajans sung at Sri Khakhi Dham.",
+      hi: "पावन भजन संग्रह का प्रथम भाग, जिसमें श्री खाखी धाम में गाए जाने वाले पारंपरिक भजन, नित्य आरती और प्रार्थनाओं का संग्रह है।"
+    },
+    cover: coverVolume1
+  },
+  {
+    id: "volume_2",
+    title: { en: "Sri Khakhi Baba Bhajan Sangrah - Volume 2", hi: "श्री खाखी बाबा भजन संग्रह - भाग २" },
+    author: { en: "Sri Khakhi Baba Seva Sangh, Hyderabad", hi: "श्री खाखी बाबा सेवा संघ, हैदराबाद" },
+    year: "Vikram Samvat 2048",
+    desc: {
+      en: "The second volume of the collection, compiling devotional hymns in praise of the Guru-lineage and regional saints of Rajasthan.",
+      hi: "भजन संग्रह का द्वितीय भाग, जिसमें गुरु-परंपरा एवं राजस्थान के क्षेत्रीय संतों की महिमा में गाए जाने वाले भक्तिमय भजनों का संकलन है।"
+    },
+    cover: coverVolume2
+  },
+  {
+    id: "volume_3",
+    title: { en: "Sri Khakhi Baba Bhajan Sangrah - Volume 3", hi: "श्री खाखी बाबा भजन संग्रह - भाग ३" },
+    author: { en: "Sri Khakhi Baba Seva Sangh, Dada Fatehpura", hi: "श्री खाखी बाबा सेवा संघ, डाडा फतेहपुरा" },
+    year: "Vikram Samvat 2057",
+    desc: {
+      en: "The third volume, published from Dada Fatehpura, containing rare devotional compositions and praises dedicated to Sri Khakhi Baba Ji.",
+      hi: "डाडा फतेहपुरा से प्रकाशित भजन संग्रह का तृतीय भाग, जिसमें श्री खाखी बाबा जी को समर्पित विशिष्ट भजन, स्तुतियां एवं पावन संस्मरण शामिल हैं।"
+    },
+    cover: coverVolume3
+  },
+  {
+    id: "volume_4",
+    title: { en: "Sri Khakhi Baba Bhajan Sangrah - Volume 4", hi: "श्री खाखी बाबा भजन संग्रह - भाग ४" },
+    author: { en: "Sri Khakhi Baba Seva Sangh, Dada Fatehpura", hi: "श्री खाखी बाबा सेवा संघ, डाडा फतेहपुरा" },
+    year: "Vikram Samvat 2071",
+    desc: {
+      en: "The fourth volume, compiling the latest devotional hymns, stutis, and prayers sung during monthly melas and major festivals.",
+      hi: "भजन संग्रह का चतुर्थ भाग, जिसमें मासिक मेलों और विशेष उत्सवों पर गाए जाने वाले नूतन भजनों, स्तुतियों एवं प्रार्थनाओं का संग्रह है।"
+    },
+    cover: coverVolume4
+  },
+  {
+    id: "chalisa",
+    title: { en: "Sri Sri 1008 Sri Khakhiji Baba Chalisa", hi: "श्री श्री १००८ श्री खाखीजी बाबा चालिसा" },
+    author: { en: "Sri Khakhi Baba Seva Sangh, Dada Fatehpura, Hyderabad", hi: "श्री खाखी बाबा सेवा संघ, डाडा फतेहपुरा, हैदराबाद आ.प्र." },
+    year: "",
+    desc: {
+      en: "A sacred Chalisa — forty devotional verses — in praise of Sri Sri 1008 Sri Khakhiji Baba, published by Sri Khakhi Baba Seva Sangh, Dada Fatehpura, Hyderabad.",
+      hi: "श्री श्री १००८ श्री खाखीजी बाबा की महिमा में रचित पावन चालीसा — चालीस भक्तिमय छंदों का संग्रह, श्री खाखी बाबा सेवा संघ, डाडा फतेहपुरा, हैदराबाद द्वारा प्रकाशित।"
+    },
+    cover: chalisaCover
+  }
+];
 
 function About() {
   const { lang, setLang } = useLang();
-  const [tab, setTab] = useState("saint"); // 'saint' or 'dham'
+  const [tab, setTab] = useState("saint"); // 'saint', 'dham', 'books'
 
   return (
     <section className="about-page-container">
@@ -28,13 +93,19 @@ function About() {
             className={`tab-btn ${tab === "saint" ? "active" : ""}`} 
             onClick={() => setTab("saint")}
           >
-            <FaHistory /> {lang === "en" ? "Sri Khakhi Baba (The Saint)" : "श्री खाखी बाबा (जीवनी)"}
+            <FaHistory /> {lang === "en" ? "The Saint" : "जीवनी"}
           </button>
           <button 
             className={`tab-btn ${tab === "dham" ? "active" : ""}`} 
             onClick={() => setTab("dham")}
           >
-            <FaMapMarkedAlt /> {lang === "en" ? "Sri Khakhi Dham (The Temple)" : "श्री खाखी धाम (स्थान)"}
+            <FaMapMarkedAlt /> {lang === "en" ? "The Temple" : "स्थान"}
+          </button>
+          <button 
+            className={`tab-btn ${tab === "books" ? "active" : ""}`} 
+            onClick={() => setTab("books")}
+          >
+            <FaBook /> {lang === "en" ? "Published Books" : "प्रकाशित पुस्तकें"}
           </button>
         </div>
 
@@ -402,7 +473,7 @@ function About() {
               </div>
             </div>
           )
-        ) : (
+        ) : tab === "dham" ? (
           /* Dham Location & Environment Content */
           lang === "en" ? (
             <div className="content-english fade-in">
@@ -469,6 +540,37 @@ function About() {
               </div>
             </div>
           )
+        ) : (
+          /* Published Books Content */
+          <div className="books-container fade-in">
+            <div className="books-intro-card">
+              <h2>{lang === "en" ? "Published Spiritual Literature" : "प्रकाशित आध्यात्मिक साहित्य"}</h2>
+              <p>
+                {lang === "en" 
+                  ? "Sri Khakhi Baba Seva Sangh is committed to preserving and propagating the holy teachings, prayers, and history of the Guru Parampara. Below is the list of printed song collections published and circulated by the Trust."
+                  : "श्री खाखी बाबा सेवा संघ गुरु-परंपरा की दिव्य शिक्षाओं, प्रार्थनाओं और इतिहास के संरक्षण व प्रचार-प्रसार के लिए समर्पित है। नीचे न्यास द्वारा प्रकाशित एवं वितरित मुद्रित भजन संग्रहों की सूची दी गई है।"}
+              </p>
+            </div>
+
+            <div className="books-grid">
+              {booksData.map((book) => (
+                <div key={book.id} className="book-card" data-aos="fade-up">
+                  <div className="book-cover-container">
+                    <img src={book.cover} alt={book.title[lang]} className="book-cover-img" />
+                    <div className="book-cover-overlay"></div>
+                  </div>
+                  <div className="book-details">
+                    <div className="book-meta">
+                      <span>{book.year}</span>
+                    </div>
+                    <h3 className="book-title">{book.title[lang]}</h3>
+                    <p className="book-author">{lang === "en" ? "Publisher: " : "प्रकाशक: "}{book.author[lang]}</p>
+                    <p className="book-desc">{book.desc[lang]}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         )}
       </div>
     </section>
