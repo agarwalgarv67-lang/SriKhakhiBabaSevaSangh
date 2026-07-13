@@ -189,8 +189,8 @@ function GuruMahima() {
       en: "Jada chetana mein aapaki, eka shakti darasaaya |\nJalachara thalachara vyomachara, nishadina thaaron hi guna gaaya ||"
     },
     {
-      hi: "शील क्षमा दया सागर, जा मे भरूप अपार |\nसभी भक्त दर पर रहे, मेरी विनय हो बारम्बार ॥",
-      en: "Sheela kshama daya saagara, ja me bharoopa apaara |\nSabhi bhakta dara para rahe, meri vinaya ho baarambaara ||"
+      hi: "शील क्षमा दया सागर, जा मे रूप अपार |\nसभी भक्त दर पर रहे, मेरी विनय हो बारम्बार ॥",
+      en: "Sheela kshama daya saagara, ja me roopa apaara |\nSabhi bhakta dara para rahe, meri vinaya ho baarambaara ||"
     },
     {
       hi: "जो सुख लोका लोक के, सभी आपके हाथ |\nएक दया की दृष्टि-से, करदो नाथ सनाथ ॥",
@@ -309,13 +309,13 @@ function GuruMahima() {
   return (
     <section className="aarti-stuti-page-container">
       {/* Hero Banner Section */}
-      <div 
-        className="aarti-hero-banner" 
+      <div
+        className="aarti-hero-banner"
         style={{ backgroundImage: `url(${tab === "aarti" ? jyotImg : bhajanImg})` }}
       >
         <div className="aarti-hero-overlay">
           <h1>{lang === "en" ? "Aarti, Stuti & Prayers" : "आरती, स्तुति एवं प्रार्थनाएँ"}</h1>
-          <p>{lang === "en" ? "Sacred verses, traditional stutis, and prayers of Sri Khakhi Baba Ji" : "श्री खाखी बाबा जी के पावन श्लोक, पारंपरिक स्तुतियाँ एवं आरती"}</p>
+          <p>{lang === "en" ? "Sacred verses, traditional stutis, and prayers of Sri Khakhi Baba Ji" : "श्री खाखी बाबा जी के पावन स्तुतियाँ, तथा गुरु महात्म्य एवं आरती"}</p>
         </div>
       </div>
 
@@ -323,26 +323,26 @@ function GuruMahima() {
       <div className="aarti-controls">
         <div className="aarti-controls-container">
           <div className="tab-buttons">
-            <button 
-              className={`tab-btn ${tab === "gurugita" ? "active" : ""}`} 
+            <button
+              className={`tab-btn ${tab === "gurugita" ? "active" : ""}`}
               onClick={() => setTab("gurugita")}
             >
               <FaBookOpen /> {lang === "en" ? "Guru Gita" : "गुरु गीता श्लोक"}
             </button>
-            <button 
-              className={`tab-btn ${tab === "babastuti" ? "active" : ""}`} 
+            <button
+              className={`tab-btn ${tab === "babastuti" ? "active" : ""}`}
               onClick={() => setTab("babastuti")}
             >
-              <FaPray /> {lang === "en" ? "Baba Stuti" : "बाबा स्तुति"}
+              <FaPray /> {lang === "en" ? "Khakhi Chalisa" : "खाखी चालीसा"}
             </button>
-            <button 
-              className={`tab-btn ${tab === "panchatattva" ? "active" : ""}`} 
+            <button
+              className={`tab-btn ${tab === "panchatattva" ? "active" : ""}`}
               onClick={() => setTab("panchatattva")}
             >
               <FaHands /> {lang === "en" ? "Panchatattva" : "पञ्चतत्त्व स्तुति"}
             </button>
-            <button 
-              className={`tab-btn ${tab === "aarti" ? "active" : ""}`} 
+            <button
+              className={`tab-btn ${tab === "aarti" ? "active" : ""}`}
               onClick={() => setTab("aarti")}
             >
               <FaFire /> {lang === "en" ? "Aarti" : "आरती"}
@@ -350,14 +350,14 @@ function GuruMahima() {
           </div>
 
           <div className="lang-toggle-container">
-            <button 
-              className={`lang-btn ${lang === "en" ? "active" : ""}`} 
+            <button
+              className={`lang-btn ${lang === "en" ? "active" : ""}`}
               onClick={() => setLang("en")}
             >
               <FaLanguage /> English
             </button>
-            <button 
-              className={`lang-btn ${lang === "hi" ? "active" : ""}`} 
+            <button
+              className={`lang-btn ${lang === "hi" ? "active" : ""}`}
               onClick={() => setLang("hi")}
             >
               <FaLanguage /> हिन्दी
@@ -368,16 +368,21 @@ function GuruMahima() {
 
       {/* Main Content Area */}
       <div className="aarti-main-content">
-        
+
         {/* ================= GURU GITA TAB ================= */}
         {tab === "gurugita" && (
           <div className="tab-content-wrapper fade-in">
             <div className="content-intro-card">
-              <h2>{lang === "en" ? "Sri Guru Gita Shlokas" : "श्रीगुरुगीता श्लोक"}</h2>
+              <h2>{lang === "en" ? "Preface" : "प्रस्तावना"}</h2>
               <p className="intro-text">
-                {lang === "en" 
-                  ? "The following verses are selected from Sri Guru Gita, recording the sacred dialogue between Lord Sadashiva and Mother Parvati in the Skanda Mahapurana regarding the ultimate glory of the Guru."
-                  : "प्रस्तुत श्लोक श्रीगुरुगीता से संगृहीत हैं, जिसका दिव्य उपदेश भगवान् सदाशिव ने स्कन्दमहापुराण में माता पार्वती को ब्रह्मज्ञान प्रदान करते हुए किया है। इस पावन संवाद में भगवान् शिव ने गुरु-तत्त्व की अनिर्वचनीय महिमा का निरूपण किया है।"}
+                {lang === "en"
+                  ? "The following verses are selected from Sri Guru Gita, recording the sacred dialogue between Lord Sadashiva and Mother Parvati in the Skanda Mahapurana regarding the ultimate glory of the Guru, His supreme Brahman nature, and the spiritual secrets of Guru-kripa."
+                  : "प्रस्तुत श्लोक श्रीगुरुगीता से संगृहीत हैं, जिसका दिव्य उपदेश भगवान् सदाशिव ने स्कन्दमहापुराण में माता पार्वती को ब्रह्मज्ञान प्रदान करते हुए किया है। इस पावन संवाद में भगवान् शिव ने गुरु-तत्त्व की अनिर्वचनीय महिमा, गुरु की परमब्रह्मस्वरूप सत्ता तथा गुरु-कृपा के आध्यात्मिक रहस्य का अत्यन्त मार्मिक एवं दार्शनिक निरूपण किया है।"}
+              </p>
+              <p className="intro-text">
+                {lang === "en"
+                  ? "In truth, the glory of Sri Guru's feet is infinite, boundless, and beyond description. No speech or scripture can fully encompass it. These verses are but a subtle indication of that infinite Guru-glory — a humble attempt, as it were, to hold the ocean on the tip of a needle. Through His boundless grace, Lord Shiva has partially illuminated the divine mystery of Guru-tattva through these verses, which leads the seeker towards Guru-bhakti, self-knowledge, and the supreme path of liberation."
+                  : "वस्तुतः श्रीगुरुचरणों की महिमा अनन्त, असीम एवं अवर्णनीय है। उसका पूर्ण वर्णन करना किसी भी वाणी अथवा शास्त्र के लिए संभव नहीं है। प्रस्तुत श्लोक उस अनन्त गुरु-महिमा का केवल एक सूक्ष्म संकेत मात्र हैं—मानो महासागर को सूई की नोक पर धारण करने का विनम्र प्रयास। भगवान् शिव ने अपनी असीम कृपा से इन श्लोकों के माध्यम से गुरु-तत्त्व के उस दिव्य रहस्य का आंशिक प्रकाश किया है, जो साधक को गुरु-भक्ति, आत्मज्ञान एवं मोक्ष के परम मार्ग की ओर अग्रसर करता है।"}
               </p>
             </div>
 
@@ -403,9 +408,9 @@ function GuruMahima() {
         {tab === "babastuti" && (
           <div className="tab-content-wrapper fade-in">
             <div className="content-intro-card">
-              <h2>{lang === "en" ? "Sri Sri 1008 Sri Khakhi Baba Ji Stuti" : "श्री श्री १००८ श्री खाखी जी बाबा की स्तुति"}</h2>
+              <h2>{lang === "en" ? "Khakhi Chalisa" : "खाखी चालीसा"}</h2>
               <p className="intro-text">
-                {lang === "en" 
+                {lang === "en"
                   ? "A devotional prayer composed of eighteen couplets praising the divine character, yoga-powers, and compassionate grace of Sri Khakhi Baba Ji."
                   : "श्री खाखी बाबा जी के दिव्य चरित्र, योग-सिद्धियों और करुणामयी कृपा की महिमा का वर्णन करने वाले अट्ठारह दोहों का पावन संग्रह।"}
               </p>
@@ -430,7 +435,7 @@ function GuruMahima() {
             <div className="content-intro-card">
               <h2>{lang === "en" ? "Sri Guru Panchatattva Stuti" : "श्री गुरुपञ्चतत्त्व स्तुति"}</h2>
               <p className="intro-text">
-                {lang === "en" 
+                {lang === "en"
                   ? "A prayer contemplating the Guru as the supreme embodiment of the five elements of creation, establishing the highest ideals of detachment and wisdom."
                   : "सृष्टि के पाँचों तत्वों (आकाश, जल, पृथ्वी, वायु, अग्नि) में श्रीगुरुदेव के साक्षात् दर्शन करते हुए वैराग्य, समता और मोक्ष प्राप्ति की पावन प्रार्थना।"}
               </p>
@@ -455,20 +460,20 @@ function GuruMahima() {
             <div className="content-intro-card">
               <h2>{lang === "en" ? "Aarti & Prayers" : "आरती एवं प्रार्थना"}</h2>
               <p className="intro-text">
-                {lang === "en" 
+                {lang === "en"
                   ? "Perform the sacred arati ritual with traditional hymns glorifying Sri Khakhi Baba Ji."
                   : "श्री खाखी बाबा जी की स्तुति एवं पावन मंगल आरती के भजन स्वर।"}
               </p>
-              
+
               {/* Subtabs for Aarti 1 and Aarti 2 */}
               <div className="aarti-subtabs">
-                <button 
+                <button
                   className={`aarti-subtab-btn ${aartiTab === "aarti1" ? "active" : ""}`}
                   onClick={() => setAartiTab("aarti1")}
                 >
                   {lang === "en" ? "Aarti 1 (Jai Sri Khakhi Baba)" : "आरती १ (जय श्री खाखी बाबा)"}
                 </button>
-                <button 
+                <button
                   className={`aarti-subtab-btn ${aartiTab === "aarti2" ? "active" : ""}`}
                   onClick={() => setAartiTab("aarti2")}
                 >
