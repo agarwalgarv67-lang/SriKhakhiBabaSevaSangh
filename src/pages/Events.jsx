@@ -19,7 +19,7 @@ function Events() {
       dateHi: "फाल्गुन बदी अमावस्या (प्रतिवर्ष फरवरी - मार्च)",
       venueEn: "Sri Khakhi Dham, Dada Fatehpura, Rajasthan",
       venueHi: "श्री खाखी धाम, डाडा फतेहरा, राजस्थान",
-      attendeesEn: "Thousands of devotees from India & abroad",
+      attendeesEn: "Thousands of devotees",
       attendeesHi: "देश-विदेश से आने वाले हजारों श्रद्धालु",
       descEn1: "The annual mela is the crown jewel of our celebrations. On this auspicious day, the sacred belongings of Sri Khakhi Baba—his Khadau (wooden sandals), Chimta (iron tongs), and Kamandal (water pot)—are decorated with flowers and carried by the members of the Seva Sangh on their heads in a grand Shobha Yatra (procession) from Khakhi Bhavan to the temple on the hill.",
       descEn2: "The festival features non-stop bhajan, kirtan, standard rituals, and a massive Bhandara (community feast) where thousands of pilgrims are served free sanctified food (prasad).",
