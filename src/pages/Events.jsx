@@ -20,7 +20,7 @@ function Events() {
       venueEn: "Sri Khakhi Dham, Dada Fatehpura, Rajasthan",
       venueHi: "श्री खाखी धाम, डाडा फतेहरा, राजस्थान",
       attendeesEn: "Thousands of devotees",
-      attendeesHi: "देश-विदेश से आने वाले हजारों श्रद्धालु",
+      attendeesHi: "हजारों भक्तगन",
       descEn1: "The annual mela is the crown jewel of our celebrations. On this auspicious day, the sacred belongings of Sri Khakhi Baba—his Khadau (wooden sandals), Chimta (iron tongs), and Kamandal (water pot)—are decorated with flowers and carried by the members of the Seva Sangh on their heads in a grand Shobha Yatra (procession) from Khakhi Bhavan to the temple on the hill.",
       descEn2: "The festival features non-stop bhajan, kirtan, standard rituals, and a massive Bhandara (community feast) where thousands of pilgrims are served free sanctified food (prasad).",
       descHi1: "वार्षिक मेला हमारे उत्सवों का गौरव है। इस पावन दिन पर, श्री खाखी बाबा की पवित्र वस्तुएं—उनकी खड़ाऊँ (लकड़ी की चप्पल), चिमटा और कमंडल—को फूलों से सजाया जाता है और सेवा संघ के सदस्यों द्वारा अपने सिर पर रखकर खाखी भवन से पहाड़ी पर स्थित मंदिर तक एक भव्य शोभा यात्रा (जुलूस) के रूप में ले जाया जाता है।",
