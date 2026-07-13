@@ -19,7 +19,7 @@ const booksData = [
     id: "volume_1",
     title: { en: "Sri Khakhi Baba Bhajan Sangrah - Volume 1", hi: "श्री खाखी बाबा भजन संग्रह - भाग १" },
     author: { en: "Sri Khakhi Baba Seva Sangh, Hyderabad", hi: "श्री खाखी बाबा सेवा संघ, हैदराबाद" },
-    year: "Vikram Samvat 2040",
+    year: "Vikram Samvat 2053",
     desc: {
       en: "The first volume of the sacred hymn collection, featuring traditional prayers, daily aartis, and foundational bhajans sung at Sri Khakhi Dham.",
       hi: "पावन भजन संग्रह का प्रथम भाग, जिसमें श्री खाखी धाम में गाए जाने वाले पारंपरिक भजन, नित्य आरती और प्रार्थनाओं का संग्रह है।"
