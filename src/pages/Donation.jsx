@@ -4,15 +4,19 @@ import { FaCopy, FaCheck, FaUniversity, FaQrcode, FaRegHeart, FaHospital, FaGrad
 function Donation() {
   const [copiedAccount, setCopiedAccount] = useState(false);
   const [copiedIfsc, setCopiedIfsc] = useState(false);
+  const [copiedUpi, setCopiedUpi] = useState(false);
 
   const handleCopy = (text, type) => {
     navigator.clipboard.writeText(text);
     if (type === "acc") {
       setCopiedAccount(true);
       setTimeout(() => setCopiedAccount(false), 2000);
-    } else {
+    } else if (type === "ifsc") {
       setCopiedIfsc(true);
       setTimeout(() => setCopiedIfsc(false), 2000);
+    } else if (type === "upi") {
+      setCopiedUpi(true);
+      setTimeout(() => setCopiedUpi(false), 2000);
     }
   };
 
@@ -89,14 +93,19 @@ function Donation() {
             <div className="qr-text">
               <h3><FaQrcode className="qr-header-icon" /> Scan & Donate via UPI</h3>
               <p>Scan the code using any UPI app (GPay, PhonePe, Paytm, BHIM) to make a secure and quick donation.</p>
-              <span className="upi-id"><strong>UPI ID:</strong> srikhakhibabasevasangh@tmb</span>
+              <span className="upi-id">
+                <strong>UPI ID:</strong> <span>srikakhi174003@tmb</span>
+                <button className="copy-btn" style={{ marginLeft: "10px" }} onClick={() => handleCopy("srikakhi174003@tmb", "upi")}>
+                  {copiedUpi ? <FaCheck className="copied-icon" /> : <FaCopy />} {copiedUpi ? "Copied" : "Copy"}
+                </button>
+              </span>
             </div>
             <div className="qr-box">
-              {/* Modern styled QR placeholder with icons */}
-              <div className="qr-placeholder">
-                <FaQrcode className="placeholder-qr-icon" />
-                <span>UPI QR Code</span>
-              </div>
+              <img 
+                src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=upi%3A%2F%2Fpay%3Fpa%3Dsrikakhi174003%40tmb%26pn%3DSRI%2520KHAKHI%2520BABA%2520SEVA%2520SANGH" 
+                alt="UPI QR Code" 
+                className="qr-image"
+              />
             </div>
           </div>
         </div>
