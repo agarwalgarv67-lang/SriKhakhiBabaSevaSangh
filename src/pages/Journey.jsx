@@ -18,6 +18,15 @@ function Journey() {
       descHi: "क्षेत्र के बच्चों को शिक्षा से जोड़ने के लिए ग्राम डाडा फतेहरा में श्री खाखी बाबा राजकीय प्राथमिक विद्यालय की आधारशिला रखी गई।"
     },
     {
+      year: "1949",
+      category: "development",
+      icon: <FaUniversity />,
+      titleEn: "Establishment of Sri Khakhi Baba Seva Sangh",
+      titleHi: "श्री खाखी बाबा सेवा संघ की स्थापना",
+      descEn: "Formed in Hyderabad with the sacred goal of temple preservation, serving Baba's legacy, and social upliftment.",
+      descHi: "बाबा की सेवा, खाखी धाम के संरक्षण तथा धार्मिक-सामाजिक उत्थान के पवित्र उद्देश्य से हैदराबाद में सेवा संघ की स्थापना की गई।"
+    },
+    {
       year: "1962",
       category: "welfare",
       icon: <FaSchool />,
@@ -25,15 +34,6 @@ function Journey() {
       titleHi: "उच्च प्राथमिक विद्यालय में क्रमोन्नयन",
       descEn: "Upgraded the school to the upper primary level to expand local educational access.",
       descHi: "स्थानीय बच्चों के लिए शिक्षा का विस्तार करते हुए विद्यालय को प्राथमिक से उच्च प्राथमिक स्तर पर क्रमोन्नत किया गया।"
-    },
-    {
-      year: "1983",
-      category: "development",
-      icon: <FaUniversity />,
-      titleEn: "Establishment of Sri Khakhi Baba Seva Sangh",
-      titleHi: "श्री खाखी बाबा सेवा संघ की स्थापना",
-      descEn: "Formed in Hyderabad (Regd. No. 136/97) with the sacred goal of temple preservation, serving Baba's legacy, and social upliftment.",
-      descHi: "बाबा की सेवा, खाखी धाम के संरक्षण तथा धार्मिक-सामाजिक उत्थान के पवित्र उद्देश्य से हैदराबाद में सेवा संघ की स्थापना (पंजीकरण संख्या 136/97) की गई।"
     },
     {
       year: "1986–1987",
@@ -61,6 +61,15 @@ function Journey() {
       titleHi: "भगवान शिव एवं हनुमान जी की स्थापना",
       descEn: "Formally installed the sacred idols of Lord Shiva and Lord Hanuman in the temple ashram premises, augmenting spiritual energy.",
       descHi: "आश्रम परिसर में भगवान शिव एवं भगवान हनुमान जी की विधिवत प्राण-प्रतिष्ठा की गई, जिससे मंदिर का आध्यात्मिक स्वरूप और समृद्ध हुआ।"
+    },
+    {
+      year: "1997",
+      category: "development",
+      icon: <FaUniversity />,
+      titleEn: "Official Registration of the Trust",
+      titleHi: "ट्रस्ट का औपचारिक पंजीकरण",
+      descEn: "Sri Khakhi Baba Seva Sangh was formally registered under Regd. No. 136/97 to institutionalize its social, educational, and welfare initiatives.",
+      descHi: "श्री खाखी बाबा सेवा संघ को पंजीकरण संख्या 136/97 के अंतर्गत औपचारिक रूप से पंजीकृत किया गया, ताकि सामाजिक, शैक्षणिक और कल्याणकारी गतिविधियों को संस्थागत रूप दिया जा सके।"
     },
     {
       year: "1998",
