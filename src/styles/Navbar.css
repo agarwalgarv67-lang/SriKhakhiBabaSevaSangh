@@ -67,6 +67,40 @@
   letter-spacing: 2px;
 }
 
+/* Nav Right Actions & Language Button */
+.nav-right-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #ffffff;
+  color: #e65100;
+  border: 1.5px solid #ffffff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 13.5px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  transition: all 0.25s ease;
+}
+
+.nav-lang-btn:hover {
+  background: #fff8e1;
+  color: #b71c1c;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+.nav-lang-btn .globe-icon {
+  font-size: 15px;
+}
+
 /* Menu Toggle Button (Mobile Hamburger) */
 .menu-toggle {
   display: none;

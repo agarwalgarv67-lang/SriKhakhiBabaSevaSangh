@@ -8,12 +8,12 @@ function LangToggle() {
     <button
       className="lang-float-btn"
       onClick={toggleLang}
-      title={lang === "en" ? "Switch to Hindi" : "Switch to English"}
+      title={lang === "hi" ? "Switch to English" : "हिंदी में बदलें"}
       aria-label="Toggle Language"
     >
       <FaLanguage className="lang-float-icon" />
       <span className="lang-float-label">
-        {lang === "en" ? "हिन्दी" : "English"}
+        {lang === "hi" ? "English" : "हिन्दी"}
       </span>
     </button>
   );
