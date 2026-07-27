@@ -4,7 +4,7 @@ import temple from "../assets/images/temple3.jpeg";
 import { FaLanguage, FaCalendarAlt, FaSchool, FaBuilding, FaTree, FaClinicMedical, FaHandsHelping, FaUniversity, FaArrowRight } from "react-icons/fa";
 
 function Journey() {
-  const { lang, setLang } = useLang();
+  const { lang } = useLang();
   const [filter, setFilter] = useState("all"); // 'all', 'development', 'welfare'
 
   const milestones = [
@@ -161,21 +161,6 @@ function Journey() {
             onClick={() => setFilter("welfare")}
           >
             {lang === "en" ? "Education & Welfare" : "शिक्षा एवं समाज कल्याण"}
-          </button>
-        </div>
-
-        <div className="lang-toggle-container">
-          <button 
-            className={`lang-btn ${lang === "en" ? "active" : ""}`} 
-            onClick={() => setLang("en")}
-          >
-            <FaLanguage /> English
-          </button>
-          <button 
-            className={`lang-btn ${lang === "hi" ? "active" : ""}`} 
-            onClick={() => setLang("hi")}
-          >
-            <FaLanguage /> हिन्दी
           </button>
         </div>
       </div>

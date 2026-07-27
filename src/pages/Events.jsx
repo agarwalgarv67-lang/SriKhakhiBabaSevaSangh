@@ -4,7 +4,7 @@ import { FaLanguage, FaCalendarAlt, FaMapMarkerAlt, FaUsers, FaMusic, FaDownload
 import calendarImg from "../assets/images/calendar_2026_2027.jpg";
 
 function Events() {
-  const { lang, setLang } = useLang();
+  const { lang } = useLang();
 
   const eventsList = [
     {
@@ -92,24 +92,6 @@ function Events() {
         <div className="events-hero-overlay">
           <h1>{lang === "en" ? "Divine Events & Celebrations" : "धार्मिक उत्सव एवं आयोजन"}</h1>
           <p>{lang === "en" ? "Immerse yourself in devotion, music, and community service" : "भक्ति, संगीत और जनकल्याणकारी कार्यों में सहभागी बनें"}</p>
-        </div>
-      </div>
-
-      {/* Control Panel (Language Toggle) */}
-      <div className="events-controls" style={{ maxWidth: "1100px", margin: "30px auto 10px", padding: "0 20px", display: "flex" }}>
-        <div className="lang-toggle-container" style={{ marginLeft: "auto" }}>
-          <button 
-            className={`lang-btn ${lang === "en" ? "active" : ""}`} 
-            onClick={() => setLang("en")}
-          >
-            <FaLanguage /> English
-          </button>
-          <button 
-            className={`lang-btn ${lang === "hi" ? "active" : ""}`} 
-            onClick={() => setLang("hi")}
-          >
-            <FaLanguage /> हिन्दी
-          </button>
         </div>
       </div>
 

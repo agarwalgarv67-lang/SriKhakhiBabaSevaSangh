@@ -3,7 +3,7 @@ import { useLang } from "../context/LanguageContext";
 import { FaLanguage, FaPhoneAlt, FaEnvelope, FaInstagram, FaMapMarkerAlt, FaUserTie, FaPaperPlane, FaCheck } from "react-icons/fa";
 
 function Contact() {
-  const { lang, setLang } = useLang();
+  const { lang } = useLang();
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [activeMap, setActiveMap] = useState("dham");
   const [formData, setFormData] = useState({
@@ -65,24 +65,6 @@ function Contact() {
         <div className="contact-hero-overlay">
           <h1>{lang === "en" ? "Contact Us" : "हमसे संपर्क करें"}</h1>
           <p>{lang === "en" ? "Reach out to the Seva Sangh for prayers, queries, or support" : "प्रार्थना, जिज्ञासा या सहयोग के लिए सेवा संघ से संपर्क करें"}</p>
-        </div>
-      </div>
-
-      {/* Control panel for Language Switcher */}
-      <div className="contact-controls">
-        <div className="lang-toggle-container" style={{ marginLeft: "auto" }}>
-          <button 
-            className={`lang-btn ${lang === "en" ? "active" : ""}`} 
-            onClick={() => setLang("en")}
-          >
-            <FaLanguage /> English
-          </button>
-          <button 
-            className={`lang-btn ${lang === "hi" ? "active" : ""}`} 
-            onClick={() => setLang("hi")}
-          >
-            <FaLanguage /> हिन्दी
-          </button>
         </div>
       </div>
 

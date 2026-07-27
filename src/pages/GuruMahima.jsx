@@ -5,7 +5,7 @@ import jyotImg from "../assets/images/jyot.jpeg";
 import bhajanImg from "../assets/images/bhajan.jpeg";
 
 function GuruMahima() {
-  const { lang, setLang } = useLang();
+  const { lang } = useLang();
   const [tab, setTab] = useState("gurugita"); // 'gurugita', 'babastuti', 'panchatattva', 'aarti'
   const [aartiTab, setAartiTab] = useState("aarti1"); // 'aarti1', 'aarti2'
 
@@ -346,21 +346,6 @@ function GuruMahima() {
               onClick={() => setTab("aarti")}
             >
               <FaFire /> {lang === "en" ? "Aarti" : "आरती"}
-            </button>
-          </div>
-
-          <div className="lang-toggle-container">
-            <button
-              className={`lang-btn ${lang === "en" ? "active" : ""}`}
-              onClick={() => setLang("en")}
-            >
-              <FaLanguage /> English
-            </button>
-            <button
-              className={`lang-btn ${lang === "hi" ? "active" : ""}`}
-              onClick={() => setLang("hi")}
-            >
-              <FaLanguage /> हिन्दी
             </button>
           </div>
         </div>

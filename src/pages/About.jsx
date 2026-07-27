@@ -73,7 +73,7 @@ const booksData = [
 ];
 
 function About() {
-  const { lang, setLang } = useLang();
+  const { lang } = useLang();
   const [tab, setTab] = useState("saint"); // 'saint', 'dham', 'books'
 
   return (
@@ -86,7 +86,7 @@ function About() {
         </div>
       </div>
 
-      {/* Control Panel (Language & Tab Toggles) */}
+      {/* Control Panel (Tab Toggles) */}
       <div className="about-controls">
         <div className="tab-buttons">
           <button 
@@ -106,21 +106,6 @@ function About() {
             onClick={() => setTab("books")}
           >
             <FaBook /> {lang === "en" ? "Published Books" : "प्रकाशित पुस्तकें"}
-          </button>
-        </div>
-
-        <div className="lang-toggle-container">
-          <button 
-            className={`lang-btn ${lang === "en" ? "active" : ""}`} 
-            onClick={() => setLang("en")}
-          >
-            <FaLanguage /> English
-          </button>
-          <button 
-            className={`lang-btn ${lang === "hi" ? "active" : ""}`} 
-            onClick={() => setLang("hi")}
-          >
-            <FaLanguage /> हिन्दी
           </button>
         </div>
       </div>
