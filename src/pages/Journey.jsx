@@ -137,7 +137,7 @@ function Journey() {
       <div className="journey-hero-banner" style={{ backgroundImage: `url(${temple})` }}>
         <div className="journey-hero-overlay">
           <h1>{lang === "en" ? "Our Sacred Journey" : "हमारी सेवा यात्रा"}</h1>
-          <p>{lang === "en" ? "Over 4 Decades of Devotion, Education, and Service" : "चार दशकों से निरंतर भक्ति, शिक्षा और सामाजिक विकास"}</p>
+          <p>{lang === "en" ? "Over Decades of Devotion, Education, and Service" : "दशकों से निरंतर भक्ति, शिक्षा और सामाजिक विकास"}</p>
         </div>
       </div>
 
