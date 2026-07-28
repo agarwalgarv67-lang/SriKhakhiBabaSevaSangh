@@ -5,6 +5,7 @@ import temple from "../assets/images/temple.jpeg";
 import kiljiKhadau from "../assets/images/kilji-baba-khadau.jpg";
 import sukhramdasImg from "../assets/images/sukhramdas-ji.jpg";
 import khakhiBabaPoster from "../assets/images/khakhi-baba-poster.jpg";
+import motilalImg from "../assets/images/motilal-singhania.jpg";
 import { FaLanguage, FaHistory, FaMapMarkedAlt, FaBook } from "react-icons/fa";
 
 import coverVolume1 from "../assets/images/cover_volume_1.jpg";
@@ -282,6 +283,44 @@ function About() {
                       </p>
                     </div>
                   </div>
+
+                  {/* Arrow 3 */}
+                  <div className="lineage-arrow">
+                    <div className="arrow-line"></div>
+                    <div className="arrow-head">⬇</div>
+                  </div>
+
+                  {/* Person 4 - Bhaktratna Shri Motilal Singhania Ji */}
+                  <div className="lineage-card lineage-card-trustee">
+                    <div className="lineage-img-wrapper rect-poster">
+                      <img src={motilalImg} alt="Bhaktratna Shri Motilal Singhania Ji" className="lineage-img-rect" />
+                    </div>
+                    <div className="lineage-card-body">
+                      <h3 className="lineage-name">Bhaktratna Shri Motilal Singhania Ji</h3>
+                      <p className="lineage-role">Founder &amp; First Trustee, Sri Khakhi Baba Seva Sangh</p>
+                      <p className="lineage-desc">
+                        Bhaktratna Shri Motilal Singhania Ji was an ardent devotee of Sri Khakhi Baba Maharaj, a deeply reverent soul, and the Founder &amp; First Trustee of Sri Khakhi Baba Seva Sangh. His entire life was dedicated to devotion towards Baba, religious service, social welfare, and the upliftment of humanity. He was among those rare householder devotees who, while fulfilling worldly responsibilities, considered service to Baba as his highest duty.
+                      </p>
+                      <p className="lineage-desc">
+                        From early childhood, he possessed a deeply religious, generous, and benevolent nature. Despite achieving prestige in trade and industry, he prioritized righteousness, service, and spiritual welfare over wealth and prosperity. Sri Khakhi Baba Maharaj was not only his revered deity but also his Sadguru and life guide. His unwavering devotion to Baba stood as living proof in this modern era of the divine Guru-disciple bond described in sacred scriptures. Pleased by his selfless faith and complete surrender, Sri Khakhi Baba Maharaj blessed him with his divine presence and grace from time to time. His life inspired countless devotees to walk the path of devotion and service.
+                      </p>
+                      <p className="lineage-desc">
+                        With the vision of channeling service to Baba into organized social welfare, he established Sri Khakhi Baba Seva Sangh. Under his visionary leadership, the Seva Sangh united devotees, establishing a strong tradition of seva, satsang, and righteous works. Through his tireless efforts, countless devotees from across the nation connected with the divine shelter of Sri Khakhi Baba Maharaj and were inspired by the spiritual tradition of Sri Khakhi Dham.
+                      </p>
+                      <p className="lineage-desc">
+                        Under his guidance, the development of Sri Khakhi Dham, Dada Fatehpura gained a new direction. To support education, rural development, and pilgrim facilities, a school, a veterinary hospital building, and a grand guest house (Dharamshala) were constructed. He strongly believed that true devotion to Baba finds its highest expression in social service and public welfare.
+                      </p>
+                      <p className="lineage-desc">
+                        Until his final days, he remained constantly focused on the holistic development of Sri Khakhi Dham. It was his earnest desire to realize key projects such as a Girls' Degree College, Sundarvan, and a Gaushala (cow shelter). Although these vows could not be fully completed during his lifetime, his visionary ideals and spirit of service continue to serve as the guiding foundation for Sri Khakhi Baba Seva Sangh. On May 16, 2006, he eternally merged into the divine feet of Baba.
+                      </p>
+                      <p className="lineage-desc">
+                        The life of Shri Motilal Singhania Ji is an incomparable example of unwavering devotion, service, sacrifice, and organizational leadership. His founding of Sri Khakhi Baba Seva Sangh, development of Sri Khakhi Dham, and contribution in uniting countless devotees will forever be remembered. His legacy of service, dedication, and steadfast faith remains vibrant in every activity of Sri Khakhi Baba Seva Sangh, inspiring generations to come.
+                      </p>
+                      <p className="lineage-footnote">
+                        *The above account is based on traditional beliefs of the Khaki Panth and descriptions recorded in 'Bhaktamal'.*
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -451,6 +490,44 @@ function About() {
                       </p>
                       <p className="lineage-desc">
                         उनकी तपोभूमि आज भी श्रद्धालुओं के लिए अटूट आस्था, आध्यात्मिक चेतना एवं गुरु-कृपा का पावन केंद्र है तथा उनकी दिव्य शिक्षाएँ और आदर्श खाकी पंथ की अखण्ड परंपरा को निरंतर आलोकित करते हुए आने वाली पीढ़ियों का मार्गदर्शन कर रहे हैं।
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* तीर 3 */}
+                  <div className="lineage-arrow">
+                    <div className="arrow-line"></div>
+                    <div className="arrow-head">⬇</div>
+                  </div>
+
+                  {/* व्यक्ति 4 — भक्तरत्न श्री मोतीलाल सिंघानिया जी */}
+                  <div className="lineage-card lineage-card-trustee">
+                    <div className="lineage-img-wrapper rect-poster">
+                      <img src={motilalImg} alt="भक्तरत्न श्री मोतीलाल सिंघानिया जी" className="lineage-img-rect" />
+                    </div>
+                    <div className="lineage-card-body">
+                      <h3 className="lineage-name">भक्तरत्न श्री मोतीलाल सिंघानिया जी</h3>
+                      <p className="lineage-role">संस्थापक एवं प्रथम ट्रस्टी, श्री खाखी बाबा सेवा संघ</p>
+                      <p className="lineage-desc">
+                        भक्तरत्न श्री मोतीलाल सिंघानिया जी श्री खाखी बाबा महाराज के परम भक्त, अनन्य श्रद्धालु तथा श्री खाखी बाबा सेवा संघ के संस्थापक एवं प्रथम ट्रस्टी थे। उनका संपूर्ण जीवन बाबा के प्रति भक्ति, धर्म-सेवा, समाज-सेवा एवं लोककल्याण को समर्पित रहा। वे उन विरले गृहस्थ भक्तों में थे जिन्होंने सांसारिक दायित्वों का निर्वहन करते हुए भी बाबा की सेवा को अपना सर्वोच्च धर्म माना।
+                      </p>
+                      <p className="lineage-desc">
+                        बाल्यकाल से ही उनका स्वभाव धार्मिक, उदार एवं परोपकारी था। उद्योग एवं व्यापार के क्षेत्र में प्रतिष्ठित होने के बावजूद उन्होंने धन और वैभव की अपेक्षा धर्म, सेवा एवं परमार्थ को अपने जीवन का उद्देश्य बनाया। श्री खाखी बाबा महाराज उनके लिए केवल आराध्य ही नहीं, अपितु सद्गुरु एवं जीवन के पथप्रदर्शक थे। बाबा के प्रति उनकी अटूट भक्ति पुराणों में वर्णित गुरु-भक्त के दिव्य संबंध का इस कलिकाल में साक्षात् प्रमाण थी। उनकी निष्काम श्रद्धा एवं पूर्ण समर्पण से प्रसन्न होकर श्री खाखी बाबा महाराज समय-समय पर उनके मध्य पधारकर अपनी दिव्य कृपा से उन्हें कृतार्थ करते थे। उनके जीवन ने असंख्य श्रद्धालुओं को बाबा की भक्ति एवं सेवा के मार्ग पर अग्रसर होने की प्रेरणा दी।
+                      </p>
+                      <p className="lineage-desc">
+                        बाबा की सेवा को समाज-सेवा का स्वरूप प्रदान करने के उद्देश्य से उन्होंने श्री खाखी बाबा सेवा संघ की स्थापना की। उनके दूरदर्शी नेतृत्व में सेवा संघ ने श्रद्धालुओं को एक सूत्र में जोड़ते हुए बाबा की सेवा, सत्संग एवं धर्मकार्य की सुदृढ़ परंपरा स्थापित की। उनके अथक प्रयासों से देश के विभिन्न भागों से असंख्य श्रद्धालु श्री खाखी बाबा महाराज की शरण से जुड़े तथा श्री खाखी धाम की सेवा एवं आध्यात्मिक परंपरा से प्रेरित हुए।
+                      </p>
+                      <p className="lineage-desc">
+                        उनके मार्गदर्शन में श्री खाखी धाम, डाडा फतेहपुरा के विकास को नई दिशा मिली। शिक्षा, ग्रामीण विकास एवं श्रद्धालुओं की सुविधा के लिए विद्यालय, पशु चिकित्सालय भवन तथा विशाल अतिथि गृह का निर्माण कराया गया। उनका दृढ़ विश्वास था कि सच्ची बाबा की भक्ति का सर्वोत्तम स्वरूप समाज-सेवा और लोककल्याण है।
+                      </p>
+                      <p className="lineage-desc">
+                        जीवन के अंतिम समय तक वे श्री खाखी धाम के सर्वांगीण विकास के लिए निरंतर चिंतनशील रहे। उनकी हार्दिक अभिलाषा थी कि कन्या महाविद्यालय, सुंदरवन एवं गौशाला जैसी महत्वपूर्ण योजनाएँ साकार हों। यद्यपि ये संकल्प उनके जीवनकाल में पूर्ण नहीं हो सके, तथापि उनकी दूरदर्शी सोच एवं सेवा-दृष्टि आज भी श्री खाखी बाबा सेवा संघ के लिए प्रेरणा का आधार बनी हुई है। दिनांक 16 मई 2006 को वे बाबा के श्रीचरणों में शाश्वत रूप से लीन हो गए।
+                      </p>
+                      <p className="lineage-desc">
+                        श्री मोतीलाल सिंघानिया जी का जीवन बाबा के प्रति अटूट भक्ति, सेवा, त्याग एवं संगठन का अनुपम उदाहरण है। श्री खाखी बाबा सेवा संघ की स्थापना, श्री खाखी धाम के विकास तथा असंख्य श्रद्धालुओं को बाबा की भक्ति के सूत्र में जोड़ने का उनका योगदान सदैव स्मरणीय रहेगा। उनकी सेवा, समर्पण एवं बाबा के प्रति अटूट निष्ठा की विरासत आज भी श्री खाखी बाबा सेवा संघ के प्रत्येक सेवा-कार्य में जीवंत है तथा आने वाली पीढ़ियों के लिए प्रेरणास्रोत बनी हुई है।
+                      </p>
+                      <p className="lineage-footnote">
+                        *उपर्युक्त विवरण खाकी पंथ की परंपरागत मान्यताओं एवं 'भक्तमाल' में वर्णित विवरणों पर आधारित है।*
                       </p>
                     </div>
                   </div>

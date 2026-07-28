@@ -2040,6 +2040,26 @@ body{
   margin-bottom: 0;
 }
 
+.lineage-card-trustee {
+  border-color: #ffcc80;
+  background: #fffcf8;
+}
+
+.lineage-card-trustee:hover {
+  border-color: #f57c00;
+  box-shadow: 0 6px 20px rgba(245, 124, 0, 0.08);
+}
+
+.lineage-footnote {
+  font-size: 14px;
+  color: #795548;
+  font-style: italic;
+  margin-top: 16px;
+  margin-bottom: 0;
+  padding-top: 10px;
+  border-top: 1px dashed #ffe0b2;
+}
+
 /* Arrow between cards */
 .lineage-arrow {
   display: flex;
