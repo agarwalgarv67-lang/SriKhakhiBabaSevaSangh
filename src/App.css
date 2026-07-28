@@ -2050,6 +2050,11 @@ body{
   box-shadow: 0 6px 20px rgba(245, 124, 0, 0.08);
 }
 
+.lineage-card-trustee .lineage-img-wrapper.rect-poster {
+  border: 3.5px solid #f57c00;
+  box-shadow: 0 4px 15px rgba(245, 124, 0, 0.2);
+}
+
 .lineage-footnote {
   font-size: 14px;
   color: #795548;
