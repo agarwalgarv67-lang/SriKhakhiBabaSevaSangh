@@ -9,6 +9,15 @@ function Journey() {
 
   const milestones = [
     {
+      year: "1940",
+      category: "development",
+      icon: <FaBuilding />,
+      titleEn: "Renovation of Mandi & Chabutra",
+      titleHi: "प्राचीन मंडी एवं चबूतरे का जीर्णोद्धार",
+      descEn: "Renovated the ancient Mandi and seating platform (Chabutra) on the hilltop, arranging proper facilities for devotees' prayers and rest.",
+      descHi: "पहाड़ी पर स्थित प्राचीन मंडी एवं चबूतरे का जीर्णोद्धार कराया गया, जिससे श्रद्धालुओं के लिए सुव्यवस्थित पूजा एवं विश्राम की सुविधा उपलब्ध हो सकी।"
+    },
+    {
       year: "1946",
       category: "welfare",
       icon: <FaSchool />,
@@ -36,16 +45,7 @@ function Journey() {
       descHi: "स्थानीय बच्चों के लिए शिक्षा का विस्तार करते हुए विद्यालय को प्राथमिक से उच्च प्राथमिक स्तर पर क्रमोन्नत किया गया।"
     },
     {
-      year: "1986–1987",
-      category: "development",
-      icon: <FaBuilding />,
-      titleEn: "Renovation of Mandi & Chabutra",
-      titleHi: "प्राचीन मंडी एवं चबूतरे का जीर्णोद्धार",
-      descEn: "Renovated the ancient Mandi and seating platform (Chabutra) on the hilltop, arranging proper facilities for devotees' prayers and rest.",
-      descHi: "पहाड़ी पर स्थित प्राचीन मंडी एवं चबूतरे का जीर्णोद्धार कराया गया, जिससे श्रद्धालुओं के लिए सुव्यवस्थित पूजा एवं विश्राम की सुविधा उपलब्ध हो सकी।"
-    },
-    {
-      year: "1990",
+      year: "1969–1970",
       category: "development",
       icon: <FaBuilding />,
       titleEn: "Tibara Well & Stone Stairway",
@@ -54,7 +54,16 @@ function Journey() {
       descHi: "तिबारा कुएं एवं उससे जुड़ी सीढ़ियों का निर्माण कराया गया, जिससे जल आपूर्ति और आवागमन दोनों ही सुलभ हो सके।"
     },
     {
-      year: "1994–1995",
+      year: "1983",
+      category: "development",
+      icon: <FaBuilding />,
+      titleEn: "Saint Residence Developed",
+      titleHi: "संत निवास भवन की व्यवस्था",
+      descEn: "Constructed and arranged accommodation facilities for visiting saints and monks, supporting spiritual discourses and hospitality.",
+      descHi: "आगमन करने वाले संतों की सेवा और निवास हेतु संत भवन की व्यवस्था की गई, जो धार्मिक-आध्यात्मिक साधना को निरंतरता प्रदान करता है।"
+    },
+    {
+      year: "1984–1985",
       category: "development",
       icon: <FaHandsHelping />,
       titleEn: "Installation of Shiva & Hanuman Idols",
@@ -82,12 +91,12 @@ function Journey() {
     },
     {
       year: "2002",
-      category: "development",
-      icon: <FaBuilding />,
-      titleEn: "Saint Residence Developed",
-      titleHi: "संत निवास भवन की व्यवस्था",
-      descEn: "Constructed and arranged accommodation facilities for visiting saints and monks, supporting spiritual discourses and hospitality.",
-      descHi: "आगमन करने वाले संतों की सेवा और निवास हेतु संत भवन की व्यवस्था की गई, जो धार्मिक-आध्यात्मिक साधना को निरंतरता प्रदान करता है।"
+      category: "welfare",
+      icon: <FaClinicMedical />,
+      titleEn: "Veterinary Animal Hospital",
+      titleHi: "पशु चिकित्सालय की स्थापना एवं संचालन",
+      descEn: "Established a dedicated veterinary facility in Dada Fatehpura to serve cattle and local livestock, assisting farming families.",
+      descHi: "ग्रामवासियों और उनके पशुधन की सेवा के उद्देश्य से गांव में पशु चिकित्सालय की स्थापना कराई गई, जिससे ग्रामीणों को त्वरित पशु उपचार की सुविधा मिल रही है।"
     },
     {
       year: "2005",
@@ -115,15 +124,6 @@ function Journey() {
       titleHi: "उच्च माध्यमिक स्तर पर क्रमोन्नयन",
       descEn: "Upgraded the school to a Senior Secondary School (12th grade), providing comprehensive schooling for students up to board exams.",
       descHi: "विद्यालय को उच्च माध्यमिक स्तर (12वीं) पर क्रमोन्नत कराया गया, जिससे ग्रामीण बच्चों को बोर्ड परीक्षाओं की तैयारी के लिए शहर न जाना पड़े।"
-    },
-    {
-      year: "Ongoing",
-      category: "welfare",
-      icon: <FaClinicMedical />,
-      titleEn: "Veterinary Animal Hospital",
-      titleHi: "पशु चिकित्सालय की स्थापना एवं संचालन",
-      descEn: "Established a dedicated veterinary facility in Dada Fatehpura to serve cattle and local livestock, assisting farming families.",
-      descHi: "ग्रामवासियों और उनके पशुधन की सेवा के उद्देश्य से गांव में पशु चिकित्सालय की स्थापना कराई गई, जिससे ग्रामीणों को त्वरित पशु उपचार की सुविधा मिल रही है।"
     }
   ];
 
