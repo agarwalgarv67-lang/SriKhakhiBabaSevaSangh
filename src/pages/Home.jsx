@@ -1,5 +1,7 @@
 import Hero from "../components/Hero";
 import About from "../components/About";
+import GuruMahima from "../components/GuruMahima";
+import Journey from "../components/Journey";
 import Gallery from "../components/Gallery";
 import Events from "../components/Events";
 import Calendar from "../components/Calendar";
@@ -12,6 +14,8 @@ function Home() {
     <>
       <Hero />
       <About />
+      <GuruMahima />
+      <Journey />
       <Gallery />
       <Events />
       <Calendar />
