@@ -229,6 +229,9 @@ function About() {
                       <p className="lineage-desc">
                         Guru Kilji Baba Maharaj strengthened this tradition through intense austerities, long samadhi, and a life of simplicity. His matted hair (jata) was so long that four disciples were needed to carry it while walking — a testament to his extraordinary life of penance. The saints of this panth keep jata, apply bhasma, and like a flowing river, never stay permanently at one place.
                       </p>
+                      <p className="lineage-footnote">
+                        *The above account is based on traditional beliefs of the Khaki Panth and descriptions recorded in 'Bhaktamal'.*
+                      </p>
                     </div>
                   </div>
 
@@ -315,9 +318,6 @@ function About() {
                       </p>
                       <p className="lineage-desc">
                         The life of Shri Motilal Singhania Ji is an incomparable example of unwavering devotion, service, sacrifice, and organizational leadership. His founding of Sri Khakhi Baba Seva Sangh, development of Sri Khakhi Dham, and contribution in uniting countless devotees will forever be remembered. His legacy of service, dedication, and steadfast faith remains vibrant in every activity of Sri Khakhi Baba Seva Sangh, inspiring generations to come.
-                      </p>
-                      <p className="lineage-footnote">
-                        *The above account is based on traditional beliefs of the Khaki Panth and descriptions recorded in 'Bhaktamal'.*
                       </p>
                     </div>
                   </div>
@@ -439,6 +439,9 @@ function About() {
                       <p className="lineage-desc">
                         इस परंपरा के संत शैव साधुओं की भाँति जटाधारी होते हैं, शरीर पर पवित्र भस्म धारण करते हैं तथा यह मानते हैं कि जिस प्रकार नदी का प्रवाह निरंतर गतिमान रहता है, उसी प्रकार एक साधु का जीवन भी सदैव भ्रमणशील होना चाहिए; इसलिए इस परंपरा के संत किसी एक स्थान पर स्थायी रूप से निवास नहीं करते।
                       </p>
+                      <p className="lineage-footnote">
+                        *उपर्युक्त विवरण खाकी पंथ की परंपरागत मान्यताओं एवं 'भक्तमाल' में वर्णित विवरणों पर आधारित है।*
+                      </p>
                     </div>
                   </div>
 
@@ -525,9 +528,6 @@ function About() {
                       </p>
                       <p className="lineage-desc">
                         श्री मोतीलाल सिंघानिया जी का जीवन बाबा के प्रति अटूट भक्ति, सेवा, त्याग एवं संगठन का अनुपम उदाहरण है। श्री खाखी बाबा सेवा संघ की स्थापना, श्री खाखी धाम के विकास तथा असंख्य श्रद्धालुओं को बाबा की भक्ति के सूत्र में जोड़ने का उनका योगदान सदैव स्मरणीय रहेगा। उनकी सेवा, समर्पण एवं बाबा के प्रति अटूट निष्ठा की विरासत आज भी श्री खाखी बाबा सेवा संघ के प्रत्येक सेवा-कार्य में जीवंत है तथा आने वाली पीढ़ियों के लिए प्रेरणास्रोत बनी हुई है।
-                      </p>
-                      <p className="lineage-footnote">
-                        *उपर्युक्त विवरण खाकी पंथ की परंपरागत मान्यताओं एवं 'भक्तमाल' में वर्णित विवरणों पर आधारित है।*
                       </p>
                     </div>
                   </div>
