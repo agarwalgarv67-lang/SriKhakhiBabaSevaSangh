@@ -48,10 +48,10 @@ function Journey() {
       year: "1969–1970",
       category: "development",
       icon: <FaBuilding />,
-      titleEn: "Tibara Well & Stone Stairway",
-      titleHi: "तिबारा कुआं एवं सीढ़ियों का निर्माण",
-      descEn: "Constructed the historic Tibara well and adjoining stairways, securing water supply and making hilltop access convenient.",
-      descHi: "तिबारा कुएं एवं उससे जुड़ी सीढ़ियों का निर्माण कराया गया, जिससे जल आपूर्ति और आवागमन दोनों ही सुलभ हो सके।"
+      titleEn: "Tibara & Stone Stairway",
+      titleHi: "तिबारा एवं सीढ़ियों का निर्माण",
+      descEn: "Constructed the historic Tibara and adjoining stairways, making hilltop access convenient.",
+      descHi: "तिबारा एवं उससे जुड़ी सीढ़ियों का निर्माण कराया गया, जिससे आवागमन सुलभ हो सके।"
     },
     {
       year: "1983",

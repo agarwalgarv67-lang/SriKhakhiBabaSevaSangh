@@ -14,10 +14,10 @@ const heritage = [
   },
 
   {
-    year: "1990",
-    title: "Construction of Tibara Well & Stairway",
+    year: "1969-1970",
+    title: "Construction of Tibara & Stairway",
     description:
-      "A well (Tibara) and stone stairway were constructed, ensuring convenient access to the temple and reliable water facilities for pilgrims."
+      "Tibara and stone stairway were constructed, ensuring convenient access to the temple for pilgrims."
   },
 
   {
