@@ -1,9 +1,28 @@
 import { useLang } from "../context/LanguageContext";
-import { FaCalendarAlt, FaMapMarkerAlt, FaUsers, FaMusic, FaInfoCircle, FaPhoneAlt } from "react-icons/fa";
+import { FaCalendarAlt, FaMapMarkerAlt, FaUsers, FaMusic, FaInfoCircle, FaPhoneAlt, FaYoutube, FaPlay } from "react-icons/fa";
 import calendarImg from "../assets/images/calendar_2026_2027.jpg";
 
 function Events() {
   const { lang } = useLang();
+
+  const liveStreams = [
+    {
+      id: "G3QsKH2bmcM",
+      url: "https://www.youtube.com/live/G3QsKH2bmcM?si=1anVE2gSd3pw43Nk",
+      titleEn: "Grand Monthly Bhajan Sandhya - Live Stream 1",
+      titleHi: "भव्य मासिक भजन संध्या - सीधा प्रसारण १",
+      dateEn: "Shukla Paksha Dwadashi Live Stream",
+      dateHi: "शुक्ल पक्ष द्वादशी लाइव प्रसारण"
+    },
+    {
+      id: "At12BeVk8ng",
+      url: "https://www.youtube.com/live/At12BeVk8ng?si=QERFvGzXJM9cwXsT",
+      titleEn: "Grand Monthly Bhajan Sandhya - Live Stream 2",
+      titleHi: "भव्य मासिक भजन संध्या - सीधा प्रसारण २",
+      dateEn: "Shukla Paksha Dwadashi Live Stream",
+      dateHi: "शुक्ल पक्ष द्वादशी लाइव प्रसारण"
+    }
+  ];
 
   const eventsList = [
     {
@@ -29,20 +48,21 @@ function Events() {
       categoryEn: "Monthly Event",
       categoryHi: "मासिक आयोजन",
       badgeClass: "monthly",
-      titleEn: "Grand Monthly Jagran",
-      titleHi: "भव्य मासिक जागरण",
-      taglineEn: "Devotional night vigil and music",
-      taglineHi: "भक्तिमयी रात्रि जागरण और संगीत",
+      isLiveStreamEvent: true,
+      titleEn: "Grand Monthly Jagran & YouTube Live Stream",
+      titleHi: "भव्य मासिक जागरण एवं यूट्यूब लाइव प्रसारण",
+      taglineEn: "Devotional night vigil, music, and online live broadcast",
+      taglineHi: "भक्तिमयी रात्रि जागरण, संगीत एवं ऑनलाइन लाइव प्रसारण",
       dateEn: "Shukla Paksha Dwadashi (Every Month)",
       dateHi: "शुक्ल पक्ष द्वादशी (प्रतिमाह)",
       venueEn: "Agarwal Bhawan, Siddiamber Bazar, Hyderabad, Telangana – 500012, India",
       venueHi: "अग्रवाल भवन, सिद्दीम्बर बाज़ार, हैदराबाद, तेलंगाना – 500012, भारत।",
-      attendeesEn: "Bhajans, Aaradhana, and Prasadam distribution",
-      attendeesHi: "मधुर भजन, महाआरती एवं महाप्रसाद वितरण",
+      attendeesEn: "Bhajans, Aaradhana, Prasadam distribution & Live Streaming",
+      attendeesHi: "मधुर भजन, महाआरती, महाप्रसाद एवं सीधा लाइव प्रसारण",
       descEn1: "Every month, the Hyderabad chapter of the Seva Sangh hosts a grand night-long devotional singing session (Jagran) on the auspicious twelfth day of the bright lunar fortnight.",
-      descEn2: "Renowned bhajan singers lead the congregation in praising Sri Khakhi Baba and Lord Shiva. Devotees gather in large numbers to experience the deep spiritual energy, and a special community dinner (prasadam) is served at the end.",
+      descEn2: "Renowned bhajan singers lead the congregation in praising Sri Khakhi Baba and Lord Shiva. Devotees from across the globe can join the live broadcast directly through our YouTube streams.",
       descHi1: "हर महीने, सेवा संघ का हैदराबाद अध्याय शुक्ल पक्ष की द्वादशी तिथि को रात भर चलने वाले भव्य भजन-कीर्तन (जागरण) का आयोजन करता है।",
-      descHi2: "प्रसिद्ध भजन गायक श्री खाखी बाबा और भगवान शिव की महिमा का गुणगान करते हैं। बड़ी संख्या में श्रद्धालु इस दिव्य आध्यात्मिक ऊर्जा का अनुभव करने के लिए एकत्रित होते हैं, और रात्रि जागरण के अंत में विशेष महाप्रसाद (भंडारा) का आयोजन किया जाता है।"
+      descHi2: "प्रसिद्ध भजन गायक श्री खाखी बाबा और भगवान शिव की महिमा का गुणगान करते हैं। देश-विदेश के श्रद्धालु हमारे यूट्यूब लाइव प्रसारण के माध्यम से सीधे इस आध्यात्मिक आयोजन से जुड़ सकते हैं।"
     },
     {
       categoryEn: "Weekly Service",
@@ -99,8 +119,8 @@ function Events() {
         <h2>{lang === "en" ? "Our Spiritual Celebrations" : "हमारे आध्यात्मिक महोत्सव"}</h2>
         <p>
           {lang === "en" 
-            ? "Sri Khakhi Baba Seva Sangh organizes regular religious ceremonies, monthly jagrans, and the grand annual mela to keep the sacred teachings and spirit of Sri Khakhi Baba alive. Devotees join these events to seek blessings and experience divine peace."
-            : "श्री खाखी बाबा सेवा संघ नियमित रूप से धार्मिक अनुष्ठानों, मासिक जागरणों और भव्य वार्षिक मेले का आयोजन करता है ताकि श्री खाखी बाबा की पवित्र शिक्षाओं और संदेश को जीवंत रखा जा सके। सभी श्रद्धालु दिव्य आशीर्वाद प्राप्त करने के लिए इन उत्सवों में भाग लेते हैं।"}
+            ? "Sri Khakhi Baba Seva Sangh organizes regular religious ceremonies, monthly jagrans, and the grand annual mela to keep the sacred teachings and spirit of Sri Khakhi Baba alive. Devotees join these events in person and via online YouTube live broadcasts to seek divine blessings."
+            : "श्री खाखी बाबा सेवा संघ नियमित रूप से धार्मिक अनुष्ठानों, मासिक जागरणों और भव्य वार्षिक मेले का आयोजन करता है। श्रद्धालु इन आयोजनों में प्रत्यक्ष रूप से एवं यूट्यूब लाइव प्रसारण के माध्यम से ऑनलाइन जुड़कर आशीर्वाद प्राप्त करते हैं।"}
         </p>
       </div>
 
@@ -135,6 +155,34 @@ function Events() {
                 </div>
               </div>
 
+              {e.isLiveStreamEvent && (
+                <div className="monthly-live-highlight-box">
+                  <div className="live-pulse-badge">
+                    <span className="pulse-dot"></span>
+                    <strong>{lang === "en" ? "🔴 YOUTUBE LIVE BROADCAST" : "🔴 यूट्यूब सीधा लाइव प्रसारण"}</strong>
+                  </div>
+                  <p>
+                    {lang === "en" 
+                      ? "Join our monthly Sudi Baras (Shukla Paksha Dwadashi) devotional bhajan sandhya live on YouTube:" 
+                      : "सुदी बारस (शुक्ल पक्ष द्वादशी) के पावन अवसर पर आयोजित मासिक भजन संध्या का यूट्यूब पर सीधा प्रसारण देखें:"}
+                  </p>
+                  <div className="live-btn-group">
+                    {liveStreams.map((stream, idx) => (
+                      <a 
+                        key={idx} 
+                        href={stream.url} 
+                        target="_blank" 
+                        rel="noreferrer" 
+                        className="watch-live-btn"
+                      >
+                        <FaYoutube className="yt-btn-icon" />
+                        <span>{lang === "en" ? `Watch Live ${idx + 1}` : `लाइव देखें ${idx + 1}`}</span>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               <div className="event-description">
                 <p>{lang === "en" ? e.descEn1 : e.descHi1}</p>
                 <p>{lang === "en" ? e.descEn2 : e.descHi2}</p>
@@ -142,6 +190,49 @@ function Events() {
             </div>
           </div>
         ))}
+      </div>
+
+      {/* Monthly Bhajan Live Streams Grid Section */}
+      <div className="live-streams-section">
+        <div className="live-streams-header">
+          <div className="live-header-badge">
+            <FaYoutube className="live-header-icon" />
+            <span>{lang === "en" ? "LIVE DEVOTIONAL BROADCASTS" : "मासिक भजन सीधा प्रसारण"}</span>
+          </div>
+          <h2>{lang === "en" ? "Watch Monthly Bhajan Sandhya Live" : "यूट्यूब पर मासिक भजन संध्या का आनंद लें"}</h2>
+          <p>
+            {lang === "en"
+              ? "Devotees unable to attend in person can watch our Shukla Paksha Dwadashi monthly bhajan broadcasts live on YouTube."
+              : "जो श्रद्धालु व्यक्तिगत रूप से उपस्थित नहीं हो सकते, वे शुक्ल पक्ष द्वादशी के मासिक भजनों के सीधे प्रसारण को यूट्यूब पर देख सकते हैं।"}
+          </p>
+        </div>
+
+        <div className="live-video-grid">
+          {liveStreams.map((stream, idx) => (
+            <div key={idx} className="live-video-card">
+              <div className="video-iframe-wrapper">
+                <iframe
+                  src={`https://www.youtube.com/embed/${stream.id}`}
+                  title={lang === "en" ? stream.titleEn : stream.titleHi}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="video-card-body">
+                <h3>{lang === "en" ? stream.titleEn : stream.titleHi}</h3>
+                <p className="video-date">{lang === "en" ? stream.dateEn : stream.dateHi}</p>
+                <a 
+                  href={stream.url} 
+                  target="_blank" 
+                  rel="noreferrer" 
+                  className="yt-open-link-btn"
+                >
+                  <FaYoutube /> {lang === "en" ? "Open in YouTube App" : "यूट्यूब ऐप में खोलें"}
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Calendar Section */}

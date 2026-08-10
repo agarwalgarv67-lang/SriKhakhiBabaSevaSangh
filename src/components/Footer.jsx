@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaPhoneAlt, FaEnvelope, FaInstagram, FaMapMarkerAlt, FaUniversity } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaInstagram, FaYoutube, FaMapMarkerAlt, FaUniversity } from "react-icons/fa";
 import { useLang } from "../context/LanguageContext";
 
 function Footer() {
@@ -81,7 +81,7 @@ function Footer() {
             <FaEnvelope className="footer-icon" />
             <a href="mailto:srikhakhibabasevasangh.hyd@gmail.com">srikhakhibabasevasangh.hyd@gmail.com</a>
           </p>
-          <p className="social-links">
+          <div className="social-links-list" style={{ marginTop: "12px", display: "flex", flexDirection: "column", gap: "8px" }}>
             <a
               href="https://instagram.com/khakhi_baba_seva_sangh"
               target="_blank"
@@ -91,7 +91,17 @@ function Footer() {
             >
               <FaInstagram /> @khakhi_baba_seva_sangh
             </a>
-          </p>
+            <a
+              href="https://www.youtube.com/live/G3QsKH2bmcM"
+              target="_blank"
+              rel="noreferrer"
+              className="social-icon youtube-link"
+              title="YouTube Live Stream"
+              style={{ color: "#ff4444", fontWeight: "600" }}
+            >
+              <FaYoutube style={{ fontSize: "1.2rem", verticalAlign: "middle" }} /> {lang === "en" ? "YouTube Live Stream" : "यूट्यूब सीधा प्रसारण"}
+            </a>
+          </div>
         </div>
 
         {/* Column 4: Support/Bank Details */}
