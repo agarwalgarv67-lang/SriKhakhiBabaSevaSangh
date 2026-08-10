@@ -2,15 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- Favicons & App Icons -->
+    <!-- Favicons & App Icons (Google & Bing Compliant) -->
+    <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="144x144" href="/favicon-144x144.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <!-- Microsoft Edge & Windows Meta Tags -->
+    <meta name="msapplication-TileColor" content="#800000" />
+    <meta name="msapplication-TileImage" content="/android-chrome-192x192.png" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    <meta name="theme-color" content="#800000" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- Primary Meta Tags -->
@@ -43,12 +51,36 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "NGO",
+        "@type": ["NGO", "PlaceOfWorship"],
         "name": "Sri Khakhi Baba Seva Sangh",
-        "description": "Spiritual trust dedicated to community service, religious events, and social welfare.",
+        "alternateName": [
+          "श्री खाखी बाबा सेवा संघ",
+          "Sri Khakhi Baba Ashram",
+          "Sri Khakhi Baba Dada Fatehpura"
+        ],
+        "description": "Official spiritual and charitable trust of Sri Khakhi Baba, dedicated to community welfare, religious heritage, and divine events in Dada Fatehpura, Rajasthan.",
         "url": "https://srikhakhibabasevasangh.in",
         "logo": "https://srikhakhibabasevasangh.in/logo.png",
-        "image": "https://srikhakhibabasevasangh.in/logo.png"
+        "image": "https://srikhakhibabasevasangh.in/logo.png",
+        "address": [
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "5-4-425/ 2&3, Station Road, Nampally",
+            "addressLocality": "Hyderabad",
+            "addressRegion": "Telangana",
+            "postalCode": "500001",
+            "addressCountry": "IN"
+          },
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "Dada Fatehpura",
+            "addressRegion": "Rajasthan",
+            "addressCountry": "IN"
+          }
+        ],
+        "sameAs": [
+          "https://instagram.com/khakhi_baba_seva_sangh"
+        ]
       }
     </script>
 
