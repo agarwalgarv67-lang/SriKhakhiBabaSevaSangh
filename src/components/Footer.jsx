@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaPhoneAlt, FaEnvelope, FaInstagram, FaMapMarkerAlt, FaUniversity } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaInstagram, FaYoutube, FaMapMarkerAlt, FaUniversity } from "react-icons/fa";
 import { useLang } from "../context/LanguageContext";
 
 function Footer() {
@@ -81,7 +81,7 @@ function Footer() {
             <FaEnvelope className="footer-icon" />
             <a href="mailto:srikhakhibabasevasangh.hyd@gmail.com">srikhakhibabasevasangh.hyd@gmail.com</a>
           </p>
-          <p className="social-links">
+          <p className="social-links" style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
             <a
               href="https://instagram.com/khakhi_baba_seva_sangh"
               target="_blank"
@@ -90,6 +90,15 @@ function Footer() {
               title="Instagram"
             >
               <FaInstagram /> @khakhi_baba_seva_sangh
+            </a>
+            <a
+              href="https://www.youtube.com/@khakhibabasevasangh"
+              target="_blank"
+              rel="noreferrer"
+              className="social-icon youtube"
+              title="YouTube Live & Broadcasts"
+            >
+              <FaYoutube style={{ color: "#ff0000" }} /> YouTube Channel
             </a>
           </p>
         </div>
