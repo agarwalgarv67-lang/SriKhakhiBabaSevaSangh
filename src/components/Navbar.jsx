@@ -68,7 +68,7 @@ function Navbar() {
           <ul>
             <li><NavLink to="/" onClick={closeMenu}>{txt.home}</NavLink></li>
             <li><NavLink to="/about" onClick={closeMenu}>{txt.about}</NavLink></li>
-            <li><NavLink to="/Journey" onClick={closeMenu}>{txt.journey}</NavLink></li>
+            <li><NavLink to="/journey" onClick={closeMenu}>{txt.journey}</NavLink></li>
             <li><NavLink to="/guru-mahima" onClick={closeMenu}>{txt.guruMahima}</NavLink></li>
             <li><NavLink to="/gallery" onClick={closeMenu}>{txt.gallery}</NavLink></li>
             <li><NavLink to="/events" onClick={closeMenu}>{txt.events}</NavLink></li>
