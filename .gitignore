@@ -1,5 +1,39 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build & Production outputs
+dist/
+dist-ssr/
+build/
+out/
+.output/
+*.tsbuildinfo
+
+# Development & Tooling Caches
+.cache/
+.vite/
+.eslintcache
+.parcel-cache/
+
+# Environment Files & Secrets
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+.env.*.local
+*.env
+
+# Deployment Services
+.vercel/
+.netlify/
+
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,18 +41,29 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
+# Editor & IDE Settings
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+!.vscode/settings.json
+!.vscode/tasks.json
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# OS / System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
