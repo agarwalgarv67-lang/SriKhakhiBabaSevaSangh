@@ -13,6 +13,7 @@ import coverVolume2 from "../assets/images/cover_volume_2.jpg";
 import coverVolume3 from "../assets/images/cover_volume_3.jpg";
 import coverVolume4 from "../assets/images/cover_volume_4.jpg";
 import chalisaCover from "../assets/images/chalisa_cover.jpg";
+import coverBhajanSangrah2057 from "../assets/images/cover_bhajan_sangrah_2057.jpg";
 
 // Published Books Data
 const booksData = [
@@ -37,6 +38,17 @@ const booksData = [
       hi: "भजन संग्रह का द्वितीय भाग, जिसमें गुरु-परंपरा एवं राजस्थान के क्षेत्रीय संतों की महिमा में गाए जाने वाले भक्तिमय भजनों का संकलन है।"
     },
     cover: coverVolume2
+  },
+  {
+    id: "bhajan_sangrah_2057",
+    title: { en: "Sri Khakhi Baba Bhajan Sangrah", hi: "श्री खाखी बाबा भजन संग्रह" },
+    author: { en: "Sri Khakhi Baba Seva Sangh, Hyderabad", hi: "श्री खाखी बाबा सेवा संघ, हैदराबाद" },
+    year: "Vikram Samvat 2057",
+    desc: {
+      en: "A sacred compilation of devotional hymns and prayers dedicated to Sri Khakhi Baba Ji, published by Sri Khakhi Baba Seva Sangh, Hyderabad in Vikram Samvat 2057.",
+      hi: "विक्रम संवत २०५७ में श्री खाखी बाबा सेवा संघ, हैदराबाद द्वारा प्रकाशित, श्री खाखी बाबा जी की महिमा में रचित पावन भजनों एवं प्रार्थनाओं का संग्रह।"
+    },
+    cover: coverBhajanSangrah2057
   },
   {
     id: "volume_3",
