@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useLang } from "../context/LanguageContext";
-import temple from "../assets/images/temple3.jpeg";
+import temple from "../assets/images/temple2.jpeg";
 import { FaLanguage, FaCalendarAlt, FaSchool, FaBuilding, FaTree, FaClinicMedical, FaHandsHelping, FaUniversity, FaArrowRight } from "react-icons/fa";
 
 function Journey() {
