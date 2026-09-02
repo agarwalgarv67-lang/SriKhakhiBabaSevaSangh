@@ -21,7 +21,6 @@ function YouTubeLive({ streams = defaultStreams }) {
       channelName: "Sri Khakhi Baba Seva Sangh",
       liveBadge: "LIVE",
       watchOnYt: "Watch on YouTube",
-      subscribeBtn: "Subscribe",
       viewMore: `View All Broadcasts (${streams.length})`,
       showLess: "Show Less",
     },
@@ -33,7 +32,6 @@ function YouTubeLive({ streams = defaultStreams }) {
       channelName: "श्री खाखी बाबा सेवा संघ",
       liveBadge: "सीधा प्रसारण",
       watchOnYt: "यूट्यूब पर देखें",
-      subscribeBtn: "सब्सक्राइब",
       viewMore: `सभी वीडियो प्रसारण देखें (${streams.length})`,
       showLess: "कम देखें",
     },
@@ -122,14 +120,6 @@ function YouTubeLive({ streams = defaultStreams }) {
                         className="yt-watch-btn"
                       >
                         <FaYoutube className="yt-red-btn-icon" /> {txt.watchOnYt}
-                      </a>
-                      <a
-                        href={youtubeChannelUrl}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="yt-sub-btn"
-                      >
-                        {txt.subscribeBtn}
                       </a>
                     </div>
                   </div>

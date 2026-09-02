@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import baba from "../assets/images/baba.jpeg";
+import baba from "../assets/images/khakhi-baba.jpeg";
 import { useLang } from "../context/LanguageContext";
 
 function About() {

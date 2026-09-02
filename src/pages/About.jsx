@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useLang } from "../context/LanguageContext";
-import baba from "../assets/images/baba.jpeg";
+import baba from "../assets/images/khakhi-baba.jpeg";
 import temple from "../assets/images/temple.jpeg";
 import kiljiKhadau from "../assets/images/kilji-baba-khadau.jpg";
 import sukhramdasImg from "../assets/images/sukhramdas-ji.jpg";
