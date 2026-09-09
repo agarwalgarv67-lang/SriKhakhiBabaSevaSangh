@@ -32,8 +32,8 @@ function Gallery() {
   const viewLabel = lang === "en" ? "🔍 View Photo" : "🔍 चित्र देखें";
   const viewAllBtn =
     lang === "en"
-      ? "View Complete Photo Gallery (12 Photos)"
-      : "पूरी फोटो गैलरी देखें (१२ चित्र)";
+      ? "View Complete Photo Gallery"
+      : "पूरी फोटो गैलरी देखें";
 
   // Filter the curated 6 images in defined order
   const featuredImages = homeFeaturedIds
