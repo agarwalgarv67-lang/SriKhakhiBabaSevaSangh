@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaPhoneAlt, FaEnvelope, FaInstagram, FaMapMarkerAlt, FaUniversity } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaInstagram, FaMapMarkerAlt, FaUniversity, FaShieldAlt } from "react-icons/fa";
 import { useLang } from "../context/LanguageContext";
 
 function Footer() {
@@ -11,6 +11,7 @@ function Footer() {
       aboutDesc:
         "A spiritual and charitable trust dedicated to preserving the sacred heritage of Sri Khakhi Baba while serving society through religious, educational, environmental, and community welfare activities.",
       regNo: "Regd. No:",
+      taxBadge: "80G Tax Exemption Available",
       officeTitle: "Registered Office",
       officeAddr: (
         <>
@@ -22,7 +23,8 @@ function Footer() {
       contactTitle: "Contact Details",
       supportTitle: "Support Our Mission",
       branch: "Branch:",
-      donateBtn: "Donate Now",
+      donateBtn: "Donate Now & Get 80G Receipt",
+      taxBenefit: "50% Tax Deduction under Sec 80G",
       copyright: `© ${new Date().getFullYear()} Sri Khakhi Baba Seva Sangh | All Rights Reserved`,
     },
     hi: {
@@ -30,6 +32,7 @@ function Footer() {
       aboutDesc:
         "एक आध्यात्मिक एवं धर्मार्थ न्यास, जो धार्मिक, शैक्षणिक, पर्यावरणीय और सामुदायिक कल्याण गतिविधियों के माध्यम से श्री खाखी बाबा की पवित्र विरासत को संरक्षित करता है।",
       regNo: "पंजीकरण सं.:",
+      taxBadge: "धारा 80G कर छूट उपलब्ध",
       officeTitle: "पंजीकृत कार्यालय",
       officeAddr: (
         <>
@@ -41,7 +44,8 @@ function Footer() {
       contactTitle: "संपर्क विवरण",
       supportTitle: "हमारे मिशन का समर्थन करें",
       branch: "शाखा:",
-      donateBtn: "दान करें",
+      donateBtn: "दान करें एवं 80G रसीद पाएं",
+      taxBenefit: "धारा 80G के तहत 50% कर कटौती",
       copyright: `© ${new Date().getFullYear()} श्री खाखी बाबा सेवा संघ | सर्वाधिकार सुरक्षित`,
     },
   };
@@ -57,6 +61,9 @@ function Footer() {
           <h3>{txt.about}</h3>
           <p className="trust-desc">{txt.aboutDesc}</p>
           <p className="reg-no"><strong>{txt.regNo}</strong> 136/97</p>
+          <p className="footer-tax-badge">
+            <FaShieldAlt className="footer-icon" /> <span>{txt.taxBadge}</span>
+          </p>
         </div>
 
         {/* Column 2: Registered Office */}
@@ -102,6 +109,9 @@ function Footer() {
             <p><strong>A/C No:</strong> 065100050174003</p>
             <p><strong>IFSC Code:</strong> TMBL0000065</p>
             <p><strong>{txt.branch}</strong> Dada Fatehpura, Rajasthan</p>
+            <div className="footer-bank-tax">
+              <FaShieldAlt /> {txt.taxBenefit}
+            </div>
           </div>
           <Link to="/donation" className="footer-donate-btn">{txt.donateBtn}</Link>
         </div>
