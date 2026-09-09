@@ -22,6 +22,9 @@ function Donation() {
   const [copiedAccount, setCopiedAccount] = useState(false);
   const [copiedIfsc, setCopiedIfsc] = useState(false);
   const [copiedUpi, setCopiedUpi] = useState(false);
+  const [copiedPan, setCopiedPan] = useState(false);
+  const [copied80G, setCopied80G] = useState(false);
+  const [copiedNgo, setCopiedNgo] = useState(false);
 
   const handleCopy = (text, type) => {
     navigator.clipboard.writeText(text);
@@ -34,6 +37,15 @@ function Donation() {
     } else if (type === "upi") {
       setCopiedUpi(true);
       setTimeout(() => setCopiedUpi(false), 2000);
+    } else if (type === "pan") {
+      setCopiedPan(true);
+      setTimeout(() => setCopiedPan(false), 2000);
+    } else if (type === "80g") {
+      setCopied80G(true);
+      setTimeout(() => setCopied80G(false), 2000);
+    } else if (type === "ngo") {
+      setCopiedNgo(true);
+      setTimeout(() => setCopiedNgo(false), 2000);
     }
   };
 
@@ -42,21 +54,24 @@ function Donation() {
       heroTitle: "Support Sri Khakhi Baba Seva Sangh",
       heroSubtitle: "Every contribution helps us serve society, protect nature, and preserve sacred heritage",
       
-      taxBadgeTitle: "50% TAX EXEMPTION AVAILABLE UNDER SECTION 80G",
-      taxBadgeDesc: "Donations made to Sri Khakhi Baba Seva Sangh (Regd. 136/97) are eligible for 50% tax deduction under Section 80G of the Income Tax Act, 1961. Donors receive an official 80G donation receipt / Form 10BE certificate for claiming tax benefits in their ITR.",
+      taxBadgeTitle: "TAX EXEMPTION AVAILABLE UNDER SECTION 80G",
+      taxBadgeDesc: "Donations made to Sri Khakhi Baba Seva Sangh (Regd. 136/97) are eligible for tax deduction under Section 80G of the Income Tax Act, 1961. Donors receive an official 80G donation receipt / Form 10BE certificate for claiming tax benefits in their ITR.",
       
       methodsHeading: "Direct Financial Contributions",
       methodsDesc: "You can make a direct bank transfer or use any UPI app to support our charitable activities. All donations are handled with complete transparency and go directly toward community development, temple preservation, education, and humanitarian services.",
       
-      bankCardTitle: "Bank Transfer Details",
+      bankCardTitle: "Bank Transfer & Trust Details",
       accName: "Account Name:",
       bankName: "Bank Name:",
       accNumber: "Account Number:",
       ifsc: "IFSC Code:",
       branch: "Branch:",
       trustReg: "Trust Regd. No:",
-      taxStatus: "80G Tax Benefit:",
-      taxStatusVal: "Eligible for 50% Deduction under Sec 80G",
+      panLabel: "Trust PAN No:",
+      eightyGLabel: "80G Registration No:",
+      ngoLabel: "NGO Darpan ID:",
+      taxStatus: "Tax Exemption Status:",
+      taxStatusVal: "Eligible for Tax Deduction under Section 80G",
       
       copy: "Copy",
       copied: "Copied",
@@ -96,21 +111,24 @@ function Donation() {
       heroTitle: "श्री खाखी बाबा सेवा संघ को सहयोग दें",
       heroSubtitle: "प्रत्येक योगदान हमें समाज सेवा, पर्यावरण संरक्षण और पावन धरोहर के संवर्धन में संबल प्रदान करता है",
       
-      taxBadgeTitle: "आयकर अधिनियम की धारा 80G के अंतर्गत 50% कर छूट उपलब्ध",
-      taxBadgeDesc: "श्री खाखी बाबा सेवा संघ (पंजीकृत सं. 136/97) को दिए जाने वाले दान पर आयकर अधिनियम, 1961 की धारा 80G के अंतर्गत 50% कर कटौती का लाभ प्राप्त होता है। आयकर रिटर्न में कर छूट का दावा करने हेतु दानदाताओं को आधिकारिक 80G रसीद / फॉर्म 10BE जारी किया जाता है।",
+      taxBadgeTitle: "आयकर अधिनियम की धारा 80G के अंतर्गत कर छूट उपलब्ध",
+      taxBadgeDesc: "श्री खाखी बाबा सेवा संघ (पंजीकृत सं. 136/97) को दिए जाने वाले दान पर आयकर अधिनियम, 1961 की धारा 80G के अंतर्गत कर कटौती का लाभ प्राप्त होता है। आयकर रिटर्न में कर छूट का दावा करने हेतु दानदाताओं को आधिकारिक 80G रसीद / फॉर्म 10BE जारी किया जाता है।",
       
       methodsHeading: "सीधे आर्थिक योगदान के माध्यम",
       methodsDesc: "आप सीधे बैंक ट्रांसफर या किसी भी यूपीआई ऐप के माध्यम से हमारे सेवा कार्यों में सहयोग कर सकते हैं। सभी दान पूर्ण पारदर्शिता के साथ स्थानीय विकास, मंदिर संरक्षण, शिक्षा एवं जनसेवा कार्यों में उपयोग किए जाते हैं।",
       
-      bankCardTitle: "बैंक ट्रांसफर विवरण",
+      bankCardTitle: "बैंक ट्रांसफर एवं न्यास विवरण",
       accName: "खाता नाम:",
       bankName: "बैंक का नाम:",
       accNumber: "खाता संख्या:",
       ifsc: "आईएफएससी (IFSC) कोड:",
       branch: "शाखा:",
       trustReg: "न्यास पंजीकरण सं.:",
-      taxStatus: "80G कर लाभ:",
-      taxStatusVal: "धारा 80G के तहत 50% कर छूट हेतु पात्र",
+      panLabel: "न्यास पैन (PAN) सं.:",
+      eightyGLabel: "80G पंजीकरण सं.:",
+      ngoLabel: "एनजीओ दर्पण (NGO Darpan) सं.:",
+      taxStatus: "कर छूट स्थिति:",
+      taxStatusVal: "धारा 80G के तहत कर छूट हेतु पात्र",
       
       copy: "कॉपी करें",
       copied: "कॉपी हुआ",
@@ -159,7 +177,7 @@ function Donation() {
     `*Donation Amount:* ₹\n` +
     `*Transaction ID / UTR:* \n` +
     `*Date of Payment:* \n\n` +
-    `(Screenshot attached)`
+    `(Payment screenshot attached)`
   );
   const waUrl = `https://wa.me/918686001010?text=${waText}`;
 
@@ -176,6 +194,8 @@ function Donation() {
     `Transaction UTR / Ref No: \n` +
     `Date of Payment: \n` +
     `Contact Phone / Mobile: \n\n` +
+    `Trust Reference Details:\n` +
+    `Trust PAN: AAKTS3250N | 80G No: AAKTS3250NF2025101 | NGO Darpan: TS/2024/0464716\n\n` +
     `Please find the payment screenshot / confirmation attached.\n\n` +
     `With devotional regards,\n`
   );
@@ -196,20 +216,58 @@ function Donation() {
         {/* Left Column: Bank Account, QR & 80G Receipt Guide */}
         <div className="donation-methods-column">
 
-          {/* 80G Tax Exemption Highlight Banner */}
+          {/* 80G Tax Exemption Highlight Banner with official PAN, 80G & NGO IDs */}
           <div className="tax-exemption-banner" data-aos="fade-up">
             <div className="tax-badge-header">
               <div className="tax-badge-icon">
                 <FaShieldAlt />
               </div>
               <div>
-                <span className="tax-badge-pill">Section 80G Benefit</span>
+                <span className="tax-badge-pill">Section 80G Approved</span>
                 <h3>{txt.taxBadgeTitle}</h3>
               </div>
             </div>
             <p className="tax-badge-text">
               {txt.taxBadgeDesc}
             </p>
+
+            <div className="tax-legal-pills">
+              <div className="legal-pill">
+                <span className="pill-lbl">PAN:</span>
+                <span className="pill-code">AAKTS3250N</span>
+                <button 
+                  className="copy-pill-btn" 
+                  onClick={() => handleCopy("AAKTS3250N", "pan")}
+                  title="Copy PAN"
+                >
+                  {copiedPan ? <FaCheck className="copied-icon" /> : <FaCopy />}
+                </button>
+              </div>
+
+              <div className="legal-pill">
+                <span className="pill-lbl">80G Reg:</span>
+                <span className="pill-code">AAKTS3250NF2025101</span>
+                <button 
+                  className="copy-pill-btn" 
+                  onClick={() => handleCopy("AAKTS3250NF2025101", "80g")}
+                  title="Copy 80G Number"
+                >
+                  {copied80G ? <FaCheck className="copied-icon" /> : <FaCopy />}
+                </button>
+              </div>
+
+              <div className="legal-pill">
+                <span className="pill-lbl">NGO Darpan:</span>
+                <span className="pill-code">TS/2024/0464716</span>
+                <button 
+                  className="copy-pill-btn" 
+                  onClick={() => handleCopy("TS/2024/0464716", "ngo")}
+                  title="Copy NGO Darpan ID"
+                >
+                  {copiedNgo ? <FaCheck className="copied-icon" /> : <FaCopy />}
+                </button>
+              </div>
+            </div>
           </div>
 
           <h2>{txt.methodsHeading}</h2>
@@ -263,6 +321,36 @@ function Donation() {
               <div className="info-row">
                 <span className="info-label">{txt.trustReg}</span>
                 <span className="info-val">136/97</span>
+              </div>
+
+              <div className="info-row">
+                <span className="info-label">{txt.panLabel}</span>
+                <span className="info-val highlight-val">
+                  AAKTS3250N
+                  <button className="copy-btn" onClick={() => handleCopy("AAKTS3250N", "pan")} aria-label="Copy PAN Number">
+                    {copiedPan ? <FaCheck className="copied-icon" /> : <FaCopy />} {copiedPan ? txt.copied : txt.copy}
+                  </button>
+                </span>
+              </div>
+
+              <div className="info-row">
+                <span className="info-label">{txt.eightyGLabel}</span>
+                <span className="info-val highlight-val">
+                  AAKTS3250NF2025101
+                  <button className="copy-btn" onClick={() => handleCopy("AAKTS3250NF2025101", "80g")} aria-label="Copy 80G Number">
+                    {copied80G ? <FaCheck className="copied-icon" /> : <FaCopy />} {copied80G ? txt.copied : txt.copy}
+                  </button>
+                </span>
+              </div>
+
+              <div className="info-row">
+                <span className="info-label">{txt.ngoLabel}</span>
+                <span className="info-val highlight-val">
+                  TS/2024/0464716
+                  <button className="copy-btn" onClick={() => handleCopy("TS/2024/0464716", "ngo")} aria-label="Copy NGO Darpan Number">
+                    {copiedNgo ? <FaCheck className="copied-icon" /> : <FaCopy />} {copiedNgo ? txt.copied : txt.copy}
+                  </button>
+                </span>
               </div>
 
               <div className="info-row tax-status-row">

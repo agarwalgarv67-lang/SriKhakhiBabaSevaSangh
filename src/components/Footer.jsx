@@ -11,6 +11,9 @@ function Footer() {
       aboutDesc:
         "A spiritual and charitable trust dedicated to preserving the sacred heritage of Sri Khakhi Baba while serving society through religious, educational, environmental, and community welfare activities.",
       regNo: "Regd. No:",
+      panNo: "PAN:",
+      eightyG: "80G Reg No:",
+      ngoDarpan: "NGO Darpan ID:",
       taxBadge: "80G Tax Exemption Available",
       officeTitle: "Registered Office",
       officeAddr: (
@@ -24,7 +27,7 @@ function Footer() {
       supportTitle: "Support Our Mission",
       branch: "Branch:",
       donateBtn: "Donate Now & Get 80G Receipt",
-      taxBenefit: "50% Tax Deduction under Sec 80G",
+      taxBenefit: "Tax Deduction under Sec 80G",
       copyright: `© ${new Date().getFullYear()} Sri Khakhi Baba Seva Sangh | All Rights Reserved`,
     },
     hi: {
@@ -32,6 +35,9 @@ function Footer() {
       aboutDesc:
         "एक आध्यात्मिक एवं धर्मार्थ न्यास, जो धार्मिक, शैक्षणिक, पर्यावरणीय और सामुदायिक कल्याण गतिविधियों के माध्यम से श्री खाखी बाबा की पवित्र विरासत को संरक्षित करता है।",
       regNo: "पंजीकरण सं.:",
+      panNo: "पैन (PAN):",
+      eightyG: "80G पंजीकरण सं.:",
+      ngoDarpan: "एनजीओ दर्पण आईडी:",
       taxBadge: "धारा 80G कर छूट उपलब्ध",
       officeTitle: "पंजीकृत कार्यालय",
       officeAddr: (
@@ -45,7 +51,7 @@ function Footer() {
       supportTitle: "हमारे मिशन का समर्थन करें",
       branch: "शाखा:",
       donateBtn: "दान करें एवं 80G रसीद पाएं",
-      taxBenefit: "धारा 80G के तहत 50% कर कटौती",
+      taxBenefit: "धारा 80G के तहत कर कटौती",
       copyright: `© ${new Date().getFullYear()} श्री खाखी बाबा सेवा संघ | सर्वाधिकार सुरक्षित`,
     },
   };
@@ -56,11 +62,15 @@ function Footer() {
     <footer className="footer">
       <div className="footer-container">
 
-        {/* Column 1: About the Trust */}
+        {/* Column 1: About the Trust & Legal Registrations */}
         <div className="footer-column">
           <h3>{txt.about}</h3>
           <p className="trust-desc">{txt.aboutDesc}</p>
-          <p className="reg-no"><strong>{txt.regNo}</strong> 136/97</p>
+          <div className="footer-legal-tags">
+            <p className="reg-no"><strong>{txt.regNo}</strong> 136/97 &nbsp;|&nbsp; <strong>{txt.panNo}</strong> AAKTS3250N</p>
+            <p className="reg-no"><strong>{txt.eightyG}</strong> AAKTS3250NF2025101</p>
+            <p className="reg-no"><strong>{txt.ngoDarpan}</strong> TS/2024/0464716</p>
+          </div>
           <p className="footer-tax-badge">
             <FaShieldAlt className="footer-icon" /> <span>{txt.taxBadge}</span>
           </p>
@@ -109,6 +119,7 @@ function Footer() {
             <p><strong>A/C No:</strong> 065100050174003</p>
             <p><strong>IFSC Code:</strong> TMBL0000065</p>
             <p><strong>{txt.branch}</strong> Dada Fatehpura, Rajasthan</p>
+            <p><strong>PAN:</strong> AAKTS3250N</p>
             <div className="footer-bank-tax">
               <FaShieldAlt /> {txt.taxBenefit}
             </div>

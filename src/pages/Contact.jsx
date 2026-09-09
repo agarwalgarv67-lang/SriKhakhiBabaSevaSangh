@@ -243,6 +243,9 @@ function Contact() {
               <h4>{lang === "en" ? "Registered Office" : "पंजीकृत कार्यालय"}</h4>
               <p>
                 <strong>Sri Khakhi Baba Seva Sangh (Regd. 136/97)</strong><br />
+                <span style={{ fontSize: "13px", color: "#666" }}>
+                  PAN: AAKTS3250N | 80G: AAKTS3250NF2025101 | NGO Darpan: TS/2024/0464716
+                </span><br />
                 5-4-425/ 2&3, Station Road,<br />
                 Nampally, Hyderabad – 500001<br />
                 Telangana, India
