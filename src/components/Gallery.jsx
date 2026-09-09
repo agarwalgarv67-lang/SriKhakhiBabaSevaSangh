@@ -1,47 +1,25 @@
 import { useState, useEffect } from "react";
 import { FaArrowLeft, FaArrowRight, FaTimes } from "react-icons/fa";
-import temple2 from "../assets/images/temple2.jpeg";
-import temple3 from "../assets/images/temple3.jpeg";
-import mela from "../assets/images/mela.jpeg";
-import mela2 from "../assets/images/mela2.jpeg";
-import mela3 from "../assets/images/mela3.jpeg";
-import mela4 from "../assets/images/mela4.jpeg";
 import { useLang } from "../context/LanguageContext";
+import { galleryImages } from "../data/galleryData";
 
 function Gallery() {
   const { lang } = useLang();
   const [activeIndex, setActiveIndex] = useState(null);
 
-  const images = {
-    en: [
-      { src: temple2, alt: "Sri Khakhi Dham Temple View" },
-      { src: temple3, alt: "Ancient Temple Architecture" },
-      { src: mela, alt: "Falgun Badi Amavasya Mela Procession" },
-      { src: mela2, alt: "Devotees gathering at Dham" },
-      { src: mela3, alt: "Grand Satsang Celebration" },
-      { src: mela4, alt: "Annadan Bhandara Prasadam" },
-    ],
-    hi: [
-      { src: temple2, alt: "श्री खाखी धाम मंदिर दृश्य" },
-      { src: temple3, alt: "प्राचीन मंदिर वास्तुकला" },
-      { src: mela, alt: "फाल्गुन बड़ी अमावस्या मेला शोभायात्रा" },
-      { src: mela2, alt: "धाम में एकत्रित भक्तगण" },
-      { src: mela3, alt: "भव्य सत्संग उत्सव" },
-      { src: mela4, alt: "अन्नदान भंडारा प्रसाद" },
-    ],
-  };
-
-  const currentImages = images[lang];
-
   const heading = lang === "en" ? "Photo Gallery" : "फोटो गैलरी";
-  const viewLabel = lang === "en" ? "🔍 View Image" : "🔍 चित्र देखें";
+  const subtitle =
+    lang === "en"
+      ? "Sacred glimpses of Sri Khakhi Dham, divine saints, sacred temple heritage, and annual celebrations."
+      : "श्री खाखी धाम, दिव्य संतों, प्राचीन मंदिर धरोहर एवं पावन वार्षिक उत्सवों के दर्शन।";
+  const viewLabel = lang === "en" ? "🔍 View Photo" : "🔍 चित्र देखें";
 
   const handleNext = () => {
-    setActiveIndex((prev) => (prev === currentImages.length - 1 ? 0 : prev + 1));
+    setActiveIndex((prev) => (prev === galleryImages.length - 1 ? 0 : prev + 1));
   };
 
   const handlePrev = () => {
-    setActiveIndex((prev) => (prev === 0 ? currentImages.length - 1 : prev - 1));
+    setActiveIndex((prev) => (prev === 0 ? galleryImages.length - 1 : prev - 1));
   };
 
   const handleClose = () => {
@@ -61,29 +39,41 @@ function Gallery() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [activeIndex]);
 
+  const activeImage = activeIndex !== null ? galleryImages[activeIndex] : null;
+
   return (
     <section className="gallery">
-      <h2 data-aos="fade-up">{heading}</h2>
-
-      <div className="gallery-grid">
-        {currentImages.map((img, idx) => (
-          <div
-            key={idx}
-            className="gallery-item"
-            data-aos="zoom-in"
-            data-aos-delay={idx * 100}
-            onClick={() => setActiveIndex(idx)}
-            style={{ cursor: "pointer" }}
-          >
-            <img src={img.src} alt={img.alt} />
-            <div className="gallery-hover-overlay">
-              <span>{viewLabel}</span>
-            </div>
-          </div>
-        ))}
+      <div className="gallery-section-header" data-aos="fade-up">
+        <h2>{heading}</h2>
+        <p className="gallery-subtitle">{subtitle}</p>
       </div>
 
-      {activeIndex !== null && (
+      <div className="gallery-grid">
+        {galleryImages.map((img, idx) => {
+          const title = img.title[lang] || img.title.en;
+          return (
+            <div
+              key={img.id || idx}
+              className="gallery-item"
+              data-aos="zoom-in"
+              data-aos-delay={(idx % 6) * 70}
+              onClick={() => setActiveIndex(idx)}
+              style={{ cursor: "pointer" }}
+            >
+              <img src={img.src} alt={title} loading="lazy" />
+              <div className="gallery-card-bottom-bar">
+                <span>{title}</span>
+              </div>
+              <div className="gallery-hover-overlay">
+                <span>{viewLabel}</span>
+                <p className="gallery-hover-title">{title}</p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      {activeIndex !== null && activeImage && (
         <div className="lightbox-overlay" onClick={handleClose}>
           <button className="lightbox-close-btn" onClick={handleClose} aria-label="Close Lightbox">
             <FaTimes />
@@ -102,14 +92,14 @@ function Gallery() {
 
           <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
             <img
-              src={currentImages[activeIndex].src}
-              alt={currentImages[activeIndex].alt}
+              src={activeImage.src}
+              alt={activeImage.title[lang] || activeImage.title.en}
               className="lightbox-image"
             />
             <div className="lightbox-caption">
-              <span className="caption-text">{currentImages[activeIndex].alt}</span>
+              <span className="caption-text">{activeImage.title[lang] || activeImage.title.en}</span>
               <span className="lightbox-counter">
-                {activeIndex + 1} / {currentImages.length}
+                {activeIndex + 1} / {galleryImages.length}
               </span>
             </div>
           </div>
