@@ -26,7 +26,7 @@ function Events() {
       bhajansTitle: "Weekly Bhajans & Satsang",
       bhajansDesc:
         "Local prayers and spiritual gatherings for community coordination and blessings.",
-      bhajansMeta: "Every Weekend | Ashram Centers",
+      bhajansMeta: "Every Weekend",
       serviceTitle: "Monthly Social Service & Welfare",
       serviceDesc:
         "Feeding the poor, fodder for cows, and distributing blankets in winters.",
@@ -51,7 +51,7 @@ function Events() {
       bhajansTitle: "साप्ताहिक भजन एवं सत्संग",
       bhajansDesc:
         "सामुदायिक समन्वय और आशीर्वाद के लिए स्थानीय प्रार्थनाएँ और आध्यात्मिक सभाएँ।",
-      bhajansMeta: "प्रत्येक सप्ताहांत | आश्रम केंद्र",
+      bhajansMeta: "प्रत्येक सप्ताहांत",
       serviceTitle: "मासिक समाज सेवा एवं कल्याण",
       serviceDesc:
         "गरीबों को भोजन, गायों को चारा और सर्दियों में कंबल वितरण।",

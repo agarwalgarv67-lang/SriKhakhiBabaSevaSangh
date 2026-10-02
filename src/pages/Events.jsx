@@ -55,8 +55,6 @@ function Events() {
       taglineHi: "स्थानीय समुदाय को आध्यात्मिकता से जोड़ना",
       dateEn: "Every Saturday / Sunday",
       dateHi: "प्रत्येक शनिवार / रविवार",
-      venueEn: "Khakhi Bhavan, Dada Fatehpura & Hyderabad center",
-      venueHi: "खाखी भवन, डाडा फतेहरा एवं हैदराबाद केंद्र",
       attendeesEn: "Local prayers, meditation, and mutual support",
       attendeesHi: "स्थानीय प्रार्थना, सामूहिक ध्यान एवं कल्याणकारी चर्चा",
       descEn1: "Local bhajans and satsangs are organized weekly to help devotees take time out from their busy lives to sit together, sing Baba's glories, and study spiritual teachings.",
@@ -122,10 +120,12 @@ function Events() {
                   <FaCalendarAlt className="detail-icon" />
                   <span><strong>{lang === "en" ? "Date:" : "तिथि:"}</strong> {lang === "en" ? e.dateEn : e.dateHi}</span>
                 </div>
-                <div className="detail-item">
-                  <FaMapMarkerAlt className="detail-icon" />
-                  <span><strong>{lang === "en" ? "Venue:" : "स्थान:"}</strong> {lang === "en" ? e.venueEn : e.venueHi}</span>
-                </div>
+                {(e.venueEn || e.venueHi) && (
+                  <div className="detail-item">
+                    <FaMapMarkerAlt className="detail-icon" />
+                    <span><strong>{lang === "en" ? "Venue:" : "स्थान:"}</strong> {lang === "en" ? e.venueEn : e.venueHi}</span>
+                  </div>
+                )}
                 <div className="detail-item">
                   {e.badgeClass === "monthly" ? (
                     <FaMusic className="detail-icon" />

@@ -4281,7 +4281,7 @@ body{
   margin: 40px auto 30px;
   padding: 0 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;

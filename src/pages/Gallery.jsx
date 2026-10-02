@@ -1,18 +1,12 @@
 import { useState, useEffect } from "react";
 import { FaArrowLeft, FaArrowRight, FaTimes } from "react-icons/fa";
 import { useLang } from "../context/LanguageContext";
-import { galleryImages, galleryCategories } from "../data/galleryData";
+import { galleryImages } from "../data/galleryData";
 import templeHero from "../assets/images/temple2.jpeg";
 
 function Gallery() {
   const { lang } = useLang();
-  const [selectedCategory, setSelectedCategory] = useState("all");
   const [activeIndex, setActiveIndex] = useState(null);
-
-  const filteredImages =
-    selectedCategory === "all"
-      ? galleryImages
-      : galleryImages.filter((img) => img.category === selectedCategory);
 
   const heading = lang === "en" ? "Photo Gallery" : "फोटो गैलरी";
   const subtitle =
@@ -22,15 +16,15 @@ function Gallery() {
   const viewLabel = lang === "en" ? "🔍 View Photo" : "🔍 चित्र देखें";
   const countLabel =
     lang === "en"
-      ? `Showing ${filteredImages.length} Sacred Photos`
-      : `${filteredImages.length} पावन चित्र प्रदर्शित`;
+      ? `Showing ${galleryImages.length} Sacred Photos`
+      : `${galleryImages.length} पावन चित्र प्रदर्शित`;
 
   const handleNext = () => {
-    setActiveIndex((prev) => (prev === filteredImages.length - 1 ? 0 : prev + 1));
+    setActiveIndex((prev) => (prev === galleryImages.length - 1 ? 0 : prev + 1));
   };
 
   const handlePrev = () => {
-    setActiveIndex((prev) => (prev === 0 ? filteredImages.length - 1 : prev - 1));
+    setActiveIndex((prev) => (prev === 0 ? galleryImages.length - 1 : prev - 1));
   };
 
   const handleClose = () => {
@@ -67,23 +61,8 @@ function Gallery() {
         </div>
       </div>
 
-      {/* Filter Tabs & Count */}
+      {/* Photo Count */}
       <div className="gallery-controls-bar" data-aos="fade-up">
-        <div className="filter-buttons">
-          {galleryCategories.map((cat) => (
-            <button
-              key={cat.id}
-              className={`filter-btn ${selectedCategory === cat.id ? "active" : ""}`}
-              onClick={() => {
-                setSelectedCategory(cat.id);
-                setActiveIndex(null);
-              }}
-            >
-              {lang === "en" ? cat.labelEn : cat.labelHi}
-            </button>
-          ))}
-        </div>
-
         <div className="gallery-count-badge">
           {countLabel}
         </div>
@@ -92,7 +71,7 @@ function Gallery() {
       {/* Grid */}
       <div className="gallery-main-wrapper">
         <div className="gallery-grid">
-          {filteredImages.map((img, idx) => {
+          {galleryImages.map((img, idx) => {
             const title = img.title[lang] || img.title.en;
             return (
               <div
@@ -144,7 +123,7 @@ function Gallery() {
             <div className="lightbox-caption">
               <span className="caption-text">{activeImage.title[lang] || activeImage.title.en}</span>
               <span className="lightbox-counter">
-                {activeIndex + 1} / {filteredImages.length}
+                {activeIndex + 1} / {galleryImages.length}
               </span>
             </div>
           </div>
