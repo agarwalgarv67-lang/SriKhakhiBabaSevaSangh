@@ -89,8 +89,8 @@ function Contact() {
               <div className="info-content">
                 <h4>{txt.emailLabel}</h4>
                 <p>
-                  <a href="mailto:srikhakhibabasevasangh.hyd@gmail.com">
-                    srikhakhibabasevasangh.hyd@gmail.com
+                  <a href="mailto:srikhakhibabasevasang.hyd@gmail.com">
+                    srikhakhibabasevasang.hyd@gmail.com
                   </a>
                 </p>
               </div>

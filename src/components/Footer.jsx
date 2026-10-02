@@ -96,7 +96,7 @@ function Footer() {
           </p>
           <p>
             <FaEnvelope className="footer-icon" />
-            <a href="mailto:srikhakhibabasevasangh.hyd@gmail.com">srikhakhibabasevasangh.hyd@gmail.com</a>
+            <a href="mailto:srikhakhibabasevasang.hyd@gmail.com">srikhakhibabasevasang.hyd@gmail.com</a>
           </p>
           <p className="social-links" style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
             <a

@@ -260,7 +260,7 @@ function Contact() {
               <FaEnvelope className="connect-icon" />
               <div>
                 <span>Email Address</span>
-                <a href="mailto:srikhakhibabasevasangh.hyd@gmail.com">srikhakhibabasevasangh.hyd@gmail.com</a>
+                <a href="mailto:srikhakhibabasevasang.hyd@gmail.com">srikhakhibabasevasang.hyd@gmail.com</a>
               </div>
             </div>
             

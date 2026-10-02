@@ -199,7 +199,7 @@ function Donation() {
     `Please find the payment screenshot / confirmation attached.\n\n` +
     `With devotional regards,\n`
   );
-  const mailtoUrl = `mailto:srikhakhibabasevasangh.hyd@gmail.com?subject=${mailSubject}&body=${mailBody}`;
+  const mailtoUrl = `mailto:srikhakhibabasevasang.hyd@gmail.com?subject=${mailSubject}&body=${mailBody}`;
 
   return (
     <section className="donation-page-container">
