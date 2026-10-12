@@ -4,6 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import { LanguageProvider } from "./context/LanguageContext";
 
@@ -43,6 +44,8 @@ function App() {
         <Route path="/donation" element={<Donation />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+
+      <Footer />
     </LanguageProvider>
   );
 }

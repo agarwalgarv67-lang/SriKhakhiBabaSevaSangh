@@ -1,6 +1,6 @@
 import { useLang } from "../context/LanguageContext";
-import { FaCalendarAlt, FaMapMarkerAlt, FaUsers, FaMusic, FaInfoCircle, FaPhoneAlt } from "react-icons/fa";
-import calendarImg from "../assets/images/calendar_2026_2027.jpg";
+import { FaCalendarAlt, FaMapMarkerAlt, FaUsers, FaMusic } from "react-icons/fa";
+import Calendar from "../components/Calendar";
 import YouTubeLive from "../components/YouTubeLive";
 
 function Events() {
@@ -146,64 +146,7 @@ function Events() {
       </div>
 
       {/* Calendar Section */}
-      <div className="calendar-section">
-        <div className="calendar-header">
-          <h2>{lang === "en" ? "Bhajan & Festival Calendar (2026 - 2027)" : "भजन एवं उत्सव तिथि पत्र (2026 - 2027)"}</h2>
-          <p>
-            {lang === "en" 
-              ? "Official dates for Shukla Paksha Dwadashi monthly bhajans and major Indian festivals." 
-              : "शुक्ल पक्ष द्वादशी के मासिक भजनों और प्रमुख भारतीय त्योहारों की आधिकारिक तिथियां।"}
-          </p>
-        </div>
-
-        <div className="calendar-content-centered">
-          <img src={calendarImg} alt="Bhajan & Festival Calendar 2026-27" className="calendar-full-image" />
-        </div>
-
-        <div className="calendar-bottom-info">
-          <div className="calendar-info-grid">
-            <div className="calendar-info-card">
-              <h3>
-                <FaCalendarAlt /> {lang === "en" ? "Monthly Sudi Baras Bhajans" : "मासिक सुदी बारस भजन"}
-              </h3>
-              <p>
-                {lang === "en"
-                  ? "Devotional bhajans in memory of Sant Shiromani Khakhi Ji Maharaj take place every month on Sudi Baras (Shukla Paksha Dwadashi). Key upcoming dates include Chaitra Sudi 12 (29 March 2026), Kartik Sudi 12 (21 November 2026), and the grand Falgun Mela on 8 March 2027."
-                  : "संत शिरोमणि खाखी जी महाराज के बारस सुदी (शुक्ल पक्ष द्वादशी) के मासिक भजनों का पावन आयोजन हर माह किया जाता है। मुख्य तिथियों में चैत्र सुदी 12 (29 मार्च 2026), कार्तिक सुदी 12 (21 नवंबर 2026) और वार्षिक फाल्गुन मेला (8 मार्च 2027) शामिल हैं।"}
-              </p>
-            </div>
-
-            <div className="calendar-info-card">
-              <h3>
-                <FaInfoCircle /> {lang === "en" ? "Major Celebrations & Festivals" : "प्रमुख त्योहार एवं उत्सव"}
-              </h3>
-              <p>
-                {lang === "en"
-                  ? "The calendar lists prominent Hindu festivals celebrated by the Sangh, including Holika Dahan (2 March 2026), Hanuman Jayanti (2 April 2026), Guru Purnima (29 July 2026), Janmashtami (4 September 2026), and Deepawali (8 November 2026). Devotees are invited to participate in all standard rituals."
-                  : "तिथि पत्र में संघ द्वारा मनाए जाने वाले प्रमुख हिंदू त्योहारों की सूची है, जिसमें होलिका दहन (2 मार्च 2026), हनुमान जयंती (2 अप्रैल 2026), गुरु पूर्णिमा (29 जुलाई 2026), कृष्ण जन्माष्टमी (4 सितंबर 2026) और दीपावली (8 नवंबर 2026) शामिल हैं। सभी श्रद्धालुओं का स्वागत है।"}
-              </p>
-            </div>
-          </div>
-
-          <div className="calendar-contacts">
-            <h4>📞 {lang === "en" ? "Contact Coordinators" : "संपर्क सूत्र"}</h4>
-            <div className="calendar-contacts-grid">
-              <div className="calendar-contact-item">
-                <strong>{lang === "en" ? "Vinod Agarwal" : "विनोद अग्रवाल"}</strong>
-                <a href="tel:+918686001010"><FaPhoneAlt /> 8686001010</a>
-              </div>
-              <div className="calendar-contact-item">
-                <strong>{lang === "en" ? "Kishan Agarwal" : "किशन अग्रवाल"}</strong>
-                <a href="tel:+918121988125"><FaPhoneAlt /> 8121988125</a>
-              </div>
-              <div className="calendar-contact-item">
-                <strong>{lang === "en" ? "Pradeep Agarwal" : "प्रदीप अग्रवाल"}</strong>
-                <a href="tel:+919391055244"><FaPhoneAlt /> 9391055244</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Calendar />
 
       {/* YouTube Live Section */}
       <YouTubeLive />

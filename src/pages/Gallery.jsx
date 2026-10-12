@@ -44,7 +44,7 @@ function Gallery() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [activeIndex]);
 
-  const activeImage = activeIndex !== null ? filteredImages[activeIndex] : null;
+  const activeImage = activeIndex !== null ? galleryImages[activeIndex] : null;
 
   return (
     <div className="gallery-page-container">

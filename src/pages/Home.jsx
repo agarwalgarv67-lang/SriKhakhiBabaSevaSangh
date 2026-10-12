@@ -6,7 +6,6 @@ import YouTubeLive from "../components/YouTubeLive";
 import Calendar from "../components/Calendar";
 import Donation from "../components/Donation";
 import Contact from "../components/Contact";
-import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -19,7 +18,6 @@ function Home() {
       <YouTubeLive />
       <Donation />
       <Contact />
-      <Footer />
     </>
   );
 }
