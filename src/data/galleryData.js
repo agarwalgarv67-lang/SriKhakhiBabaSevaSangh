@@ -123,8 +123,8 @@ export const galleryImages = [
     src: mela4,
     category: "festivals",
     title: {
-      en: "Annadan & Maha Bhandara Prasadam",
-      hi: "विशाल अन्नदान एवं महा भंडारा प्रसाद",
+      en: "Sri Khakhi Baba Ki Palki",
+      hi: "श्री खाखी बाबा की पालकी",
     },
   },
 ];

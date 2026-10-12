@@ -10,7 +10,7 @@ import { galleryImages } from "../data/galleryData";
 // - Devotional Bhajan Sandhya
 // - Falgun Mela Shobha Yatra
 // - Akhand Pavitra Jyoti
-// - Annadan & Maha Bhandara Prasadam
+// - Sri Khakhi Baba Ki Palki
 const homeFeaturedIds = [
   "khakhi-baba-poster",
   "temple2",
