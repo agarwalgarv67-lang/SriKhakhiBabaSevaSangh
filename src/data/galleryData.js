@@ -10,6 +10,8 @@ import mela from "../assets/images/mela.jpeg";
 import mela2 from "../assets/images/mela2.jpeg";
 import mela3 from "../assets/images/mela3.jpeg";
 import mela4 from "../assets/images/mela4.jpeg";
+import ardas from "../assets/images/ardas.jpeg";
+import baba from "../assets/images/baba.jpeg";
 
 export const galleryCategories = [
   { id: "all", labelEn: "All Photos", labelHi: "सभी चित्र" },
@@ -26,6 +28,24 @@ export const galleryImages = [
     title: {
       en: "Sri Khakhi Baba Ji Maharaj Divine Portrait",
       hi: "श्री खाखी बाबा जी महाराज दिव्य स्वरूप",
+    },
+  },
+  {
+    id: "baba",
+    src: baba,
+    category: "baba",
+    title: {
+      en: "Khakhi Baba",
+      hi: "श्री खाखी बाबा",
+    },
+  },
+  {
+    id: "ardas",
+    src: ardas,
+    category: "baba",
+    title: {
+      en: "Sri Khakhi Baba Ardas",
+      hi: "श्री खाखी बाबा अरदास",
     },
   },
   {
