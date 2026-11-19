@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useLang } from "../context/LanguageContext";
-import { FaLanguage, FaPhoneAlt, FaEnvelope, FaInstagram, FaMapMarkerAlt, FaUserTie, FaPaperPlane, FaCheck } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaInstagram, FaUserTie, FaPaperPlane, FaCheck } from "react-icons/fa";
 
 function Contact() {
   const { lang } = useLang();

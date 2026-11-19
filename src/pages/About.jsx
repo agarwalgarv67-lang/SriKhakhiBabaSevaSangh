@@ -6,7 +6,7 @@ import kiljiKhadau from "../assets/images/kilji-baba-khadau.jpg";
 import sukhramdasImg from "../assets/images/sukhramdas-ji.jpg";
 import khakhiBabaPoster from "../assets/images/khakhi-baba-poster.jpg";
 import motilalImg from "../assets/images/motilal-singhania.jpg";
-import { FaLanguage, FaHistory, FaMapMarkedAlt, FaBook } from "react-icons/fa";
+import { FaHistory, FaMapMarkedAlt, FaBook } from "react-icons/fa";
 
 import coverVolume1 from "../assets/images/cover_volume_1.jpg";
 import coverVolume2 from "../assets/images/cover_volume_2.jpg";

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useLang } from "../context/LanguageContext";
-import { FaFire, FaBookOpen, FaPray, FaHands, FaLanguage } from "react-icons/fa";
+import { FaFire, FaBookOpen, FaPray, FaHands } from "react-icons/fa";
 import jyotImg from "../assets/images/jyot.jpeg";
 import bhajanImg from "../assets/images/bhajan.jpeg";
 
@@ -333,7 +333,7 @@ function GuruMahima() {
               className={`tab-btn ${tab === "babastuti" ? "active" : ""}`}
               onClick={() => setTab("babastuti")}
             >
-              <FaPray /> {lang === "en" ? "Khakhi Chalisa" : "खाखी चालीसा"}
+              <FaPray /> {lang === "en" ? "Khakhi Stuti" : "खाखी स्तुति"}
             </button>
             <button
               className={`tab-btn ${tab === "panchatattva" ? "active" : ""}`}
@@ -393,7 +393,7 @@ function GuruMahima() {
         {tab === "babastuti" && (
           <div className="tab-content-wrapper fade-in">
             <div className="content-intro-card">
-              <h2>{lang === "en" ? "Khakhi Chalisa" : "खाखी चालीसा"}</h2>
+              <h2>{lang === "en" ? "Khakhi Stuti (18 Couplets)" : "श्री खाखी स्तुति (१८ दोहे)"}</h2>
               <p className="intro-text">
                 {lang === "en"
                   ? "A devotional prayer composed of eighteen couplets praising the divine character, yoga-powers, and compassionate grace of Sri Khakhi Baba Ji."

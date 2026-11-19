@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useLang } from "../context/LanguageContext";
 import temple from "../assets/images/temple2.jpeg";
-import { FaLanguage, FaCalendarAlt, FaSchool, FaBuilding, FaTree, FaClinicMedical, FaHandsHelping, FaUniversity, FaArrowRight } from "react-icons/fa";
+import { FaCalendarAlt, FaSchool, FaBuilding, FaTree, FaClinicMedical, FaHandsHelping, FaUniversity, FaArrowRight } from "react-icons/fa";
 
 function Journey() {
   const { lang } = useLang();

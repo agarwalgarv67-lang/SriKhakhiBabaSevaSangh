@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { FaArrowLeft, FaArrowRight, FaTimes, FaImages } from "react-icons/fa";
 import { useLang } from "../context/LanguageContext";
@@ -40,17 +40,17 @@ function Gallery() {
     .map((id) => galleryImages.find((img) => img.id === id))
     .filter(Boolean);
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     setActiveIndex((prev) => (prev === featuredImages.length - 1 ? 0 : prev + 1));
-  };
+  }, [featuredImages.length]);
 
-  const handlePrev = () => {
+  const handlePrev = useCallback(() => {
     setActiveIndex((prev) => (prev === 0 ? featuredImages.length - 1 : prev - 1));
-  };
+  }, [featuredImages.length]);
 
-  const handleClose = () => {
+  const handleClose = useCallback(() => {
     setActiveIndex(null);
-  };
+  }, []);
 
   useEffect(() => {
     if (activeIndex === null) return;
@@ -63,7 +63,7 @@ function Gallery() {
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [activeIndex]);
+  }, [activeIndex, handleClose, handleNext, handlePrev]);
 
   const activeImage = activeIndex !== null ? featuredImages[activeIndex] : null;
 

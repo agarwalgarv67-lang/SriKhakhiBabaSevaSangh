@@ -72,11 +72,13 @@ function YouTubeLive({ streams = defaultStreams }) {
                     allowFullScreen
                   ></iframe>
 
-                  {/* YouTube Live Overlay Chip */}
-                  <div className="yt-live-chip">
-                    <span className="yt-pulse-dot"></span>
-                    <span>{txt.liveBadge}</span>
-                  </div>
+                  {/* YouTube Live Overlay Chip (Only shown when stream is currently live) */}
+                  {stream.isLive && (
+                    <div className="yt-live-chip">
+                      <span className="yt-pulse-dot"></span>
+                      <span>{txt.liveBadge}</span>
+                    </div>
+                  )}
                 </div>
 
                 {/* Video Info Section Below Player */}

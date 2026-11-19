@@ -1,11 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { FaArrowLeft, FaArrowRight, FaTimes } from "react-icons/fa";
 import { useLang } from "../context/LanguageContext";
-import { galleryImages } from "../data/galleryData";
+import { galleryImages, galleryCategories } from "../data/galleryData";
 import templeHero from "../assets/images/temple2.jpeg";
 
 function Gallery() {
   const { lang } = useLang();
+  const [selectedCategory, setSelectedCategory] = useState("all");
   const [activeIndex, setActiveIndex] = useState(null);
 
   const heading = lang === "en" ? "Photo Gallery" : "फोटो गैलरी";
@@ -14,22 +15,28 @@ function Gallery() {
       ? "Sacred glimpses of Sri Khakhi Dham, divine saints, sacred temple heritage, and annual celebrations."
       : "श्री खाखी धाम, दिव्य संतों, प्राचीन मंदिर धरोहर एवं पावन वार्षिक उत्सवों के दर्शन।";
   const viewLabel = lang === "en" ? "🔍 View Photo" : "🔍 चित्र देखें";
+
+  const filteredImages =
+    selectedCategory === "all"
+      ? galleryImages
+      : galleryImages.filter((img) => img.category === selectedCategory);
+
   const countLabel =
     lang === "en"
-      ? `Showing ${galleryImages.length} Sacred Photos`
-      : `${galleryImages.length} पावन चित्र प्रदर्शित`;
+      ? `Showing ${filteredImages.length} Sacred Photos`
+      : `${filteredImages.length} पावन चित्र प्रदर्शित`;
 
-  const handleNext = () => {
-    setActiveIndex((prev) => (prev === galleryImages.length - 1 ? 0 : prev + 1));
-  };
+  const handleNext = useCallback(() => {
+    setActiveIndex((prev) => (prev === filteredImages.length - 1 ? 0 : prev + 1));
+  }, [filteredImages.length]);
 
-  const handlePrev = () => {
-    setActiveIndex((prev) => (prev === 0 ? galleryImages.length - 1 : prev - 1));
-  };
+  const handlePrev = useCallback(() => {
+    setActiveIndex((prev) => (prev === 0 ? filteredImages.length - 1 : prev - 1));
+  }, [filteredImages.length]);
 
-  const handleClose = () => {
+  const handleClose = useCallback(() => {
     setActiveIndex(null);
-  };
+  }, []);
 
   useEffect(() => {
     if (activeIndex === null) return;
@@ -42,9 +49,9 @@ function Gallery() {
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [activeIndex]);
+  }, [activeIndex, handleClose, handleNext, handlePrev]);
 
-  const activeImage = activeIndex !== null ? galleryImages[activeIndex] : null;
+  const activeImage = activeIndex !== null ? filteredImages[activeIndex] : null;
 
   return (
     <div className="gallery-page-container">
@@ -61,17 +68,29 @@ function Gallery() {
         </div>
       </div>
 
-      {/* Photo Count */}
+      {/* Category Filter & Photo Count Bar */}
       <div className="gallery-controls-bar" data-aos="fade-up">
-        <div className="gallery-count-badge">
-          {countLabel}
+        <div className="filter-buttons">
+          {galleryCategories.map((cat) => (
+            <button
+              key={cat.id}
+              className={`filter-btn ${selectedCategory === cat.id ? "active" : ""}`}
+              onClick={() => {
+                setSelectedCategory(cat.id);
+                setActiveIndex(null);
+              }}
+            >
+              {lang === "en" ? cat.labelEn : cat.labelHi}
+            </button>
+          ))}
         </div>
+        <div className="gallery-count-badge">{countLabel}</div>
       </div>
 
       {/* Grid */}
       <div className="gallery-main-wrapper">
         <div className="gallery-grid">
-          {galleryImages.map((img, idx) => {
+          {filteredImages.map((img, idx) => {
             const title = img.title[lang] || img.title.en;
             return (
               <div
@@ -123,7 +142,7 @@ function Gallery() {
             <div className="lightbox-caption">
               <span className="caption-text">{activeImage.title[lang] || activeImage.title.en}</span>
               <span className="lightbox-counter">
-                {activeIndex + 1} / {galleryImages.length}
+                {activeIndex + 1} / {filteredImages.length}
               </span>
             </div>
           </div>

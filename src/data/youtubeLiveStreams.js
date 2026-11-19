@@ -17,7 +17,7 @@ export function parseYouTubeEmbedId(urlOrId) {
     return urlOrId;
   }
   // Match youtube.com/live/ID, youtube.com/watch?v=ID, youtu.be/ID
-  const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|live\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+  const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|live\/|watch\?v=|&v=)([^#&?]*).*/;
   const match = urlOrId.match(regExp);
   return (match && match[2].length === 11) ? match[2] : urlOrId;
 }
@@ -30,6 +30,7 @@ export const youtubeLiveStreams = [
     titleHi: "मासिक सुदी बारस भजन संध्या (लाइव प्रसारण 1)",
     dateEn: "Shukla Paksha Dwadashi Live",
     dateHi: "शुक्ल पक्ष द्वादशी सीधा प्रसारण",
+    isLive: false,
   },
   {
     id: "stream2",
@@ -38,5 +39,6 @@ export const youtubeLiveStreams = [
     titleHi: "मासिक सुदी बारस भजन संध्या (लाइव प्रसारण 2)",
     dateEn: "Shukla Paksha Dwadashi Live",
     dateHi: "शुक्ल पक्ष द्वादशी सीधा प्रसारण",
+    isLive: false,
   }
 ];

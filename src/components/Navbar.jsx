@@ -13,6 +13,7 @@ function Navbar() {
 
   const t = {
     hi: {
+      title: "श्री खाखी बाबा सेवा संघ",
       subheading: "डाडा फतेहपुरा, राजस्थान",
       home: "मुख्य पृष्ठ",
       about: "हमारे बारे में",
@@ -25,6 +26,7 @@ function Navbar() {
       langSwitch: "English",
     },
     en: {
+      title: "Sri Khakhi Baba Seva Sangh",
       subheading: "DADA FATEHPURA, RAJASTHAN",
       home: "Home",
       about: "About",
@@ -46,7 +48,7 @@ function Navbar() {
         <Link to="/" className="logo" onClick={closeMenu}>
           <img src={logo} alt="Sri Khakhi Baba Seva Sangh Logo" />
           <div className="logo-text">
-            <h2 style={{ fontFamily: "Poppins" }}>Sri Khakhi Baba Seva Sangh</h2>
+            <h2 style={{ fontFamily: "Poppins" }}>{txt.title}</h2>
             <span>{txt.subheading}</span>
           </div>
         </Link>
