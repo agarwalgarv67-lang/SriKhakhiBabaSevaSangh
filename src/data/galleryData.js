@@ -37,84 +37,12 @@ export const galleryImages = [
     },
   },
   {
-    id: "baba",
-    src: baba,
-    category: "baba",
-    title: {
-      en: "Khakhi Baba",
-      hi: "श्री खाखी बाबा",
-    },
-  },
-  {
-    id: "ardas",
-    src: ardas,
-    category: "baba",
-    title: {
-      en: "Sri Khakhi Baba Ardas",
-      hi: "श्री खाखी बाबा अरदास",
-    },
-  },
-  {
     id: "temple2",
     src: temple2,
     category: "temple",
     title: {
       en: "Panoramic View of Sri Khakhi Dham Mandir",
       hi: "श्री खाखी धाम मंदिर का विहंगम दृश्य",
-    },
-  },
-  {
-    id: "temple",
-    src: temple,
-    category: "temple",
-    title: {
-      en: "Sri Khakhi Dham Hilltop Temple",
-      hi: "पावन पहाड़ी पर स्थित श्री खाखी धाम मंदिर",
-    },
-  },
-  {
-    id: "temple3",
-    src: temple3,
-    category: "temple",
-    title: {
-      en: "Ancient Mandir Shikhar & Architecture",
-      hi: "प्राचीन मंदिर शिखर एवं वास्तुकला",
-    },
-  },
-  {
-    id: "jyot",
-    src: jyot,
-    category: "temple",
-    title: {
-      en: "Akhand Pavitra Jyoti (Eternal Flame)",
-      hi: "अखंड पावन ज्योति दर्शन",
-    },
-  },
-  {
-    id: "stairs",
-    src: stairs,
-    category: "temple",
-    title: {
-      en: "Sacred Stone Steps to Hilltop Temple",
-      hi: "पहाड़ी मंदिर की ओर ले जाती पावन सीढ़ियाँ",
-    },
-  },
-  {
-    id: "stairs2",
-    src: stairs2,
-    category: "temple",
-    title: {
-      en: "Pilgrimage Path & Hill Steps to Sri Khakhi Dham",
-      hi: "धाम दर्शन हेतु तीर्थ-मार्ग एवं सीढ़ियाँ",
-    },
-  },
-  {
-    id: "bhajan",
-    src: bhajan,
-    category: "festivals",
-    title: {
-      en: "Devotional Bhajan Sandhya & Kirtan",
-      hi: "भक्तिमय भजन संध्या एवं हरि संकीर्तन",
     },
   },
   {
@@ -127,30 +55,21 @@ export const galleryImages = [
     },
   },
   {
-    id: "mela2",
-    src: mela2,
-    category: "festivals",
+    id: "jyot",
+    src: jyot,
+    category: "temple",
     title: {
-      en: "Devotees Gathering at Sri Khakhi Dham",
-      hi: "श्री खाखी धाम में एकत्रित श्रद्धालु भक्तगण",
+      en: "Akhand Pavitra Jyoti (Eternal Flame)",
+      hi: "अखंड पावन ज्योति दर्शन",
     },
   },
   {
-    id: "mela3",
-    src: mela3,
-    category: "festivals",
+    id: "baba",
+    src: baba,
+    category: "baba",
     title: {
-      en: "Grand Annual Satsang & Cultural Mahotsav",
-      hi: "भव्य वार्षिक सत्संग एवं सांस्कृतिक महोत्सव",
-    },
-  },
-  {
-    id: "mela4",
-    src: mela4,
-    category: "festivals",
-    title: {
-      en: "Sri Khakhi Baba Ki Palki",
-      hi: "श्री खाखी बाबा की पालकी",
+      en: "Khakhi Baba",
+      hi: "श्री खाखी बाबा",
     },
   },
   {
@@ -163,15 +82,6 @@ export const galleryImages = [
     },
   },
   {
-    id: "route-map",
-    src: routeMap,
-    category: "temple",
-    title: {
-      en: "Sri Khakhi Dham Route Map & Nearby Sacred Sites",
-      hi: "श्री खाखीजी धाम जाने का मार्ग एवं निकटवर्ती दर्शनीय स्थल",
-    },
-  },
-  {
     id: "khakhi-dham-evolution",
     src: khakhiDhamEvolution,
     category: "temple",
@@ -181,12 +91,39 @@ export const galleryImages = [
     },
   },
   {
-    id: "temple-bhagyanagar",
-    src: templeBhagyanagar,
+    id: "bhajan",
+    src: bhajan,
+    category: "festivals",
+    title: {
+      en: "Devotional Bhajan Sandhya & Kirtan",
+      hi: "भक्तिमय भजन संध्या एवं हरि संकीर्तन",
+    },
+  },
+  {
+    id: "ardas",
+    src: ardas,
+    category: "baba",
+    title: {
+      en: "Sri Khakhi Baba Ardas",
+      hi: "श्री खाखी बाबा अरदास",
+    },
+  },
+  {
+    id: "temple",
+    src: temple,
     category: "temple",
     title: {
-      en: "Temple Built by Sri Khakhi Baba Seva Sangh, Bhagyanagar",
-      hi: "श्री खाखी बाबा सेवा संघ, भाग्यनगर द्वारा निर्मित मन्दिर",
+      en: "Sri Khakhi Dham Hilltop Temple",
+      hi: "पावन पहाड़ी पर स्थित श्री खाखी धाम मंदिर",
+    },
+  },
+  {
+    id: "mela4",
+    src: mela4,
+    category: "festivals",
+    title: {
+      en: "Sri Khakhi Baba Ki Palki",
+      hi: "श्री खाखी बाबा की पालकी",
     },
   },
   {
@@ -199,12 +136,75 @@ export const galleryImages = [
     },
   },
   {
+    id: "stairs",
+    src: stairs,
+    category: "temple",
+    title: {
+      en: "Sacred Stone Steps to Hilltop Temple",
+      hi: "पहाड़ी मंदिर की ओर ले जाती पावन सीढ़ियाँ",
+    },
+  },
+  {
+    id: "mela2",
+    src: mela2,
+    category: "festivals",
+    title: {
+      en: "Devotees Gathering at Sri Khakhi Dham",
+      hi: "श्री खाखी धाम में एकत्रित श्रद्धालु भक्तगण",
+    },
+  },
+  {
+    id: "temple-bhagyanagar",
+    src: templeBhagyanagar,
+    category: "temple",
+    title: {
+      en: "Temple Built by Sri Khakhi Baba Seva Sangh, Bhagyanagar",
+      hi: "श्री खाखी बाबा सेवा संघ, भाग्यनगर द्वारा निर्मित मन्दिर",
+    },
+  },
+  {
+    id: "route-map",
+    src: routeMap,
+    category: "temple",
+    title: {
+      en: "Sri Khakhi Dham Route Map & Nearby Sacred Sites",
+      hi: "श्री खाखीजी धाम जाने का मार्ग एवं निकटवर्ती दर्शनीय स्थल",
+    },
+  },
+  {
+    id: "mela3",
+    src: mela3,
+    category: "festivals",
+    title: {
+      en: "Grand Annual Satsang & Cultural Mahotsav",
+      hi: "भव्य वार्षिक सत्संग एवं सांस्कृतिक महोत्सव",
+    },
+  },
+  {
+    id: "temple3",
+    src: temple3,
+    category: "temple",
+    title: {
+      en: "Ancient Mandir Shikhar & Architecture",
+      hi: "प्राचीन मंदिर शिखर एवं वास्तुकला",
+    },
+  },
+  {
     id: "school-and-hospital",
     src: schoolAndHospital,
     category: "temple",
     title: {
       en: "Sri Khakhi Baba Government School & Animal Hospital, Dada Fatehpura",
       hi: "श्री खाखी बाबा राजकीय माध्यमिक विद्यालय एवं पशु चिकित्सालय, डाडा फतेहपुरा",
+    },
+  },
+  {
+    id: "stairs2",
+    src: stairs2,
+    category: "temple",
+    title: {
+      en: "Pilgrimage Path & Hill Steps to Sri Khakhi Dham",
+      hi: "धाम दर्शन हेतु तीर्थ-मार्ग एवं सीढ़ियाँ",
     },
   },
 ];
