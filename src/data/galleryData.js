@@ -12,6 +12,12 @@ import mela3 from "../assets/images/mela3.jpeg";
 import mela4 from "../assets/images/mela4.jpeg";
 import ardas from "../assets/images/ardas.jpeg";
 import baba from "../assets/images/baba.jpeg";
+import routeMap from "../assets/images/route-map.jpg";
+import falgunMelaShobhaYatra from "../assets/images/falgun-mela-shobhayatra.jpg";
+import khakhiBhavan from "../assets/images/khakhi-bhavan-dada-fatehpura.jpg";
+import khakhiDhamEvolution from "../assets/images/khakhi-dham-evolution-1875-2014.jpg";
+import schoolAndHospital from "../assets/images/school-and-animal-hospital.jpg";
+import templeBhagyanagar from "../assets/images/temple-heritage-bhagyanagar.jpg";
 
 export const galleryCategories = [
   { id: "all", labelEn: "All Photos", labelHi: "सभी चित्र" },
@@ -145,6 +151,60 @@ export const galleryImages = [
     title: {
       en: "Sri Khakhi Baba Ki Palki",
       hi: "श्री खाखी बाबा की पालकी",
+    },
+  },
+  {
+    id: "falgun-mela-shobhayatra",
+    src: falgunMelaShobhaYatra,
+    category: "festivals",
+    title: {
+      en: "Falgun Mela Darshan & Shobha Yatra",
+      hi: "फाल्गुन मेला दर्शन एवं शोभा यात्रा",
+    },
+  },
+  {
+    id: "route-map",
+    src: routeMap,
+    category: "temple",
+    title: {
+      en: "Sri Khakhi Dham Route Map & Nearby Sacred Sites",
+      hi: "श्री खाखीजी धाम जाने का मार्ग एवं निकटवर्ती दर्शनीय स्थल",
+    },
+  },
+  {
+    id: "khakhi-dham-evolution",
+    src: khakhiDhamEvolution,
+    category: "temple",
+    title: {
+      en: "Sri Khakhi Dham - Historical Evolution (1875 - 2014)",
+      hi: "श्री खाखी धाम - ऐतिहासिक विकास (1875 - 2014)",
+    },
+  },
+  {
+    id: "temple-bhagyanagar",
+    src: templeBhagyanagar,
+    category: "temple",
+    title: {
+      en: "Temple Built by Sri Khakhi Baba Seva Sangh, Bhagyanagar",
+      hi: "श्री खाखी बाबा सेवा संघ, भाग्यनगर द्वारा निर्मित मन्दिर",
+    },
+  },
+  {
+    id: "khakhi-bhavan",
+    src: khakhiBhavan,
+    category: "temple",
+    title: {
+      en: "Sri Khakhi Bhavan, Dada Fatehpura",
+      hi: "श्री खाखी भवन, डाडा फतेहपुरा",
+    },
+  },
+  {
+    id: "school-and-hospital",
+    src: schoolAndHospital,
+    category: "temple",
+    title: {
+      en: "Sri Khakhi Baba Government School & Animal Hospital, Dada Fatehpura",
+      hi: "श्री खाखी बाबा राजकीय माध्यमिक विद्यालय एवं पशु चिकित्सालय, डाडा फतेहपुरा",
     },
   },
 ];

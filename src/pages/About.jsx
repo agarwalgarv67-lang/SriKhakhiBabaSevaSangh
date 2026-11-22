@@ -142,9 +142,9 @@ function About() {
               </div>
 
               <div className="history-section">
-                <h3>Arrival of Sri Khakhi Baba on the Hill (1889)</h3>
+                <h3>Arrival of Sri Khakhi Baba on the Sacred Hill</h3>
                 <p>
-                  In the year 1889, when Maharaja Ajit Singh, the then ruler of Khetri, initiated preparations for constructing a dam to provide irrigation facilities to the local farmers, Sri Khakhi Baba was deeply engaged in meditation at the very site where the Ajit Sagar Dam stands today.
+                  During the reign of Maharaja Ajit Singh, the then ruler of Khetri, when preparations were initiated for constructing a dam to provide irrigation facilities to the local farmers, Sri Khakhi Baba was deeply engaged in meditation at the very site where the Ajit Sagar Dam stands today.
                 </p>
                 <p>
                   Workers from the Od community were involved in the dam construction, excavating soil from the lower areas to build the embankment. Since Baba had established his meditation spot at that location, the workers humbly requested him to move elsewhere. However, Sri Khakhi Baba, being deeply absorbed in intense penance, did not respond to their request.
@@ -351,9 +351,9 @@ function About() {
               </div>
 
               <div className="history-section">
-                <h3>श्री खाखी बाबा का पहाड़ी पर आगमन (1889)</h3>
+                <h3>श्री खाखी बाबा का पावन पहाड़ी पर आगमन</h3>
                 <p>
-                  सन 1889 में, जब खेतड़ी के तत्कालीन नरेश महाराजा अजीत सिंह द्वारा क्षेत्र के किसानों की सिंचाई सुविधा हेतु एक बांध के निर्माण की तैयारियां की जा रही थीं, उस समय श्री खाखी बाबा उसी स्थान पर तपस्या में लीन थे, जहां आज अजीत सागर बांध स्थित है।
+                  खेतड़ी के तत्कालीन नरेश महाराजा अजीत सिंह के शासनकाल में, जब क्षेत्र के किसानों की सिंचाई सुविधा हेतु एक बांध के निर्माण की तैयारियां की जा रही थीं, उस समय श्री खाखी बाबा उसी स्थान पर तपस्या में लीन थे, जहां आज अजीत सागर बांध स्थित है।
                 </p>
                 <p>
                   बांध निर्माण कार्य में ओड़ जाति के श्रमिक कार्यरत थे, जो बांध की पाल (दीवार) बनाने के लिए नीचे से मिट्टी खोदकर ला रहे थे। चूंकि उसी स्थान पर बाबा का तपस्थल था, इसलिए श्रमिकों ने विनम्रतापूर्वक बाबा से वहां से हटने का अनुरोध किया। परंतु श्री खाखी बाबा गहन तपस्या में लीन होने के कारण अपने स्थान से नहीं उठे।

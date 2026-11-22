@@ -27,13 +27,13 @@ function Journey() {
       descHi: "क्षेत्र के बच्चों को शिक्षा से जोड़ने के लिए ग्राम डाडा फतेहरा में श्री खाखी बाबा राजकीय प्राथमिक विद्यालय की आधारशिला रखी गई।"
     },
     {
-      year: "1949",
+      year: "Before 1949",
       category: "development",
       icon: <FaUniversity />,
-      titleEn: "Establishment of Sri Khakhi Baba Seva Sangh",
-      titleHi: "श्री खाखी बाबा सेवा संघ की स्थापना",
-      descEn: "Formed in Hyderabad with the sacred goal of temple preservation, serving Baba's legacy, and social upliftment.",
-      descHi: "बाबा की सेवा, खाखी धाम के संरक्षण तथा धार्मिक-सामाजिक उत्थान के पवित्र उद्देश्य से हैदराबाद में सेवा संघ की स्थापना की गई।"
+      titleEn: "Early Seva Gatherings in Hyderabad",
+      titleHi: "प्रारम्भिक सेवा गतिविधियाँ एवं भक्त समागम",
+      descEn: "Devotees in Hyderabad began organized spiritual gatherings, bhajans, and seva initiatives prior to 1949, laying the foundation for the Seva Sangh.",
+      descHi: "हैदराबाद में श्रद्धालुओं द्वारा 1949 से पूर्व ही सत्संग, भजन एवं सेवा कार्यों का अनौपचारिक शुभारम्भ किया गया, जिसने आगे चलकर सेवा संघ का रूप लिया।"
     },
     {
       year: "1962",
@@ -57,10 +57,10 @@ function Journey() {
       year: "1983",
       category: "development",
       icon: <FaBuilding />,
-      titleEn: "Saint Residence Developed",
-      titleHi: "संत निवास भवन की व्यवस्था",
-      descEn: "Constructed and arranged accommodation facilities for visiting saints and monks, supporting spiritual discourses and hospitality.",
-      descHi: "आगमन करने वाले संतों की सेवा और निवास हेतु संत भवन की व्यवस्था की गई, जो धार्मिक-आध्यात्मिक साधना को निरंतरता प्रदान करता है।"
+      titleEn: "Official Establishment & Saint Residence",
+      titleHi: "श्री खाखी बाबा सेवा संघ की आधिकारिक स्थापना",
+      descEn: "Sri Khakhi Baba Seva Sangh was officially established in 1983 to preserve Sri Khakhi Dham and institutionalize religious and welfare activities, including developing accommodation for visiting saints.",
+      descHi: "श्री खाखी धाम के संरक्षण और सेवा कार्यों को संगठित रूप देने हेतु 1983 में श्री खाखी बाबा सेवा संघ की आधिकारिक स्थापना की गई तथा पधारने वाले संतों हेतु आवास भवन की व्यवस्था की गई।"
     },
     {
       year: "1984–1985",
@@ -203,8 +203,8 @@ function Journey() {
           <FaArrowRight className="philosophy-accent-icon" />
           <p>
             {lang === "en" 
-              ? "For more than 40 years, Sri Khakhi Baba Seva Sangh has remained committed to preserving faith, serving society, and carrying forward the eternal teachings of Sri Khakhi Baba through devotion, compassion, and selfless service."
-              : "४० से अधिक वर्षों से, श्री खाखी बाबा सेवा संघ आस्था के संरक्षण, समाज की सेवा और भक्ति, करुणा एवं निःस्वार्थ कर्म के माध्यम से श्री खाखी बाबा के शाश्वत संदेश को जन-जन तक पहुँचाने के लिए संकल्पित है।"}
+              ? "For more than 40 years since its official establishment in 1983, Sri Khakhi Baba Seva Sangh has remained committed to preserving faith, serving society, and carrying forward the eternal teachings of Sri Khakhi Baba through devotion, compassion, and selfless service."
+              : "१९८३ में आधिकारिक स्थापना के बाद से ४० से अधिक वर्षों से, श्री खाखी बाबा सेवा संघ आस्था के संरक्षण, समाज की सेवा और भक्ति, करुणा एवं निःस्वार्थ कर्म के माध्यम से श्री खाखी बाबा के शाश्वत संदेश को जन-जन तक पहुँचाने के लिए संकल्पित है।"}
           </p>
         </div>
       </div>
